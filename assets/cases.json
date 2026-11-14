@@ -1,0 +1,6 @@
+[
+  {"id":"case-01","label":"Case 01","sourceName":"homelander","root":"assets/cases/case-01"},
+  {"id":"case-02","label":"Case 02","sourceName":"sam","root":"assets/cases/case-02"},
+  {"id":"case-03","label":"Case 03","sourceName":"xjy","root":"assets/cases/case-03"},
+  {"id":"case-04","label":"Case 04","sourceName":"zkbg","root":"assets/cases/case-04"}
+]

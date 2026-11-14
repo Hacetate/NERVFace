@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NERVFace — single-image 3D face generation. Explore input portraits, generated geometry, UV textures, and interactive 3D assets.">
+  <meta name="theme-color" content="#ffffff">
+  <title>NERVFace | Single-image 3D face generation</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/cases/case-02/input.webp" as="image">
+  <script src="site-config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body id="top" class="calibration-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="#top" aria-label="NERVFace home"><span class="brand-symbol" aria-hidden="true">N<span>/</span>F</span><span>NERVFace</span></a>
+    <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="navigation">Index <span aria-hidden="true">+</span></button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#overview"><span>01</span> Overview</a><a href="#assets"><span>02</span> 3D Assets</a><a href="#method"><span>03</span> Method</a><a href="#gallery"><span>04</span> Gallery</a><a href="#citation"><span>05</span> Citation</a>
+    </nav>
+    <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="projectTitle">
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span class="status-dot"></span><span id="venue">BLENDER SCENE / RENDER COMPARISON</span></p>
+        <div class="title-lockup"><h1 id="projectTitle">NERVFace</h1><span class="title-registration" aria-hidden="true">+</span></div>
+        <p class="hero-title" id="projectSubtitle">Single-image 3D face generation</p>
+        <span class="title-rule" aria-hidden="true"></span>
+        <p class="lede" id="projectDescription">From a photograph to a structured face asset.<br>Generated geometry. Complete UV textures. A new point of view.</p>
+      </div>
+      <div class="hero-demo">
+        <div class="plate-topline"><span><b class="red">FIG. 01</b> / ONE IDENTITY, THREE VIEWS</span><div class="presentation-toggle" role="group" aria-label="Presentation layout"><button data-presentation="compare" aria-pressed="true">Drag comparison</button><button data-presentation="plates" aria-pressed="false">View as plates</button></div></div>
+        <div id="heroDiagram" class="triptych" aria-label="Input, geometry and appearance plates" hidden>
+          <figure class="specimen-plate">
+            <button class="plate-viewport" data-lightbox="assets/cases/case-02/input.webp" data-caption="Case 02 · Input photograph" aria-label="Enlarge input photograph"><span class="plate-register" aria-hidden="true"></span><img data-plate-image="input" src="assets/cases/case-02/input.webp" alt="Case 02 input portrait" fetchpriority="high"><span class="plate-enlarge" aria-hidden="true">↗</span></button>
+            <figcaption><span class="plate-number">01</span><div><strong>Input photograph</strong><span>The visual reference</span></div><span class="plate-arrow" aria-hidden="true">→</span></figcaption>
+          </figure>
+          <figure class="specimen-plate">
+            <button class="plate-viewport" data-lightbox="assets/cases/case-02/geometry.webp" data-caption="Case 02 · Generated geometry" aria-label="Enlarge generated geometry"><span class="plate-register" aria-hidden="true"></span><img data-plate-image="geometry" src="assets/cases/case-02/geometry.webp" alt="Case 02 gray geometry"><span class="plate-enlarge" aria-hidden="true">↗</span></button>
+            <figcaption><span class="plate-number">02</span><div><strong>Generated geometry</strong><span>The structure beneath</span></div><span class="plate-arrow" aria-hidden="true">→</span></figcaption>
+          </figure>
+          <figure class="specimen-plate">
+            <button class="plate-viewport" data-lightbox="assets/cases/case-02/render.webp" data-caption="Case 02 · Textured appearance" aria-label="Enlarge textured appearance"><span class="plate-register" aria-hidden="true"></span><img data-plate-image="render" src="assets/cases/case-02/render.webp" alt="Case 02 appearance render"><span class="plate-enlarge" aria-hidden="true">↗</span></button>
+            <figcaption><span class="plate-number">03</span><div><strong>Textured appearance</strong><span>The completed surface</span></div><span class="plate-arrow red" aria-hidden="true">↗</span></figcaption>
+          </figure>
+        </div>
+        <div id="comparisonPanel" class="comparison-panel">
+          <figure class="comparison" aria-label="Interactive portrait, geometry and appearance comparison">
+            <div class="stage-heading"><span>PORTRAIT <i>/</i> SURFACE <i>/</i> APPEARANCE</span><span class="stage-dot" aria-hidden="true"></span></div>
+            <div class="stage-image-inset">
+              <div class="compare-frame" id="compareFrame" data-view="split" style="--x:50%;--y:48%">
+                <img id="compareInput" class="compare-image layer-input" src="assets/cases/case-02/input.webp" alt="Case 02 input portrait" draggable="false">
+                <img id="compareGeometry" class="compare-image layer-geometry" src="assets/cases/case-02/geometry.webp" alt="Case 02 gray geometry" draggable="false">
+                <img id="compareRender" class="compare-image layer-render" src="assets/cases/case-02/render.webp" alt="Case 02 appearance render" draggable="false">
+                <div class="divider-horizontal" aria-hidden="true"></div><div class="divider-vertical" aria-hidden="true"></div>
+                <button id="compareHandle" class="compare-handle" aria-label="Adjust comparison. Arrow keys move the dividers; Shift moves faster; Home resets." aria-describedby="comparePosition"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 6 2.5-2.5L14.5 6M9.5 18l2.5 2.5 2.5-2.5M6 9.5 3.5 12 6 14.5M18 9.5l2.5 2.5-2.5 2.5"/></svg></button>
+                <span class="image-label label-input">Input</span><span class="image-label label-geometry">Geometry</span><span class="image-label label-render">Appearance</span>
+              </div>
+            </div>
+            <figcaption class="stage-footer">
+              <div class="stage-tools" role="group" aria-label="Comparison tools">
+                <button id="focusCompare" class="stage-icon-button" title="Focus comparison for arrow-key control" aria-label="Focus comparison for arrow-key control"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18m-12-6 3-3 3 3m-9 3-3 3 3 3m12-6 3 3-3 3m-9 3 3 3 3-3"/></svg></button>
+                <button id="resetCompare" class="stage-icon-button" title="Reset comparison" aria-label="Reset comparison"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 7A8 8 0 1 1 4 14M5.5 3v5h5"/></svg></button>
+                <button id="playReveal" class="stage-icon-button" title="Play comparison reveal" aria-label="Play comparison reveal" aria-pressed="false"><svg class="reveal-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg><svg class="reveal-stop" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg></button>
+                <span class="stage-hint">Drag to explore</span>
+              </div>
+              <div id="stageCases" class="stage-cases" role="group" aria-label="Select comparison case by number"></div>
+            </figcaption>
+          </figure>
+          <div class="comparison-notes"><p class="stage-caption">One identity, viewed three ways.</p><div class="compare-modes" role="group" aria-label="Comparison view"><button data-view="split" aria-pressed="true">Compare</button><button data-view="input" aria-pressed="false">Input</button><button data-view="geometry" aria-pressed="false">Geometry</button><button data-view="render" aria-pressed="false">Appearance</button></div><p class="control-note"><kbd>←</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd> Move dividers <span>·</span> <kbd>Home</kbd> Reset</p></div>
+        </div>
+        <span id="comparePosition" class="sr-only" aria-live="polite">Dividers at 50 percent horizontal and 48 percent vertical.</span>
+        <div class="filmstrip"><div class="filmstrip-caption"><span>CONTACT SHEET</span><strong id="compareCaseLabel">02 / 06</strong></div><div id="heroCases" class="hero-cases" role="group" aria-label="Select comparison case"></div><span class="filmstrip-note">Choose a face.<br>Explore its surface.</span></div>
+      </div>
+      <div class="hero-bottom">
+        <div class="actions" id="projectLinks"><a id="inspectCase" class="button primary" href="#assets">Explore this face in 3D <span aria-hidden="true">↗</span></a><button class="button" disabled>Paper <span class="soon">TBA</span></button><button class="button" disabled>Code <span class="soon">TBA</span></button></div>
+        <details class="metadata"><summary><span>Project information</span><small id="metadataSummary">Publication details pending</small></summary><div class="metadata-body" id="metadataBody"><p>The official title, authors, affiliations, and publication links have not yet been provided.</p><p>This is a local design draft; the headline is descriptive, not the official paper title.</p></div></details>
+      </div>
+    </section>
+    <section class="highlights container" aria-label="Project at a glance">
+      <article><span class="feature-index">I / GEOMETRY</span><h2>A structured face.</h2><p>Inspect the generated surface, from a front-facing silhouette to the profile.</p></article>
+      <article><span class="feature-index">II / APPEARANCE</span><h2>Beyond the photograph.</h2><p>Complete UV textures give the face an appearance that can be explored in 3D.</p></article>
+      <article><span class="feature-index">III / EXPLORATION</span><h2>Same asset. New view.</h2><p>Switch from texture to gray geometry without changing your point of view.</p></article>
+    </section>
+    <section id="overview" class="section container">
+      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">01</span> OVERVIEW</p><h2>From image<br>to asset<span class="red">.</span></h2></div><p>Input photographs, registered appearance renders, and gray geometry. The supplied NERVFace examples, arranged as a visual study.</p></div>
+      <figure class="figure-card"><button class="figure-zoom" data-lightbox="assets/overview.webp" data-caption="NERVFace registered comparison overview" aria-label="Enlarge NERVFace overview"><img src="assets/overview.webp" alt="NERVFace registered portrait and generated face comparisons" loading="lazy"><span class="zoom-hint" aria-hidden="true">EXPAND FIGURE ↗</span></button><figcaption><span><b class="red">FIG. 02</b> / Registered visual comparisons</span><span>SUPPLIED TEASER ASSETS</span></figcaption></figure>
+      <details class="disclosure"><summary><span>Reading the figures</span><small>Offline renders vs. real-time assets</small></summary><div class="disclosure-body"><p>The images above are the supplied offline renders. The viewer below uses GLB exports with browser-compatible materials; its lighting and shading are not an exact reproduction of Blender.</p></div></details>
+      <div id="videoSlot" hidden><figure class="figure-card video-card"><video id="teaserVideo" controls playsinline preload="metadata"></video><figcaption>Project teaser</figcaption></figure></div>
+    </section>
+    <section id="assets" class="section container">
+      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">02</span> SOURCE-SCENE COMPARISON</p><h2>Same scene.<br>Two renderers<span class="red">.</span></h2></div><p>Four exported cases. Switch between progressive path tracing and real-time rendering above the viewer. The input portrait stays alongside, and switching modes preserves your camera.</p></div>
+      <div class="asset-strip"><span class="mono-label">SELECT A CASE</span><div id="assetCases" class="asset-cases" role="group" aria-label="Select 3D model"></div></div>
+      <div class="asset-layout">
+        <div class="viewer-column">
+          <div class="pane-title"><div class="renderer-switch" role="group" aria-label="Rendering mode"><button type="button" data-render-mode="pathtraced" aria-pressed="true" title="Progressive path tracing">PT</button><button type="button" data-render-mode="raster" aria-pressed="false" title="Real-time raster rendering">实时渲染</button></div><strong id="paneRendererTitle">路径追踪 PT</strong></div>
+          <div id="viewerFrame" class="viewer-frame" data-state="idle">
+            <div class="viewer-top"><span class="viewer-badge"><span class="status-dot"></span><span id="viewerTitle">Case 02</span></span><span id="renderModeBadge" class="viewer-badge">PROGRESSIVE / PT</span></div>
+            <div id="viewerCanvas" class="viewer-canvas" role="img" aria-label="Interactive 3D face. Drag to orbit, pinch or scroll to zoom. Arrow keys rotate the model, plus and minus zoom." tabindex="0"></div>
+            <div id="viewerStatus" class="viewer-status" role="status"><span class="loader" aria-hidden="true"></span><strong id="viewerStatusText">Preparing 3D viewer…</strong><progress id="modelProgress" max="100" value="0" aria-label="3D model loading progress"></progress><button id="retryViewer" class="button" hidden>Reload page</button></div>
+            <div class="viewer-bottom"><span id="viewerHint">DRAG TO ORBIT / SCROLL TO ZOOM</span><div class="viewer-tools"><button id="rotateButton" title="Toggle automatic rotation" aria-pressed="false">Auto-rotate</button><button id="resetButton" title="Restore the original Blender camera">Source camera</button><button id="fullscreenButton" title="Toggle full screen" aria-label="Toggle viewer full screen">⛶</button></div></div>
+          </div>
+          <div class="material-modes" role="group" aria-label="3D material mode"><button data-material="full" aria-pressed="true"><span class="material-dot color-dot"></span>Appearance</button><button data-material="geometry" aria-pressed="false"><span class="material-dot gray-dot"></span>Gray geometry</button><button data-material="wireframe" aria-pressed="false"><span class="material-dot wire-dot"></span>Wireframe</button></div>
+          <div class="environment-panel">
+            <div class="environment-heading"><span class="mono-label">LIGHTING / 光照环境</span><span id="environmentStatus" class="environment-status">原始输入光照</span></div>
+            <div id="environmentOptions" class="environment-options" role="group" aria-label="Lighting environment">
+              <button type="button" class="environment-option source-option" data-environment="source" aria-pressed="true"><span class="environment-swatch source-swatch" aria-hidden="true"><span></span></span><span class="environment-name">原始光照<small>Blender 输入</small></span></button>
+            </div>
+            <div id="environmentAdjust" class="environment-adjust" hidden>
+              <label for="environmentIntensity">强度 <output id="environmentIntensityValue">1.0×</output></label>
+              <input id="environmentIntensity" type="range" min="0" max="3" step="0.05" value="1">
+              <label for="environmentRotation">旋转 <output id="environmentRotationValue">0°</output></label>
+              <input id="environmentRotation" type="range" min="-180" max="180" step="5" value="0">
+            </div>
+          </div>
+          <div class="view-presets" role="group" aria-label="Quick camera views"><span>VIEWPOINT</span><button data-camera="-45">Left 45°</button><button data-camera="0">Source</button><button data-camera="45">Right 45°</button></div>
+          <p id="rendererInfo" class="viewer-note">Renderer has not started.</p>
+          <p id="sourceViewStatus" class="viewer-note">Switch between PT and real-time rendering without changing the camera.</p>
+        </div>
+        <aside class="input-photo-column">
+          <div class="input-photo-heading"><span>INPUT PORTRAIT</span><strong>角色输入</strong></div>
+          <figure class="input-photo"><img id="assetInput" src="assets/cases/case-02/input.webp" alt="Case 02 source portrait" loading="lazy"><figcaption><span id="assetInputLabel">Case 02</span><span>Original input</span></figcaption></figure>
+        </aside>
+      </div>
+      <details class="disclosure fidelity-disclosure"><summary><span>Inherited parameters & remaining differences / 继承与限制</span><small>Read before judging a match</small></summary><div class="disclosure-body"><p>相机矩阵、原始尺寸、World、面光源、贴图与颜色管理来自 scene.json。实时模式不包含 PT 的全局光照与追踪阴影；圆盘面光源在实时模式中采用矩形 LTC 近似。源文件 SSS 权重为 0，保持关闭；眼睛独立 Coat IOR 尚不能等价表达。线框模式始终使用光栅化。</p><p>光照环境默认使用原始输入光照；选择 HDRI 后，由该环境贴图独立照明（原始 World 与面光源暂时隐藏），可随时切回。HDRI 来自本地素材库 D:\HDRI Sky，已降采样为 1K 网页版；PT 与实时渲染均支持切换，实时模式对 HDRI 高光采用近似采样。</p><pre id="fidelityNotes">Select a case to inspect its source notes.</pre></div></details>
+      <details class="disclosure export-disclosure"><summary><span>Export checklist & case status / 导出清单与案例状态</span><small>4 ready · 2 pending</small></summary><div class="disclosure-body"><p>可用：01 homelander、02 sam、03 xjy、04 zkbg。待补：05 trump2、06 trump3 的 full.gltf、几何缓冲、scene.json 与 reference.png。</p><p>每组需要：完整网格/UV/法线/变换；材质槽与全部有效贴图、色彩空间和通道；眼睛各层及有效着色节点；SSS 模型/强度/尺度；灯光形状/变换/功率/归一化；World；相机；色彩管理；同机位无损参考图。</p><a class="button" href="export-checklist.txt" download>下载完整中文清单 ↓</a></div></details>
+    </section>
+    <section id="method" class="section container">
+      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">03</span> METHOD</p><h2>The idea,<br>in three steps<span class="red">.</span></h2></div><p>A high-level illustration of the project. The final method figure and paper description have not yet been supplied.</p></div>
+      <div id="methodPlaceholder" class="method-panel">
+        <div class="method-step"><span class="method-number">01</span><div><span>CONDITION</span><h3>Input portrait</h3><p>A single image provides the visual reference.</p></div></div>
+        <span class="method-arrow" aria-hidden="true">→</span>
+        <div class="method-step"><span class="method-number">02</span><div><span>GENERATE</span><h3>Geometry + texture</h3><p>A generated facial mesh with a complete UV texture.</p></div></div>
+        <span class="method-arrow" aria-hidden="true">→</span>
+        <div class="method-step"><span class="method-number">03</span><div><span>EXPLORE</span><h3>3D face asset</h3><p>Inspect shape and appearance from new views.</p></div></div>
+      </div>
+      <figure id="methodFigure" class="figure-card" hidden><button class="figure-zoom" aria-label="Enlarge method figure"><img alt="NERVFace method" loading="lazy"></button><figcaption>Method overview</figcaption></figure>
+      <p id="methodDraftNote" class="draft-note">SCHEMATIC PLACEHOLDER / NOT THE FINAL PAPER PIPELINE</p>
+    </section>
+    <section id="gallery" class="section container">
+      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">04</span> VISUAL GALLERY</p><h2>Different faces.<br>Shared structure<span class="red">.</span></h2></div><p>Paired comparisons from the registered teaser. Select a figure to examine it, or open the same case directly in the 3D viewer.</p></div>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+    <section id="citation" class="section container">
+      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">05</span> CITATION</p><h2>Build on<br>this work<span class="red">.</span></h2></div><p id="citationDescription">Publication metadata is pending. The official citation will be added when the paper details are provided.</p></div>
+      <div class="citation-box"><div class="citation-toolbar"><span id="citationStatus">BIBTEX / NOT YET AVAILABLE</span><button id="copyCitation" class="button" disabled>Copy BibTeX</button></div><pre id="bibtex">The official citation will appear here when the paper details are provided.</pre></div>
+    </section>
+  </main>
+  <footer class="footer container"><div class="footer-wordmark" aria-hidden="true">NERVFace<span class="red">/</span></div><div class="footer-line"><a class="brand" href="#top">A new point of view.</a><p>SHAPE / APPEARANCE / EXPLORATION</p><a href="#top">Back to top <span class="red">↑</span></a></div></footer>
+  <dialog id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-toolbar"><span id="lightboxCaption"></span><button id="closeLightbox" aria-label="Close enlarged figure">Close ×</button></div><img id="lightboxImage" alt=""><p>Esc to close / Original supplied imagery</p></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><div class="noscript">Enable JavaScript for comparison controls and the interactive 3D viewer. Static figures remain available.</div></noscript>
+</body>
+</html>

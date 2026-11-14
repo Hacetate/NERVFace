@@ -1,0 +1,134 @@
+THREE.JS 0.187.0
+Used for the interactive 3D viewer. Bundled locally; no CDN is required.
+
+The MIT License
+
+Copyright © 2010-2026 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+DESIGN REFERENCE
+https://luh1124.github.io/MARCUS-Avatar-Projectpage/
+https://github.com/Luh1124/MARCUS-Avatar-Projectpage
+Layout and interaction reference only. This page is independently implemented;
+no original project-page code, photographs, figures, or avatar assets are bundled.
+
+NERVFACE ASSETS
+The images and derived glTF files were prepared from user-supplied material.
+They are not licensed by the Three.js MIT notice above. The user should confirm
+publication rights and author consent before distributing these materials.
+The viewer restores source transforms, camera, world and area-light energy from
+scene.json. Exported PBR materials are not an exact copy of Cycles shading.
+The installed WebGPU glTF BSDF fixes clearcoat IOR at 1.5. Non-default Blender
+spread, unsupported color transforms and unconverted SSS are reported in the
+viewer. No image-match claim is made. No OIDN, AI denoiser or CDN is used.
+
+THREE-GPU-PATHTRACER 0.0.28
+MIT License
+Copyright (c) 2021 Garrett Johnson
+
+THREE-MESH-BVH 0.9.18
+MIT License
+Copyright (c) 2018 Garrett Johnson
+
+XATLAS-WEB 0.1.0
+MIT License
+Copyright (c) 2018-2020 Jonathan Young
+Peer dependency of three-gpu-pathtracer; no UV unwrapping is used by this viewer.
+
+The following MIT terms apply to the three packages above:
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+LINEARLY TRANSFORMED COSINES (Three.js explicit raster-preview BRDF tables)
+Copyright (c) 2017, Eric Heitz, Jonathan Dupuy, Stephen Hill and David Neubelt.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* If you use (or adapt) the source code in your own work, please include a
+  reference to the paper:
+
+  Real-Time Polygonal-Light Shading with Linearly Transformed Cosines.
+  Eric Heitz, Jonathan Dupuy, Stephen Hill and David Neubelt.
+  ACM Transactions on Graphics (Proceedings of ACM SIGGRAPH 2016) 35(4), 2016.
+  Project page: https://eheitzresearch.wordpress.com/415-2/
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+LIGHT-CONVERSION REFERENCES (consulted, no Blender source code bundled)
+https://raw.githubusercontent.com/blender/blender/main/intern/cycles/scene/light.cpp
+https://raw.githubusercontent.com/blender/blender/main/intern/cycles/kernel/light/area.h
+https://raw.githubusercontent.com/blender/blender/v4.5.0/intern/cycles/blender/light.cpp
+Cycles area_light_eval converts source RGB radiant flux to emitted radiance:
+color * powerW / (PI * world-space area), or color * powerW / PI with normalize=false.
+Disk/ellipse area is PI/4 times transformed full width times full height.
+This is a radiometric shader-input mapping; no arbitrary lumen/watt efficacy or
+image-matching gain is applied. The full-spread formula does not reproduce the
+soft-box-grid attenuation of a narrower Blender spread.
+
+RELIGHTING HDRIs (assets/hdri/)
+Downsampled 1K derivatives of files from the user's local library D:\HDRI Sky
+(studio, interior, garden, forest, river, afternoon, cloudy, space, sky).
+Original filenames are recorded in assets/hdri/manifest.json. These packs
+(e.g. Dosch, HDRI-Hen/HDRI Haven, Alex Hart, Arnaud Lonys, XP HDR) carry their
+own licenses; the user must confirm redistribution rights before publishing
+this site. The default lighting remains the inherited Blender source scene;
+selecting an HDRI hides the source world and area lights.
+
+VERSION-PINNED ADAPTATIONS
+The viewer checks Three r187 pipeline error flags because compileComputeAsync
+can resolve after reporting shader errors only to the console. Renderer-scoped
+subclasses report these failures and drain outstanding work before case disposal.
+A tracer-scoped adaptation disposes replaced environment CDF storage and handles
+sample-readback failures. No global renderer, material or light prototypes are
+modified. Raster LTC nodes and tables are owned by the viewer instance.

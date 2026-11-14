@@ -1,0 +1,74 @@
+NERVFace｜Blender → 网页导出清单与现有案例
+
+一、当前可接入的案例
+Case 01 / homelander：完整导出包，3 个网格、3 盏面光源。
+Case 02 / sam：完整导出包，3 个网格、5 盏面光源。
+Case 03 / xjy：完整导出包，3 个网格、3 盏面光源。
+Case 04 / zkbg：完整导出包，3 个网格、5 盏面光源。
+以上四组均具备 full.gltf、geometry.bin、scene.json、reference.png，引用的贴图无缺失。参考图为原始 1536×1536 成图；模板贴图保留原分辨率，specular 的 alpha 已具有空间变化，不再是常量。
+
+Case 05 / trump2、Case 06 / trump3：校准版还缺完整模型/几何缓冲、scene.json、reference.png。本轮不继续重导这两组，不将其放入校准版 3D 选择列表。旧站的 2D 图片和简化 GLB 不算本轮忠实迁移已完成。
+
+二、每个案例需要提供的导出内容
+
+1. 几何与变换
+- 头部及所有眼睛部件：顶点、三角形索引、法线、切线、UV 集、材质槽和面→材质对应。
+- 对象 matrixWorld、原始单位/尺度、坐标轴约定、修改器后的实际几何。
+- 不自行居中或归一化；若必须转换，需提供精确的变换矩阵并同时变换相机/灯光/SSS 尺度。
+- 明确眼球、角膜、虹膜、巩膜是独立对象、同一网格的多层结构，还是程序化材质；不能合并后省略对应关系。
+
+2. 皮肤材质与原始贴图
+- Base Color、Roughness、Specular、Normal、Displacement/Height 的实际文件、原分辨率、颜色空间。
+- 每张贴图的 UV 集、坐标变换、采样/包裹方式、读取通道和乘数。
+- Metallic、IOR、Specular IOR Level、Specular Tint、Alpha、Transmission、Coat 等实际生效的值与连接。
+- glTF metallicRoughnessTexture 的 roughness 读取 G；KHR_materials_specular.specularTexture 的强度读取 alpha。
+- Blender Specular IOR Level 不能直接当成 glTF specularFactor；需正确转换。本批源值适用 alpha = 2 × 线性 IOR Level，保留源 IOR，不进行任意调亮或静默裁剪。
+- 法线空间（切线/对象）、UV 集、强度和位移实际接线。强度为 0 的源效果应保持关闭。
+
+3. SSS
+- 散射模型名称、Weight、Radius RGB、Scale、IOR、Anisotropy、Thin Wall 及相应贴图/连接。
+- 场景单位和几何尺度，便于将散射距离映射到网页实现。
+- 本批已导出的四组源材质 SSS Weight 均为 0；参数已记录，网页不会擅自开启。
+- 只记录 Blender 的有效输入。标记 enabled=false / unavailable=true 的内部 Weight 插槽不是有效的“着色强度为 0”。
+
+4. 眼睛
+- 所有实际几何层及变换；虹膜纹理、瞳孔/虹膜映射、角膜/巩膜材质。
+- Roughness、IOR、Specular、Coat Weight、Coat Roughness、独立 Coat IOR、Transmission、Alpha 和 Emission。
+- 导出最终连接到 Surface 的有效节点网络，或将与视角无关的基色网络无光照烘焙。
+- 若基色信号超过线性 1，提供归一化图与恢复乘数，不能直接裁剪；也不能将高光/阴影烘进基色来冒充材质。
+
+5. 灯光与 World
+- 每盏灯的类型、DISK/RECTANGLE 等形状、matrixWorld、尺寸、功率/强度、颜色、归一化开关、spread。
+- 灯光节点的颜色和强度乘数，阴影/漫反射/高光贡献控制。
+- World 有效节点、背景色/强度，或完整 HDR/EXR 与旋转；区分环境照明和 film transparent。
+- 明确物理量与单位。面光源功率、面积和出射辐亮度不是同一个数值，不能直接复制到任意 intensity 字段。
+
+6. 相机与色彩
+- camera matrixWorld、相机类型、焦距、传感器尺寸/fit、shift、裁剪面、分辨率、像素宽高比。
+- 相机矩阵使用行/列主序，以及相机坐标轴约定。
+- View Transform、Look、Exposure、Gamma、Display Device；本批为 Standard / None / 0 / 1 / sRGB。
+- 保留原相机旋转，不用 lookAt(网格中心) 代替已拟合的相机。
+
+7. 对照依据
+- 与上述最终场景完全一致的原相机无损 PNG/EXR 成图。
+- Blender 版本、渲染引擎、采样数、降噪设置和透明背景设置。
+- 建议先交一个已认可的案例，验证“材质/光照/相机/色彩”一致后再批量导出。
+
+三、推荐交付结构
+case-XX/
+  full.gltf
+  geometry.bin
+  scene.json
+  reference.png
+materials/
+  原始贴图或正确通道打包后的贴图
+
+scene.json 保留原相机、灯光、World、材质标量/节点信息以及 glTF 不能表达的属性。贴图可共享，但必须保持相对路径可解析。已有其他导出格式也可以先给一个样例，不必为配合格式而改变 Blender 中调好的值。
+
+四、本网页预览的边界
+- 实时 Raster 和渐进 PT 均在 WebGPU 上运行，需支持 WebGPU 的浏览器。
+- 两模式使用同一份已导出场景；左侧为单渲染画布，左上角提供 PT／实时渲染按钮，默认 PT，切换保留相机。桌面布局右侧约 30% 宽度显示角色输入照片，不显示 Blender 原图。原参考图文件仅保留作源数据校验。
+- 实时模式没有 PT 的追踪全局光照/阴影，圆盘/椭圆面光源以矩形 LTC 着色近似。
+- PT 使用路径追踪，但 BSDF 并不等同于 Cycles。眼睛独立 Coat IOR 目前仍受 glTF/所用着色器限制，不能声称完整等价。
+- 源 SSS 权重为 0，保持关闭。线框始终通过光栅化显示。
+- 当前不使用 AI 美化、生成图片替换、伪造光照或隐藏差异来宣称复现。
