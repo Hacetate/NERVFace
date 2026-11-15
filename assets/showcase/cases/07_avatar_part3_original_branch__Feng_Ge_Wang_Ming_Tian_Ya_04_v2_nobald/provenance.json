@@ -28,8 +28,8 @@
       ]
     },
     "render": {
-      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/images/render.png",
-      "sha256": "9f509dbad565802cf9e3501541cc8eaa86cf7035a6510c5508fa895bedd916c7",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald\\render.png",
+      "sha256": "6b5eaeedef69c3c09017d708c784a4796dca40e6625236ee95ed6dd1755e7234",
       "sourceSize": [
         1024,
         1024
@@ -40,8 +40,8 @@
       ]
     },
     "mesh": {
-      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/images/mesh.png",
-      "sha256": "7f00b8812b3b41ee769f6200341a278886bd22739db7fa73686a3d515f1a8a7a",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald\\mesh.png",
+      "sha256": "070ffd51e4230ce383f576733005aec5a45fdf7c6527f44e5725836b56d32fa0",
       "sourceSize": [
         1024,
         1024
@@ -105,5 +105,62 @@
       "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
     }
   ],
-  "sourceArchiveUnchanged": true
+  "sourceArchiveUnchanged": true,
+  "cameraRegistration": {
+    "date": "2026-11-15",
+    "group": "7_target_mismatch",
+    "applied": true,
+    "beforeRegionalRMS": {
+      "bridge": 6.73554878771073,
+      "nose": 7.2539384999836525,
+      "lip": 12.480367908010093,
+      "chin": 7.980735963667987,
+      "eyes": 7.090020288308966,
+      "iris": 7.258100884764334
+    },
+    "candidateRegionalRMS": {
+      "bridge": 2.3933398741861898,
+      "nose": 2.9879433996877007,
+      "lip": 8.55503495086779,
+      "chin": 3.3843123465640534,
+      "eyes": 3.195677785332524,
+      "iris": 2.5024696875725376
+    },
+    "remainingRegions": [
+      "lip"
+    ],
+    "geometryUnchanged": true,
+    "status": "improved_with_residuals",
+    "camera": {
+      "matrix_world": [
+        [
+          0.9963309753664331,
+          0.06552991240428306,
+          -0.05504780918783641,
+          -1.3869635081976739
+        ],
+        [
+          -0.05446472224062195,
+          0.9816426332951105,
+          0.18278755360016213,
+          4.765877967386915
+        ],
+        [
+          0.06601532574858365,
+          -0.17911875288860243,
+          0.9816101240066831,
+          25.44354424805658
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 571.0069199769822,
+      "shift_x": -0.03500115871429432,
+      "shift_y": 0.13407063484191883
+    }
+  }
 }

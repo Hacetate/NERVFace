@@ -28,8 +28,8 @@
       ]
     },
     "render": {
-      "archivePath": "cases/06_avatar_part3_bald/Tokugawa_06_face_AI_v2/images/render.png",
-      "sha256": "72f0087e47881a86ed62012847d399b52d09f49b4c762d1315903b9f5cadb08a",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\06_avatar_part3_bald__Tokugawa_06_face_AI_v2\\render.png",
+      "sha256": "fdd8f8d72cadd43795d8d5397251d5690a18f99f0c6f9bbdabfb4962fa0a3763",
       "sourceSize": [
         1024,
         1024
@@ -40,8 +40,8 @@
       ]
     },
     "mesh": {
-      "archivePath": "cases/06_avatar_part3_bald/Tokugawa_06_face_AI_v2/images/mesh.png",
-      "sha256": "941e26b2c21e218383f6b490df84cf14b627037ce530ab5062efb7a40ec3df71",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\06_avatar_part3_bald__Tokugawa_06_face_AI_v2\\mesh.png",
+      "sha256": "a0dbd652c396ee13cbce5885133200a40b5957e76c96d43f1649ea1536f3fefb",
       "sourceSize": [
         1024,
         1024
@@ -105,5 +105,60 @@
       "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
     }
   ],
-  "sourceArchiveUnchanged": true
+  "sourceArchiveUnchanged": true,
+  "cameraRegistration": {
+    "date": "2026-11-15",
+    "group": "14_other_residuals",
+    "applied": true,
+    "beforeRegionalRMS": {
+      "bridge": 4.29340542899148,
+      "nose": 4.422256188933551,
+      "lip": 9.784879049641171,
+      "chin": 5.697341446582505,
+      "eyes": 4.411372855393973,
+      "iris": 5.760605432249654
+    },
+    "candidateRegionalRMS": {
+      "bridge": 4.674471932278316,
+      "nose": 2.5624174983007015,
+      "lip": 6.8417810809737425,
+      "chin": 7.251955117436974,
+      "eyes": 3.372851184637562,
+      "iris": 1.9837344159440287
+    },
+    "remainingRegions": [],
+    "geometryUnchanged": true,
+    "status": "improved",
+    "camera": {
+      "matrix_world": [
+        [
+          0.8397353337078994,
+          0.012753800194465686,
+          -0.5428461203493576,
+          -64.50138262755272
+        ],
+        [
+          0.0503890686003037,
+          0.9935799628413728,
+          0.1012909545276488,
+          12.13285557691335
+        ],
+        [
+          0.5406528552565685,
+          -0.11241110390946528,
+          0.8337015429013153,
+          99.43809311645347
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 3026.946465182495,
+      "shift_x": -0.10959607362747192,
+      "shift_y": 0.1333770751953125
+    }
+  }
 }

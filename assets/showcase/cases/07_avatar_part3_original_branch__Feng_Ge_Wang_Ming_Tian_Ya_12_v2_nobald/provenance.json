@@ -28,8 +28,8 @@
       ]
     },
     "render": {
-      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_12_v2_nobald/images/render.png",
-      "sha256": "e604ec48aea4f59d9eb0c1c27bce3878719b09526f9930a46c50cbfa1b2afc1f",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_12_v2_nobald\\render.png",
+      "sha256": "3b1454d3f2211b5364f19adcc7a256994c3644252049c9a5b529799276760804",
       "sourceSize": [
         1024,
         1024
@@ -40,8 +40,8 @@
       ]
     },
     "mesh": {
-      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_12_v2_nobald/images/mesh.png",
-      "sha256": "08fb1a39280b248d8659fe13a9fba3be534bcf2e5e0f02801b79af8c5a17ea83",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_12_v2_nobald\\mesh.png",
+      "sha256": "f2daf96e40da6855594699e17159f9c1ec67026255fc3f2483a02ce9a2d50f81",
       "sourceSize": [
         1024,
         1024
@@ -105,5 +105,60 @@
       "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
     }
   ],
-  "sourceArchiveUnchanged": true
+  "sourceArchiveUnchanged": true,
+  "cameraRegistration": {
+    "date": "2026-11-15",
+    "group": "7_target_mismatch",
+    "applied": true,
+    "beforeRegionalRMS": {
+      "bridge": 7.441251745987161,
+      "nose": 5.009371112185004,
+      "lip": 5.7343437515998135,
+      "chin": 9.478964355645616,
+      "eyes": 6.561369928869716,
+      "iris": 5.900499140588835
+    },
+    "candidateRegionalRMS": {
+      "bridge": 1.5034158293885747,
+      "nose": 1.1372334661766523,
+      "lip": 3.6969654666081078,
+      "chin": 2.976212262828095,
+      "eyes": 1.8528943367228026,
+      "iris": 3.7009307242127294
+    },
+    "remainingRegions": [],
+    "geometryUnchanged": true,
+    "status": "improved",
+    "camera": {
+      "matrix_world": [
+        [
+          0.994933966790173,
+          -0.015764535022816942,
+          -0.09928688487400743,
+          -4.517357461603263
+        ],
+        [
+          0.022320194571719052,
+          0.997618205440689,
+          0.06526675221887376,
+          3.102937125342966
+        ],
+        [
+          0.09802151192311652,
+          -0.06715221688759657,
+          0.9929160137552078,
+          45.712835672195844
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 1139.3994975658761,
+      "shift_x": -0.041158155833427745,
+      "shift_y": 0.14162095313134648
+    }
+  }
 }

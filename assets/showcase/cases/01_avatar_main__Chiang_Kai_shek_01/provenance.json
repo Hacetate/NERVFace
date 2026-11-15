@@ -105,5 +105,29 @@
       "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
     }
   ],
-  "sourceArchiveUnchanged": true
+  "sourceArchiveUnchanged": true,
+  "cameraRegistration": {
+    "date": "2026-11-15",
+    "group": "14_other_residuals",
+    "applied": false,
+    "beforeRegionalRMS": {
+      "bridge": 1.4509184145339977,
+      "nose": 2.2748945181516738,
+      "lip": 7.803421238436779,
+      "chin": 4.516566793070465,
+      "eyes": 4.987463218550347,
+      "iris": 2.1306686156756434
+    },
+    "candidateRegionalRMS": {
+      "bridge": 4.5132006273872145,
+      "nose": 4.188766250781467,
+      "lip": 5.4485902734429015,
+      "chin": 3.6610375801757677,
+      "eyes": 4.816173208824453,
+      "iris": 2.0329796012833277
+    },
+    "remainingRegions": [],
+    "geometryUnchanged": true,
+    "status": "original_retained"
+  }
 }

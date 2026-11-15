@@ -8,9 +8,9 @@
   "method": "Native mesh UV, perspective-correct barycentric interpolation, nearest-depth rasterization",
   "background": "Linear extension toward image borders; eye openings interpolated; rows outside head use nearest covered row.",
   "source": "Final registered scene / original head UV with eye depth occlusion",
-  "visibleHeadPixels": 473403,
-  "eyeOcclusionPixels": 3713,
+  "visibleHeadPixels": 475376,
+  "eyeOcclusionPixels": 3671,
   "eyeHandling": "Visible eyeballs occlude the head interior; interpolate native U across each opening from the eyelid boundary.",
   "interaction": "Mask native U >= slider threshold; U=0.5 is midline. No screen-space translation.",
-  "decodedSHA256": "84affcfe51074c20daa62e1395fa6e14e23e292a751f5e60a259f1b2c3a327a2"
+  "decodedSHA256": "5b477077a9d3d692a547b909af3849806a55de6874201b32e620ef565182df4f"
 }

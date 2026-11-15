@@ -28,8 +28,8 @@
       ]
     },
     "render": {
-      "archivePath": "cases/06_avatar_part3_bald/yajuu_01/images/render.png",
-      "sha256": "fba907ee876dadce5dc92604f7da29aadcd3e7d1e0980e8e2489eb95e833f4d6",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\06_avatar_part3_bald__yajuu_01\\render.png",
+      "sha256": "aaa7cf10eedd9abb666e5b368a71807f3fb75edc68e63b3ace86e6fe38de0e3b",
       "sourceSize": [
         1024,
         1024
@@ -40,8 +40,8 @@
       ]
     },
     "mesh": {
-      "archivePath": "cases/06_avatar_part3_bald/yajuu_01/images/mesh.png",
-      "sha256": "0867215116de27334fa00257df87c6759647e0502ed205a4691d855475841474",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\06_avatar_part3_bald__yajuu_01\\mesh.png",
+      "sha256": "60fb56dd4fd3391cc5ea8ed629e448f00283140be279d0708750152561c40ff0",
       "sourceSize": [
         1024,
         1024
@@ -105,5 +105,60 @@
       "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
     }
   ],
-  "sourceArchiveUnchanged": true
+  "sourceArchiveUnchanged": true,
+  "cameraRegistration": {
+    "date": "2026-11-15",
+    "group": "14_other_residuals",
+    "applied": true,
+    "beforeRegionalRMS": {
+      "bridge": 6.790011486303825,
+      "nose": 4.383332560129008,
+      "lip": 8.112990656702715,
+      "chin": 3.3798635110008597,
+      "eyes": 6.16115865052139,
+      "iris": 4.732861574330475
+    },
+    "candidateRegionalRMS": {
+      "bridge": 5.039975916137444,
+      "nose": 3.29838849894613,
+      "lip": 7.12865493041845,
+      "chin": 6.429155654435622,
+      "eyes": 5.226269316379581,
+      "iris": 2.4543215120772803
+    },
+    "remainingRegions": [],
+    "geometryUnchanged": true,
+    "status": "improved",
+    "camera": {
+      "matrix_world": [
+        [
+          0.9552507128833647,
+          -0.04473605520184398,
+          -0.2923948492174159,
+          -13.996420763666967
+        ],
+        [
+          0.058076787952423756,
+          0.9976223801061873,
+          0.03710118403436838,
+          1.9176439419458393
+        ],
+        [
+          0.2900399188223916,
+          -0.05242228794000393,
+          0.9555776232461354,
+          46.09200983815563
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 1327.3092370196384,
+      "shift_x": -0.07178382361579472,
+      "shift_y": 0.1252748779870606
+    }
+  }
 }

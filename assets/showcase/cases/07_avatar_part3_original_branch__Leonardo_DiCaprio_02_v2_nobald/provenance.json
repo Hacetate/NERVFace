@@ -28,8 +28,8 @@
       ]
     },
     "render": {
-      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_02_v2_nobald/images/render.png",
-      "sha256": "e5e261b7d959d1ac369c3951f9588b3e2d0fead331c48764ea0a29bba5124c03",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_02_v2_nobald\\render.png",
+      "sha256": "2968cab52bcdf0f61c67ccc40298ad4e46d990da73b5a132ec233fb828b927b0",
       "sourceSize": [
         1024,
         1024
@@ -40,8 +40,8 @@
       ]
     },
     "mesh": {
-      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_02_v2_nobald/images/mesh.png",
-      "sha256": "2f0c0012efef501e2294aae4d548e7cde28d43c7eeb9f07c6cb76bcb90663aa9",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_02_v2_nobald\\mesh.png",
+      "sha256": "d66d608ca547f655891cff03dfc5d161be66f244dee24986c93f7614f1db2fb3",
       "sourceSize": [
         1024,
         1024
@@ -105,5 +105,60 @@
       "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
     }
   ],
-  "sourceArchiveUnchanged": true
+  "sourceArchiveUnchanged": true,
+  "cameraRegistration": {
+    "date": "2026-11-15",
+    "group": "7_target_mismatch",
+    "applied": true,
+    "beforeRegionalRMS": {
+      "bridge": 12.992793800188585,
+      "nose": 9.927285175917582,
+      "lip": 7.213797716486891,
+      "chin": 6.920144405813143,
+      "eyes": 11.66194527129164,
+      "iris": 10.029680760276422
+    },
+    "candidateRegionalRMS": {
+      "bridge": 1.5592024228504173,
+      "nose": 1.592273346217174,
+      "lip": 4.509464834424575,
+      "chin": 2.132994107453007,
+      "eyes": 1.8974492280497104,
+      "iris": 2.119479824600043
+    },
+    "remainingRegions": [],
+    "geometryUnchanged": true,
+    "status": "improved",
+    "camera": {
+      "matrix_world": [
+        [
+          0.9901445697155198,
+          0.07545531717683804,
+          0.11798411668470356,
+          13.07355736888826
+        ],
+        [
+          -0.09371352800317684,
+          0.9830165768414297,
+          0.1577848510344843,
+          17.589952767076266
+        ],
+        [
+          -0.10407464097672547,
+          -0.1672865096682431,
+          0.9803997846839274,
+          108.98663719083262
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 2672.26493073567,
+      "shift_x": -0.0033979861915712783,
+      "shift_y": 0.1331783344394466
+    }
+  }
 }

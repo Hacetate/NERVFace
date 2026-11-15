@@ -28,8 +28,8 @@
       ]
     },
     "render": {
-      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_01/images/render.png",
-      "sha256": "e371c5d627b88fc01fed874b626f567ec8c00e13149679828d2f097e761d3094",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\render.png",
+      "sha256": "bd79f0f67b7b667def8dc861c293b4d998d1258e622e1834ac017912c39bf58b",
       "sourceSize": [
         1024,
         1024
@@ -40,8 +40,8 @@
       ]
     },
     "mesh": {
-      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_01/images/mesh.png",
-      "sha256": "fd106cd3c14fa99660ce5f4452d58ca0f54d2f1b9eea59afcc355a51f009353c",
+      "registrationOutput": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\mesh.png",
+      "sha256": "380879bd0fe75dec13617114fae2714c17750f4680e646b39cc33ab637b6262f",
       "sourceSize": [
         1024,
         1024
@@ -105,5 +105,62 @@
       "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
     }
   ],
-  "sourceArchiveUnchanged": true
+  "sourceArchiveUnchanged": true,
+  "cameraRegistration": {
+    "date": "2026-11-15",
+    "group": "14_other_residuals",
+    "applied": true,
+    "beforeRegionalRMS": {
+      "bridge": 13.190457679958824,
+      "nose": 5.4886027820229835,
+      "lip": 7.70843828063973,
+      "chin": 6.961203772096588,
+      "eyes": 4.563070810446719,
+      "iris": 1.8119418568812382
+    },
+    "candidateRegionalRMS": {
+      "bridge": 11.116548490431594,
+      "nose": 5.97601918430752,
+      "lip": 7.408711498622596,
+      "chin": 7.09444494802802,
+      "eyes": 3.3303329984186045,
+      "iris": 3.467897227150611
+    },
+    "remainingRegions": [
+      "bridge"
+    ],
+    "geometryUnchanged": true,
+    "status": "improved_with_residuals",
+    "camera": {
+      "matrix_world": [
+        [
+          0.9998811498783269,
+          -0.010281089679303829,
+          0.011480924592895621,
+          0.8297082788643018
+        ],
+        [
+          0.009178915868211228,
+          0.9956945152023813,
+          0.09223983532849843,
+          6.7749614322179745
+        ],
+        [
+          -0.012379819031079325,
+          -0.09212350283749858,
+          0.995670542796767,
+          71.79994775624576
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lens_mm": 1903.8427159836153,
+      "shift_x": -0.010981082916259766,
+      "shift_y": 0.1338489055633545
+    }
+  }
 }
