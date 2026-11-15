@@ -111,7 +111,8 @@
     "scene": "scene.json",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 18
   },
   {
     "id": "01_avatar_main__Bill_Clinton_03",
@@ -187,7 +188,8 @@
     "scene": "scene.json",
     "collections": [
       "asian"
-    ]
+    ],
+    "frontPageOrder": 8
   },
   {
     "id": "01_avatar_main__Chun_Doo_hwan_01",
@@ -225,7 +227,8 @@
     "scene": "scene.json",
     "collections": [
       "asian"
-    ]
+    ],
+    "frontPageOrder": 10
   },
   {
     "id": "01_avatar_main__Cristiano_Ronaldo_01",
@@ -377,7 +380,8 @@
     "scene": "scene.json",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 14
   },
   {
     "id": "01_avatar_main__IShowSpeed_03",
@@ -417,7 +421,8 @@
     "collections": [
       "western",
       "memes"
-    ]
+    ],
+    "frontPageOrder": 6
   },
   {
     "id": "01_avatar_main__Jackie_Chan_03",
@@ -455,7 +460,8 @@
     "scene": "scene.json",
     "collections": [
       "asian"
-    ]
+    ],
+    "frontPageOrder": 9
   },
   {
     "id": "01_avatar_main__Joe_Biden_01",
@@ -531,7 +537,8 @@
     "scene": "scene.json",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 15
   },
   {
     "id": "01_avatar_main__John_Cena_03",
@@ -607,7 +614,8 @@
     "scene": "scene.json",
     "collections": [
       "asian"
-    ]
+    ],
+    "frontPageOrder": 13
   },
   {
     "id": "01_avatar_main__Leon_S_Kennedy_01",
@@ -645,7 +653,8 @@
     "scene": "scene.json",
     "collections": [
       "games"
-    ]
+    ],
+    "frontPageOrder": 2
   },
   {
     "id": "01_avatar_main__Leonardo_DiCaprio_04",
@@ -721,7 +730,8 @@
     "scene": "scene.json",
     "collections": [
       "asian"
-    ]
+    ],
+    "frontPageOrder": 11
   },
   {
     "id": "01_avatar_main__Rowan_Atkinson_02",
@@ -797,7 +807,8 @@
     "scene": "scene.json",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 16
   },
   {
     "id": "01_avatar_main__Yao_Ming_02",
@@ -911,7 +922,8 @@
     "scene": "scene.json",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 17
   },
   {
     "id": "03_avatar_original_branch__Dwayne_Johnson_02_nobald",
@@ -1379,7 +1391,8 @@
     "identitySource": "User-provided identification, 2026-11-15",
     "collections": [
       "asian"
-    ]
+    ],
+    "frontPageOrder": 12
   },
   {
     "id": "05_teaser_final__sam",
@@ -1460,7 +1473,8 @@
     "scene": "scene.json",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 19
   },
   {
     "id": "05_teaser_final__trump3",
@@ -1744,7 +1758,8 @@
     "collections": [
       "asian",
       "memes"
-    ]
+    ],
+    "frontPageOrder": 7
   },
   {
     "id": "07_avatar_part3_original_branch__Andras_Arato_02_v2_nobald",
@@ -1784,7 +1799,8 @@
     "collections": [
       "western",
       "memes"
-    ]
+    ],
+    "frontPageOrder": 5
   },
   {
     "id": "07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald",
@@ -1864,7 +1880,8 @@
     "collections": [
       "asian",
       "memes"
-    ]
+    ],
+    "frontPageOrder": 4
   },
   {
     "id": "07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald",
@@ -2130,7 +2147,8 @@
     "scene": "scene.json",
     "collections": [
       "games"
-    ]
+    ],
+    "frontPageOrder": 3
   },
   {
     "id": "08_avatar_part4_bald__Connor_03",
@@ -2206,7 +2224,8 @@
     "scene": "scene.json",
     "collections": [
       "games"
-    ]
+    ],
+    "frontPageOrder": 1
   },
   {
     "id": "08_avatar_part4_bald__Jill_Valentine_02",
@@ -2320,7 +2339,8 @@
     "scene": "scene.json",
     "collections": [
       "games"
-    ]
+    ],
+    "frontPageOrder": 0
   },
   {
     "id": "08_avatar_part4_bald__Markus_03",
@@ -2397,6 +2417,7 @@
     "identitySource": "User-provided identification, 2026-11-15",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 20
   }
 ]

@@ -9,6 +9,21 @@ function balanceCollections(items) {
   return buckets.flatMap((bucket,rank)=>bucket.map((item,i)=>({item,rank,position:(i+.5)/bucket.length})))
     .sort((a,b)=>a.position-b.position || a.rank-b.rank).map(entry=>entry.item);
 }
+function orderCollection(items, pageSize=24) {
+  const pinned=items.filter(c=>Number.isInteger(c.frontPageOrder)).sort((a,b)=>a.frontPageOrder-b.frontPageOrder);
+  const remaining=balanceCollections(items.filter(c=>!Number.isInteger(c.frontPageOrder)));
+  if(!pinned.length)return remaining;
+  const categories=['games','memes','western','asian'];
+  const bucket=c=>categories.find(key=>c.collections.includes(key));
+  const first=[...pinned];
+  while(first.length<pageSize && remaining.length) {
+    const available=categories.filter(key=>remaining.some(c=>bucket(c)===key));
+    available.sort((a,b)=>first.filter(c=>bucket(c)===a).length-first.filter(c=>bucket(c)===b).length);
+    const next=available.length ? remaining.findIndex(c=>bucket(c)===available[0]) : 0;
+    first.push(...remaining.splice(next,1));
+  }
+  return [...first,...remaining];
+}
 mount.innerHTML = `
   <div class="section-heading"><div><p class="eyebrow"><span class="section-index">01</span> CASE COLLECTION</p><h2>One face.<br>Every detail<span class="red">.</span></h2></div><p>Original portrait and registered render, together. Use the slider below each card to move through the UV surface, then open the details to explore 3D and textures.</p></div>
   <div class="sc-toolbar"><div class="sc-switch" id="scGridModes" role="group" aria-label="Card image"><button data-mode="compare" aria-pressed="true">Compare</button><button data-mode="input" aria-pressed="false">Input</button><button data-mode="render" aria-pressed="false">Render</button><button data-mode="mesh" aria-pressed="false">Mesh</button></div><span class="sc-count" id="scCount">LOADING COLLECTION</span></div>
@@ -225,9 +240,9 @@ $('#scLight').onchange=e=>viewer?.setLighting(e.target.value);
 $('#scPrev').onclick=()=>{if(index>0)openCase(index-1);}; $('#scNext').onclick=()=>{if(index<cases.length-1)openCase(index+1);};
 document.querySelector('#scGridModes').onclick=e=>{const b=e.target.closest('[data-mode]');if(!b)return; gridMode=b.dataset.mode;pressed(document.querySelector('#scGridModes'),b);renderCards();};
 try {
-  const response=await fetch('assets/showcase/cases.json?v=multi-label-1'); if(!response.ok)throw new Error('Collection manifest unavailable');
+  const response=await fetch('assets/showcase/cases.json?v=priority-collections-1'); if(!response.ok)throw new Error('Collection manifest unavailable');
   cases=await response.json();
-  cases=balanceCollections(cases);
+  cases=orderCollection(cases);
   document.querySelector('#scCount').textContent=`${String(cases.length).padStart(2,'0')} ${cases.length===1?'CASE':'CASES'}`;
   for(const [value,label] of Object.entries(collectionLabels)) {const count=cases.filter(c=>c.collections.includes(value)).length;if(!count)continue;const option=document.createElement('option');option.value=value;option.textContent=`${label} (${count})`;document.querySelector('#scBatch').append(option);}
   renderCards(); followHash();
