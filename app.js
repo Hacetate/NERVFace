@@ -30,8 +30,7 @@ function setPublicationInfo() {
     }
   }
   $('#projectLinks').querySelectorAll('button').forEach((button) => button.remove());
-  for (const [key, label] of [['paper', 'Paper'], ['code', 'Code'], ['weights', 'Weights']]) {
-    if (key === 'weights' && !config.links[key]) continue;
+  for (const [key, label] of [['paper', 'Paper'], ['code', 'Code'], ['dataset', 'Dataset']]) {
     const url = mediaUrl(config.links[key]);
     const control = document.createElement(url ? 'a' : 'button');
     control.className = 'button';

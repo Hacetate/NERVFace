@@ -7,12 +7,12 @@
   <meta name="theme-color" content="#ffffff">
   <title>NERVFace | Single-image 3D face generation</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=viewer-recovery7">
+  <link rel="stylesheet" href="styles.css?v=hero-split-1">
   <link rel="stylesheet" href="assets/showcase/showcase.css?v=card-caption4">
   <script type="module" src="assets/showcase/showcase.js?v=first-page-24-hair"></script>
   <link rel="preload" href="assets/cases/case-02/input.webp" as="image">
-  <script src="site-config.js" defer></script>
-  <script src="app.js?v=first-page-24-hair" defer></script>
+  <script src="site-config.js?v=dataset-1" defer></script>
+  <script src="app.js?v=hero-split-1" defer></script>
 </head>
 <body id="top" class="calibration-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -26,13 +26,6 @@
   </header>
   <main id="main">
     <section class="hero container" aria-labelledby="projectTitle">
-      <div class="hero-copy">
-        <p class="eyebrow hero-eyebrow"><span class="status-dot"></span><span id="venue">BLENDER SCENE / RENDER COMPARISON</span></p>
-        <div class="title-lockup"><h1 id="projectTitle">NERVFace</h1><span class="title-registration" aria-hidden="true">+</span></div>
-        <p class="hero-title" id="projectSubtitle">Single-image 3D face generation</p>
-        <span class="title-rule" aria-hidden="true"></span>
-        <p class="lede" id="projectDescription">From a photograph to a structured face asset.<br>Generated geometry. Complete UV textures. A new point of view.</p>
-      </div>
       <div class="hero-demo">
         <div class="plate-topline"><span><b class="red">FIG. 01</b> / ONE IDENTITY, THREE VIEWS</span><div class="presentation-toggle" role="group" aria-label="Presentation layout"><button data-presentation="compare" aria-pressed="true">Drag comparison</button><button data-presentation="plates" aria-pressed="false">View as plates</button></div></div>
         <div id="heroDiagram" class="triptych" aria-label="Input, geometry and appearance plates" hidden>
@@ -76,10 +69,18 @@
         </div>
         <span id="comparePosition" class="sr-only" aria-live="polite">Dividers at 50 percent horizontal and 48 percent vertical.</span>
         <div class="filmstrip"><div class="filmstrip-caption"><span>CONTACT SHEET</span><strong id="compareCaseLabel">02 / 06</strong></div><div id="heroCases" class="hero-cases" role="group" aria-label="Select comparison case"></div><span class="filmstrip-note">Choose a face.<br>Explore its surface.</span></div>
+              <div class="hero-explore"><a id="inspectCase" class="button primary" href="#assets">Explore this face in 3D <span aria-hidden="true">↗</span></a></div>
       </div>
-      <div class="hero-bottom">
-        <div class="actions" id="projectLinks"><a id="inspectCase" class="button primary" href="#assets">Explore this face in 3D <span aria-hidden="true">↗</span></a><button class="button" disabled>Paper <span class="soon">TBA</span></button><button class="button" disabled>Code <span class="soon">TBA</span></button></div>
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span class="status-dot"></span><span id="venue">BLENDER SCENE / RENDER COMPARISON</span></p>
+        <div class="title-lockup"><h1 id="projectTitle">NERVFace</h1><span class="title-registration" aria-hidden="true">+</span></div>
+        <p class="hero-title" id="projectSubtitle">Single-image 3D face generation</p>
+        <span class="title-rule" aria-hidden="true"></span>
+        <p class="lede" id="projectDescription">From a photograph to a structured face asset.<br>Generated geometry. Complete UV textures. A new point of view.</p>
+            <div class="hero-bottom">
+        <div class="actions" id="projectLinks"><button class="button" disabled>Paper <span class="soon">TBA</span></button><button class="button" disabled>Code <span class="soon">TBA</span></button><button class="button" disabled>Dataset <span class="soon">TBA</span></button></div>
         <details class="metadata"><summary><span>Project information</span><small id="metadataSummary">Publication details pending</small></summary><div class="metadata-body" id="metadataBody"><p>The official title, authors, affiliations, and publication links have not yet been provided.</p><p>This is a local design draft; the headline is descriptive, not the official paper title.</p></div></details>
+      </div>
       </div>
     </section>
     <section class="highlights container" aria-label="Project at a glance">
