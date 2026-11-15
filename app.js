@@ -140,7 +140,7 @@ function syncRenderControls() {
   document.querySelectorAll('.renderer-switch button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.renderMode === selectedRenderMode)));
   const wire = selectedMaterial === 'wireframe';
   $('#renderModeBadge').textContent = wire ? 'WIREFRAME / RASTER' : selectedRenderMode === 'pathtraced' ? 'PROGRESSIVE / PT' : 'REAL-TIME / RASTER';
-  $('#paneRendererTitle').textContent = wire ? '线框 / Raster' : selectedRenderMode === 'pathtraced' ? '路径追踪 PT' : '实时渲染 Raster';
+  $('#paneRendererTitle').textContent = wire ? 'Wireframe / Raster' : selectedRenderMode === 'pathtraced' ? 'Path tracing · PT' : 'Real-time / Raster';
 }
 function showSceneReport() {
   const report = viewer?.getReport();
@@ -291,7 +291,7 @@ let environmentBusy = false;
 function syncEnvironmentControls() {
   document.querySelectorAll('.environment-option').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.environment === selectedEnvironment)));
   const entry = environments.find(item => item.id === selectedEnvironment);
-  $('#environmentStatus').textContent = selectedEnvironment === 'source' ? '原始输入光照' : `${entry?.zh || entry?.name || selectedEnvironment} · HDRI`;
+  $('#environmentStatus').textContent = selectedEnvironment === 'source' ? 'Source lighting' : `${entry?.name || selectedEnvironment} · HDRI`;
   $('#environmentAdjust').hidden = selectedEnvironment === 'source';
   if (entry && selectedEnvironment !== 'source') {
     $('#environmentIntensity').value = entry.intensity;
@@ -313,7 +313,7 @@ async function selectEnvironment(id) {
   } catch (error) {
     selectedEnvironment = previous;
     syncEnvironmentControls();
-    notify(`光照切换失败：${error.message}`);
+    notify(`Lighting change failed: ${error.message}`);
   } finally { environmentBusy = false; }
 }
 async function initializeEnvironments() {
@@ -327,13 +327,13 @@ async function initializeEnvironments() {
       button.type = 'button'; button.className = 'environment-option';
       button.dataset.environment = entry.id;
       button.setAttribute('aria-pressed', 'false');
-      button.setAttribute('aria-label', `使用 ${entry.zh} HDRI 光照`);
+      button.setAttribute('aria-label', `Use ${entry.name} HDRI lighting`);
       const swatch = document.createElement('span'); swatch.className = 'environment-swatch';
       const image = new Image(); image.src = entry.thumb; image.alt = ''; image.loading = 'lazy';
       swatch.append(image);
       const name = document.createElement('span'); name.className = 'environment-name';
-      name.textContent = entry.zh;
-      const detail = document.createElement('small'); detail.textContent = entry.name;
+      name.textContent = entry.name;
+      const detail = document.createElement('small'); detail.textContent = 'HDRI';
       name.append(detail);
       button.append(swatch, name);
       button.addEventListener('click', () => selectEnvironment(entry.id));
@@ -342,7 +342,7 @@ async function initializeEnvironments() {
     container.querySelector('[data-environment="source"]').addEventListener('click', () => selectEnvironment('source'));
     syncEnvironmentControls();
   } catch (error) {
-    $('#environmentStatus').textContent = 'HDRI 清单加载失败';
+    $('#environmentStatus').textContent = 'Could not load HDRI list';
     console.error('HDRI manifest failed:', error);
   } finally { resolveEnvironmentsReady(); }
 }

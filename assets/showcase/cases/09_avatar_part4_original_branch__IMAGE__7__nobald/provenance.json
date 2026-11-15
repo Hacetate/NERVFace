@@ -4,16 +4,34 @@
   "sceneSHA256": "774c2b0a351523358bbed78166bf3da40047e89e4bbbe518b62e8b9a020f28d3",
   "images": {
     "input": {
-      "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/images/input.png",
-      "sha256": "38802b0e386a1a2dc5a6c8bc7da3aa18e039efa62cb2c1350e409ccfb75c7eb0",
+      "source": "User-supplied original portrait, 2026-11-15",
+      "sha256": "8a6413ffeed3c31d78d6312cde2e3bea21e6e644371750116b2fecfee3b72b7f",
       "sourceSize": [
-        1024,
-        1024
+        1152,
+        2048
       ],
       "webSize": [
         1024,
         1024
-      ]
+      ],
+      "alignment": {
+        "matrix": [
+          [
+            0.8742497303265673,
+            0.005700898292805035,
+            19.08221175271672
+          ],
+          [
+            -0.005700898292805035,
+            0.8742497303265673,
+            -165.51054980138878
+          ]
+        ],
+        "matches": 71,
+        "inliers": 33,
+        "medianError": 0.8704614639282227
+      },
+      "method": "Global uniform scale, rotation and translation to existing input frame; no local face deformation"
     },
     "bald": {
       "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/images/bald.png",

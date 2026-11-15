@@ -9,10 +9,10 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css?v=viewer-recovery7">
   <link rel="stylesheet" href="assets/showcase/showcase.css?v=card-caption4">
-  <script type="module" src="assets/showcase/showcase.js?v=priority-collections-1"></script>
+  <script type="module" src="assets/showcase/showcase.js?v=english-messi-1"></script>
   <link rel="preload" href="assets/cases/case-02/input.webp" as="image">
   <script src="site-config.js" defer></script>
-  <script src="app.js?v=viewer-recovery7" defer></script>
+  <script src="app.js?v=english-messi-1" defer></script>
 </head>
 <body id="top" class="calibration-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -94,7 +94,7 @@
       <div class="asset-strip"><div id="assetCases" class="asset-cases" role="group" aria-label="Select 3D model"></div></div>
       <div class="asset-layout">
         <div class="viewer-column">
-          <div class="pane-title"><div class="renderer-switch" role="group" aria-label="Rendering mode"><button type="button" data-render-mode="pathtraced" aria-pressed="true" title="Progressive path tracing">PT</button><button type="button" data-render-mode="raster" aria-pressed="false" title="Real-time raster rendering">实时渲染</button></div><div class="viewer-heading-actions"><strong id="paneRendererTitle">路径追踪 PT</strong><button id="reloadViewer" title="Reload the current model, textures and renderer while keeping the view">↻ Reload viewer</button></div></div>
+          <div class="pane-title"><div class="renderer-switch" role="group" aria-label="Rendering mode"><button type="button" data-render-mode="pathtraced" aria-pressed="true" title="Progressive path tracing">PT</button><button type="button" data-render-mode="raster" aria-pressed="false" title="Real-time raster rendering">Real-time</button></div><div class="viewer-heading-actions"><strong id="paneRendererTitle">Path tracing · PT</strong><button id="reloadViewer" title="Reload the current model, textures and renderer while keeping the view">↻ Reload viewer</button></div></div>
           <div id="viewerFrame" class="viewer-frame" data-state="idle">
             <div class="viewer-top"><span class="viewer-badge"><span class="status-dot"></span><span id="viewerTitle">Case 02</span></span><span id="renderModeBadge" class="viewer-badge">PROGRESSIVE / PT</span></div>
             <div id="viewerCanvas" class="viewer-canvas" role="img" aria-label="Interactive 3D face. Drag to orbit, pinch or scroll to zoom. Arrow keys rotate the model, plus and minus zoom." tabindex="0"></div>
@@ -103,14 +103,14 @@
           </div>
           <div class="material-modes" role="group" aria-label="3D material mode"><button data-material="full" aria-pressed="true"><span class="material-dot color-dot"></span>Appearance</button><button data-material="geometry" aria-pressed="false"><span class="material-dot gray-dot"></span>Gray geometry</button><button data-material="wireframe" aria-pressed="false"><span class="material-dot wire-dot"></span>Wireframe</button></div>
           <div class="environment-panel">
-            <div class="environment-heading"><span class="mono-label">LIGHTING / 光照环境</span><span id="environmentStatus" class="environment-status">原始输入光照</span></div>
+            <div class="environment-heading"><span class="mono-label">LIGHTING</span><span id="environmentStatus" class="environment-status">Source lighting</span></div>
             <div id="environmentOptions" class="environment-options" role="group" aria-label="Lighting environment">
-              <button type="button" class="environment-option source-option" data-environment="source" aria-pressed="true"><span class="environment-swatch source-swatch" aria-hidden="true"><span></span></span><span class="environment-name">原始光照<small>Blender 输入</small></span></button>
+              <button type="button" class="environment-option source-option" data-environment="source" aria-pressed="true"><span class="environment-swatch source-swatch" aria-hidden="true"><span></span></span><span class="environment-name">Source lighting<small>Blender source</small></span></button>
             </div>
             <div id="environmentAdjust" class="environment-adjust" hidden>
-              <label for="environmentIntensity">强度 <output id="environmentIntensityValue">1.0×</output></label>
+              <label for="environmentIntensity">Intensity <output id="environmentIntensityValue">1.0×</output></label>
               <input id="environmentIntensity" type="range" min="0" max="3" step="0.05" value="1">
-              <label for="environmentRotation">旋转 <output id="environmentRotationValue">0°</output></label>
+              <label for="environmentRotation">Rotation <output id="environmentRotationValue">0°</output></label>
               <input id="environmentRotation" type="range" min="-180" max="180" step="5" value="0">
             </div>
           </div>
@@ -119,12 +119,12 @@
           <p id="sourceViewStatus" class="viewer-note">Switch between PT and real-time rendering without changing the camera.</p>
         </div>
         <aside class="input-photo-column">
-          <div class="input-photo-heading"><span>INPUT PORTRAIT</span><strong>角色输入</strong></div>
+          <div class="input-photo-heading"><span>INPUT PORTRAIT</span><strong>Source portrait</strong></div>
           <figure class="input-photo"><img id="assetInput" src="assets/cases/case-02/input.webp" alt="Case 02 source portrait" loading="lazy"><figcaption><span id="assetInputLabel">Case 02</span><span>Original input</span></figcaption></figure>
         </aside>
       </div>
-      <details class="disclosure fidelity-disclosure"><summary><span>Inherited parameters & remaining differences / 继承与限制</span><small>Read before judging a match</small></summary><div class="disclosure-body"><p>相机矩阵、原始尺寸、World、面光源、贴图与颜色管理来自 scene.json。实时模式不包含 PT 的全局光照与追踪阴影；圆盘面光源在实时模式中采用矩形 LTC 近似。源文件 SSS 权重为 0，保持关闭；眼睛独立 Coat IOR 尚不能等价表达。线框模式始终使用光栅化。</p><p>光照环境默认使用原始输入光照；选择 HDRI 后，由该环境贴图独立照明（原始 World 与面光源暂时隐藏），可随时切回。HDRI 来自本地素材库 D:\HDRI Sky，已降采样为 1K 网页版；PT 与实时渲染均支持切换，实时模式对 HDRI 高光采用近似采样。</p><pre id="fidelityNotes">Select a case to inspect its source notes.</pre></div></details>
-      <details class="disclosure export-disclosure"><summary><span>Collection status / 角色资产状态</span><small>61 ready</small></summary><div class="disclosure-body"><p>61 个角色均使用最后交接场景导出的压缩模型，可在 PT 和实时渲染之间切换。每个角色保留独立的相机、灯光、眼球和最终材质。</p><p>网页渲染与 Blender Cycles 仍存在着色和光照实现差异；最终离线效果请查看上方 Case Explorer 的 Render 图。</p></div></details>
+      <details class="disclosure fidelity-disclosure"><summary><span>Inherited parameters &amp; remaining differences</span><small>Read before judging a match</small></summary><div class="disclosure-body"><p>Camera transforms, original scale, world lighting, area lights, textures and color management come from the source scene. Real-time rendering does not include path-traced global illumination or shadows; disk area lights use a rectangular LTC approximation. Subsurface scattering remains disabled, matching the source. The eyes use an approximation for the separate coat IOR. Wireframe always uses raster rendering.</p><p>Source lighting is enabled by default. Selecting an HDRI replaces the source world and area lights with the selected environment; switch back at any time. The web environments use 1K maps. Both PT and real-time rendering support them, with approximate HDRI highlights in real-time mode.</p><pre id="fidelityNotes">Select a case to inspect its source notes.</pre></div></details>
+      <details class="disclosure export-disclosure"><summary><span>Collection status</span><small>61 ready</small></summary><div class="disclosure-body"><p>All 61 cases use compressed models exported from the final source scenes and support both PT and real-time rendering. Each retains its own camera, lighting, eyes and materials.</p><p>Browser rendering and Blender Cycles differ in shading and lighting. For the final offline result, select Render in the case collection above.</p></div></details>
     </section>
     <section id="method" class="section container">
       <div class="section-heading"><div><p class="eyebrow"><span class="section-index">03</span> METHOD</p><h2>The idea,<br>in three steps<span class="red">.</span></h2></div><p>A high-level illustration of the project. The final method figure and paper description have not yet been supplied.</p></div>
