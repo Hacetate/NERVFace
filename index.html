@@ -7,12 +7,12 @@
   <meta name="theme-color" content="#ffffff">
   <title>NERVFace | Single-image 3D face generation</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=hero-split-1">
+  <link rel="stylesheet" href="styles.css?v=hero-clean-2">
   <link rel="stylesheet" href="assets/showcase/showcase.css?v=card-caption4">
   <script type="module" src="assets/showcase/showcase.js?v=first-page-24-hair"></script>
   <link rel="preload" href="assets/cases/case-02/input.webp" as="image">
   <script src="site-config.js?v=dataset-1" defer></script>
-  <script src="app.js?v=hero-split-1" defer></script>
+  <script src="app.js?v=hero-clean-2" defer></script>
 </head>
 <body id="top" class="calibration-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -65,28 +65,23 @@
               <div id="stageCases" class="stage-cases" role="group" aria-label="Select comparison case by number"></div>
             </figcaption>
           </figure>
-          <div class="comparison-notes"><p class="stage-caption">One identity, viewed three ways.</p><div class="compare-modes" role="group" aria-label="Comparison view"><button data-view="split" aria-pressed="true">Compare</button><button data-view="input" aria-pressed="false">Input</button><button data-view="geometry" aria-pressed="false">Geometry</button><button data-view="render" aria-pressed="false">Appearance</button></div><p class="control-note"><kbd>←</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd> Move dividers <span>·</span> <kbd>Home</kbd> Reset</p></div>
+          <div class="comparison-notes"><div class="compare-modes" role="group" aria-label="Comparison view"><button data-view="split" aria-pressed="true">Compare</button><button data-view="input" aria-pressed="false">Input</button><button data-view="geometry" aria-pressed="false">Geometry</button><button data-view="render" aria-pressed="false">Appearance</button></div></div>
         </div>
         <span id="comparePosition" class="sr-only" aria-live="polite">Dividers at 50 percent horizontal and 48 percent vertical.</span>
-        <div class="filmstrip"><div class="filmstrip-caption"><span>CONTACT SHEET</span><strong id="compareCaseLabel">02 / 06</strong></div><div id="heroCases" class="hero-cases" role="group" aria-label="Select comparison case"></div><span class="filmstrip-note">Choose a face.<br>Explore its surface.</span></div>
-              <div class="hero-explore"><a id="inspectCase" class="button primary" href="#assets">Explore this face in 3D <span aria-hidden="true">↗</span></a></div>
       </div>
       <div class="hero-copy">
-        <p class="eyebrow hero-eyebrow"><span class="status-dot"></span><span id="venue">BLENDER SCENE / RENDER COMPARISON</span></p>
+        <p class="eyebrow hero-eyebrow" hidden><span class="status-dot"></span><span id="venue">BLENDER SCENE / RENDER COMPARISON</span></p>
         <div class="title-lockup"><h1 id="projectTitle">NERVFace</h1><span class="title-registration" aria-hidden="true">+</span></div>
         <p class="hero-title" id="projectSubtitle">Single-image 3D face generation</p>
         <span class="title-rule" aria-hidden="true"></span>
-        <p class="lede" id="projectDescription">From a photograph to a structured face asset.<br>Generated geometry. Complete UV textures. A new point of view.</p>
+        <p class="lede" id="projectDescription" hidden>From a photograph to a structured face asset.<br>Generated geometry. Complete UV textures. A new point of view.</p>
             <div class="hero-bottom">
         <div class="actions" id="projectLinks"><button class="button" disabled>Paper <span class="soon">TBA</span></button><button class="button" disabled>Code <span class="soon">TBA</span></button><button class="button" disabled>Dataset <span class="soon">TBA</span></button></div>
-        <details class="metadata"><summary><span>Project information</span><small id="metadataSummary">Publication details pending</small></summary><div class="metadata-body" id="metadataBody"><p>The official title, authors, affiliations, and publication links have not yet been provided.</p><p>This is a local design draft; the headline is descriptive, not the official paper title.</p></div></details>
+        <div class="filmstrip"><div class="filmstrip-caption"><span>CONTACT SHEET</span><strong id="compareCaseLabel">02 / 06</strong></div><div id="heroCases" class="hero-cases" role="group" aria-label="Select comparison case"></div></div>
+              <div class="hero-explore"><a id="inspectCase" class="button primary" href="#assets">Explore this face in 3D <span aria-hidden="true">↗</span></a></div>
+        <details class="metadata" hidden><summary><span>Project information</span><small id="metadataSummary">Publication details pending</small></summary><div class="metadata-body" id="metadataBody"></div></details>
       </div>
       </div>
-    </section>
-    <section class="highlights container" aria-label="Project at a glance">
-      <article><span class="feature-index">I / GEOMETRY</span><h2>A structured face.</h2><p>Inspect the generated surface, from a front-facing silhouette to the profile.</p></article>
-      <article><span class="feature-index">II / APPEARANCE</span><h2>Beyond the photograph.</h2><p>Complete UV textures give the face an appearance that can be explored in 3D.</p></article>
-      <article><span class="feature-index">III / EXPLORATION</span><h2>Same asset. New view.</h2><p>Switch from texture to gray geometry without changing your point of view.</p></article>
     </section>
     <section id="overview" class="section container showcase-section" aria-label="Case explorer"><div id="showcase"></div></section>
     <section id="assets" class="section container">

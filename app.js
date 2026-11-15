@@ -17,9 +17,10 @@ function mediaUrl(value) {
 function setPublicationInfo() {
   if (config.title) { $('#projectTitle').textContent = config.title; document.title = `${config.title} | Project page`; }
   if (config.subtitle) $('#projectSubtitle').textContent = config.subtitle;
-  if (config.description) $('#projectDescription').textContent = config.description;
-  if (config.venue) $('#venue').textContent = config.venue;
+  if (config.description) { $('#projectDescription').textContent = config.description; $('#projectDescription').hidden = false; }
+  if (config.venue) { $('#venue').textContent = config.venue; $('#venue').parentElement.hidden = false; }
   if (config.authors.length) {
+    $('.metadata').hidden = false;
     $('#metadataSummary').textContent = `${config.authors.length} authors`;
     const body = $('#metadataBody');
     body.replaceChildren();

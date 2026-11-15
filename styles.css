@@ -521,3 +521,13 @@ dialog > p { text-align: center; font: 9px var(--mono); margin-top: 13px; }
   .hero h1 { font-size:clamp(54px, 13vw, 88px); }
   .hero .hero-title { font-size:21px; }
 }
+/* Keep the contact sheet beside the figure, directly under publication links. */
+.hero-copy .filmstrip { display:block; margin-top:30px; padding-block:18px; }
+.hero-copy .filmstrip-caption { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.hero-copy .filmstrip-caption strong { margin:0; font-size:11px; }
+.hero-copy .hero-cases { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; overflow:visible; }
+.hero-copy .case-chip { min-width:0; flex-direction:column; gap:8px; padding:8px; }
+.hero-copy .case-chip img { width:100%; height:auto; aspect-ratio:1; object-fit:cover; }
+.hero-copy .hero-explore { margin-top:18px; }
+.hero .comparison-notes { margin-top:12px; }
+.hero [hidden] { display:none !important; }
