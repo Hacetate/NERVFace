@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Liu_Qiangdong_03",
+  "archiveScene": "cases/01_avatar_main/Liu_Qiangdong_03/scene/final.blend",
+  "sceneSHA256": "26fcbae9321ab914b763f368f4973950d5a750fd561408d0fe779a9122d75df0",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Liu_Qiangdong_03/images/input.png",
+      "sha256": "c24f9c262cb67427edba30126146ed52676c0102d0a69732ebecf289559d8d43",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Liu_Qiangdong_03/images/bald.png",
+      "sha256": "e629376b1a547e9eb71eefc6c728edc975f0adc7471e06b1bb047ce1e5a61041",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Liu_Qiangdong_03/images/render.png",
+      "sha256": "1018f8ba2dcd13979b7e33f000c6dcac000ec07d9514a6ca4790c1e5ba0f4c85",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Liu_Qiangdong_03/images/mesh.png",
+      "sha256": "20410884a03dffce1f2d010d0d69bef808c0a4a2c4cafb7753361a3205b820af",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Liu_Qiangdong_03/textures/uniform.png",
+      "sha256": "3adf47d91f6585527fe5ab7c5fc678f4f23e11302adea4206c81e52e8053eaf7",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Liu_Qiangdong_03/textures/pro.png",
+      "sha256": "fb6b05c1ce6696f14bcf579cb95754223d0de9954a7c65250124c9adf4bdc5b7",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Liu_Qiangdong_03/textures/unwarp.png",
+      "sha256": "c898f12513f0f49ba2f4e7dc3035851304ae907b811001cbe3d6c04be3546812",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Liu_Qiangdong_03/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

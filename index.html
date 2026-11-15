@@ -7,10 +7,12 @@
   <meta name="theme-color" content="#ffffff">
   <title>NERVFace | Single-image 3D face generation</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=viewer-recovery7">
+  <link rel="stylesheet" href="assets/showcase/showcase.css?v=card-caption4">
+  <script type="module" src="assets/showcase/showcase.js?v=card-caption4"></script>
   <link rel="preload" href="assets/cases/case-02/input.webp" as="image">
   <script src="site-config.js" defer></script>
-  <script src="app.js" defer></script>
+  <script src="app.js?v=viewer-recovery7" defer></script>
 </head>
 <body id="top" class="calibration-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -18,7 +20,7 @@
     <a class="brand" href="#top" aria-label="NERVFace home"><span class="brand-symbol" aria-hidden="true">N<span>/</span>F</span><span>NERVFace</span></a>
     <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="navigation">Index <span aria-hidden="true">+</span></button>
     <nav id="navigation" aria-label="Main navigation">
-      <a href="#overview"><span>01</span> Overview</a><a href="#assets"><span>02</span> 3D Assets</a><a href="#method"><span>03</span> Method</a><a href="#gallery"><span>04</span> Gallery</a><a href="#citation"><span>05</span> Citation</a>
+      <a href="#overview"><span>01</span> Case Explorer</a><a href="#assets"><span>02</span> 3D Assets</a><a href="#method"><span>03</span> Method</a><a href="#citation"><span>04</span> Citation</a>
     </nav>
     <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
   </header>
@@ -85,22 +87,18 @@
       <article><span class="feature-index">II / APPEARANCE</span><h2>Beyond the photograph.</h2><p>Complete UV textures give the face an appearance that can be explored in 3D.</p></article>
       <article><span class="feature-index">III / EXPLORATION</span><h2>Same asset. New view.</h2><p>Switch from texture to gray geometry without changing your point of view.</p></article>
     </section>
-    <section id="overview" class="section container">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">01</span> OVERVIEW</p><h2>From image<br>to asset<span class="red">.</span></h2></div><p>Input photographs, registered appearance renders, and gray geometry. The supplied NERVFace examples, arranged as a visual study.</p></div>
-      <figure class="figure-card"><button class="figure-zoom" data-lightbox="assets/overview.webp" data-caption="NERVFace registered comparison overview" aria-label="Enlarge NERVFace overview"><img src="assets/overview.webp" alt="NERVFace registered portrait and generated face comparisons" loading="lazy"><span class="zoom-hint" aria-hidden="true">EXPAND FIGURE ↗</span></button><figcaption><span><b class="red">FIG. 02</b> / Registered visual comparisons</span><span>SUPPLIED TEASER ASSETS</span></figcaption></figure>
-      <details class="disclosure"><summary><span>Reading the figures</span><small>Offline renders vs. real-time assets</small></summary><div class="disclosure-body"><p>The images above are the supplied offline renders. The viewer below uses GLB exports with browser-compatible materials; its lighting and shading are not an exact reproduction of Blender.</p></div></details>
-      <div id="videoSlot" hidden><figure class="figure-card video-card"><video id="teaserVideo" controls playsinline preload="metadata"></video><figcaption>Project teaser</figcaption></figure></div>
-    </section>
+    <section id="overview" class="section container showcase-section" aria-label="Case explorer"><div id="showcase"></div></section>
     <section id="assets" class="section container">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">02</span> SOURCE-SCENE COMPARISON</p><h2>Same scene.<br>Two renderers<span class="red">.</span></h2></div><p>Four exported cases. Switch between progressive path tracing and real-time rendering above the viewer. The input portrait stays alongside, and switching modes preserves your camera.</p></div>
-      <div class="asset-strip"><span class="mono-label">SELECT A CASE</span><div id="assetCases" class="asset-cases" role="group" aria-label="Select 3D model"></div></div>
+      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">02</span> SOURCE-SCENE COMPARISON</p><h2>Same scene.<br>Two renderers<span class="red">.</span></h2></div><p>Explore all 61 characters. Switch between progressive path tracing and real-time rendering above the viewer. The input portrait stays alongside, and switching modes preserves your camera.</p></div>
+      <div class="asset-picker"><label class="mono-label" for="assetCaseSelect">SELECT A CHARACTER · 61 CASES</label><select id="assetCaseSelect" aria-label="Select character for both renderers"></select></div>
+      <div class="asset-strip"><div id="assetCases" class="asset-cases" role="group" aria-label="Select 3D model"></div></div>
       <div class="asset-layout">
         <div class="viewer-column">
-          <div class="pane-title"><div class="renderer-switch" role="group" aria-label="Rendering mode"><button type="button" data-render-mode="pathtraced" aria-pressed="true" title="Progressive path tracing">PT</button><button type="button" data-render-mode="raster" aria-pressed="false" title="Real-time raster rendering">实时渲染</button></div><strong id="paneRendererTitle">路径追踪 PT</strong></div>
+          <div class="pane-title"><div class="renderer-switch" role="group" aria-label="Rendering mode"><button type="button" data-render-mode="pathtraced" aria-pressed="true" title="Progressive path tracing">PT</button><button type="button" data-render-mode="raster" aria-pressed="false" title="Real-time raster rendering">实时渲染</button></div><div class="viewer-heading-actions"><strong id="paneRendererTitle">路径追踪 PT</strong><button id="reloadViewer" title="Reload the current model, textures and renderer while keeping the view">↻ Reload viewer</button></div></div>
           <div id="viewerFrame" class="viewer-frame" data-state="idle">
             <div class="viewer-top"><span class="viewer-badge"><span class="status-dot"></span><span id="viewerTitle">Case 02</span></span><span id="renderModeBadge" class="viewer-badge">PROGRESSIVE / PT</span></div>
             <div id="viewerCanvas" class="viewer-canvas" role="img" aria-label="Interactive 3D face. Drag to orbit, pinch or scroll to zoom. Arrow keys rotate the model, plus and minus zoom." tabindex="0"></div>
-            <div id="viewerStatus" class="viewer-status" role="status"><span class="loader" aria-hidden="true"></span><strong id="viewerStatusText">Preparing 3D viewer…</strong><progress id="modelProgress" max="100" value="0" aria-label="3D model loading progress"></progress><button id="retryViewer" class="button" hidden>Reload page</button></div>
+            <div id="viewerStatus" class="viewer-status" role="status"><span class="loader" aria-hidden="true"></span><strong id="viewerStatusText">Preparing 3D viewer…</strong><progress id="modelProgress" max="100" value="0" aria-label="3D model loading progress"></progress><button id="retryViewer" class="button" hidden>Reload viewer</button></div>
             <div class="viewer-bottom"><span id="viewerHint">DRAG TO ORBIT / SCROLL TO ZOOM</span><div class="viewer-tools"><button id="rotateButton" title="Toggle automatic rotation" aria-pressed="false">Auto-rotate</button><button id="resetButton" title="Restore the original Blender camera">Source camera</button><button id="fullscreenButton" title="Toggle full screen" aria-label="Toggle viewer full screen">⛶</button></div></div>
           </div>
           <div class="material-modes" role="group" aria-label="3D material mode"><button data-material="full" aria-pressed="true"><span class="material-dot color-dot"></span>Appearance</button><button data-material="geometry" aria-pressed="false"><span class="material-dot gray-dot"></span>Gray geometry</button><button data-material="wireframe" aria-pressed="false"><span class="material-dot wire-dot"></span>Wireframe</button></div>
@@ -126,7 +124,7 @@
         </aside>
       </div>
       <details class="disclosure fidelity-disclosure"><summary><span>Inherited parameters & remaining differences / 继承与限制</span><small>Read before judging a match</small></summary><div class="disclosure-body"><p>相机矩阵、原始尺寸、World、面光源、贴图与颜色管理来自 scene.json。实时模式不包含 PT 的全局光照与追踪阴影；圆盘面光源在实时模式中采用矩形 LTC 近似。源文件 SSS 权重为 0，保持关闭；眼睛独立 Coat IOR 尚不能等价表达。线框模式始终使用光栅化。</p><p>光照环境默认使用原始输入光照；选择 HDRI 后，由该环境贴图独立照明（原始 World 与面光源暂时隐藏），可随时切回。HDRI 来自本地素材库 D:\HDRI Sky，已降采样为 1K 网页版；PT 与实时渲染均支持切换，实时模式对 HDRI 高光采用近似采样。</p><pre id="fidelityNotes">Select a case to inspect its source notes.</pre></div></details>
-      <details class="disclosure export-disclosure"><summary><span>Export checklist & case status / 导出清单与案例状态</span><small>4 ready · 2 pending</small></summary><div class="disclosure-body"><p>可用：01 homelander、02 sam、03 xjy、04 zkbg。待补：05 trump2、06 trump3 的 full.gltf、几何缓冲、scene.json 与 reference.png。</p><p>每组需要：完整网格/UV/法线/变换；材质槽与全部有效贴图、色彩空间和通道；眼睛各层及有效着色节点；SSS 模型/强度/尺度；灯光形状/变换/功率/归一化；World；相机；色彩管理；同机位无损参考图。</p><a class="button" href="export-checklist.txt" download>下载完整中文清单 ↓</a></div></details>
+      <details class="disclosure export-disclosure"><summary><span>Collection status / 角色资产状态</span><small>61 ready</small></summary><div class="disclosure-body"><p>61 个角色均使用最后交接场景导出的压缩模型，可在 PT 和实时渲染之间切换。每个角色保留独立的相机、灯光、眼球和最终材质。</p><p>网页渲染与 Blender Cycles 仍存在着色和光照实现差异；最终离线效果请查看上方 Case Explorer 的 Render 图。</p></div></details>
     </section>
     <section id="method" class="section container">
       <div class="section-heading"><div><p class="eyebrow"><span class="section-index">03</span> METHOD</p><h2>The idea,<br>in three steps<span class="red">.</span></h2></div><p>A high-level illustration of the project. The final method figure and paper description have not yet been supplied.</p></div>
@@ -140,12 +138,8 @@
       <figure id="methodFigure" class="figure-card" hidden><button class="figure-zoom" aria-label="Enlarge method figure"><img alt="NERVFace method" loading="lazy"></button><figcaption>Method overview</figcaption></figure>
       <p id="methodDraftNote" class="draft-note">SCHEMATIC PLACEHOLDER / NOT THE FINAL PAPER PIPELINE</p>
     </section>
-    <section id="gallery" class="section container">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">04</span> VISUAL GALLERY</p><h2>Different faces.<br>Shared structure<span class="red">.</span></h2></div><p>Paired comparisons from the registered teaser. Select a figure to examine it, or open the same case directly in the 3D viewer.</p></div>
-      <div id="galleryGrid" class="gallery-grid"></div>
-    </section>
     <section id="citation" class="section container">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">05</span> CITATION</p><h2>Build on<br>this work<span class="red">.</span></h2></div><p id="citationDescription">Publication metadata is pending. The official citation will be added when the paper details are provided.</p></div>
+      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">04</span> CITATION</p><h2>Build on<br>this work<span class="red">.</span></h2></div><p id="citationDescription">Publication metadata is pending. The official citation will be added when the paper details are provided.</p></div>
       <div class="citation-box"><div class="citation-toolbar"><span id="citationStatus">BIBTEX / NOT YET AVAILABLE</span><button id="copyCitation" class="button" disabled>Copy BibTeX</button></div><pre id="bibtex">The official citation will appear here when the paper details are provided.</pre></div>
     </section>
   </main>

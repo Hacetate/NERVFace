@@ -1,0 +1,109 @@
+{
+  "selectionId": "08_avatar_part4_bald/Markus_01",
+  "archiveScene": "cases/08_avatar_part4_bald/Markus_01/scene/final.blend",
+  "sceneSHA256": "e8d42b8e093431a6dc664fb14159b13c64d2884a48574e8aebcdaf9f11bbff0f",
+  "images": {
+    "input": {
+      "archivePath": "cases/08_avatar_part4_bald/Markus_01/images/input.png",
+      "sha256": "5c46b84c8bd6dc89876236775ad2e7ce1eeadbc3addc3bce7dce0793665d0f50",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/08_avatar_part4_bald/Markus_01/images/bald.png",
+      "sha256": "e08469ee7badc425f7d771653898191ee0f3aa91922cbe1ad999f482565c03cb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/08_avatar_part4_bald/Markus_01/images/render.png",
+      "sha256": "ace51588fe34d37a7fb395386e81fa430f8efe1324c8eca28a196e24f9d67727",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/08_avatar_part4_bald/Markus_01/images/mesh.png",
+      "sha256": "830ccc47e113efe724428eda6b8a13cccb68bd0c8d4cc08d35332f3c01c6aeef",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/08_avatar_part4_bald/Markus_01/textures/uniform.png",
+      "sha256": "f48f0782cb011d548b9e5254d9a28ef9f9c81bea1d8b39307ef5f18f59605e4d",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/08_avatar_part4_bald/Markus_01/textures/pro.png",
+      "sha256": "88a54b272981e121cd63893c2a7e5a989e207ea46a6049929106e2dc217790df",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/08_avatar_part4_bald/Markus_01/textures/unwarp.png",
+      "sha256": "66575574e5d147b52b7dfc66b92fe853754bc2614d859650abe6945c7c87d334",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/08_avatar_part4_bald/Markus_01/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

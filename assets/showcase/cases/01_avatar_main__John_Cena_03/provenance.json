@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/John_Cena_03",
+  "archiveScene": "cases/01_avatar_main/John_Cena_03/scene/final.blend",
+  "sceneSHA256": "34b7314faadb4e5ae903973d580af032ea0f6e035be32e69e8ceea07b6efcc66",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/John_Cena_03/images/input.png",
+      "sha256": "fe308349b5e3c5f08a09130accb7140ae389085e319566ec8fa59b7659d82317",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/John_Cena_03/images/bald.png",
+      "sha256": "361994b99d8f8de41a92479ec21983af129031be7e42dced01fc8f24bfa9cb44",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/John_Cena_03/images/render.png",
+      "sha256": "dc6727509a29755520a62e073111f6f06452dfd1d8d976aa80dc50c85a50f1ca",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/John_Cena_03/images/mesh.png",
+      "sha256": "dd5c3b4567a8e741dcaa392e142f08a4d57ede309a06c00886bb6a86f6ca8666",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/John_Cena_03/textures/uniform.png",
+      "sha256": "3860f8ac5c2e108fd3ffc4f416780cdafd334d9b727fac691ea0d73ad56014fe",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/John_Cena_03/textures/pro.png",
+      "sha256": "0f32b1c1524fca3ec7aceb1a3664cbdce8ac371fef9dfa53499f1ad93c626770",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/John_Cena_03/textures/unwarp.png",
+      "sha256": "27b43dfb7622b1a2094756a7968b152eaeee2034b1535ecced523ad57855f17b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/John_Cena_03/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

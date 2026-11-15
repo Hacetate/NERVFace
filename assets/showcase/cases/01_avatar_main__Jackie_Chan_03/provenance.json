@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Jackie_Chan_03",
+  "archiveScene": "cases/01_avatar_main/Jackie_Chan_03/scene/final.blend",
+  "sceneSHA256": "d3d761609873fa418392133d8396d95a0df4bc8d911cbdb1d6a6d42bb9c3d4ae",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Jackie_Chan_03/images/input.png",
+      "sha256": "08e18fa8cad942305698db995acb30e88120f12aae285249bcd55308ab4273c3",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Jackie_Chan_03/images/bald.png",
+      "sha256": "b0869e866aa4415093a515d7821a00f49cf70053c9fd47059cdef8bdf7d4cd35",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Jackie_Chan_03/images/render.png",
+      "sha256": "396b974cdef1a8f22923f59c7423b1805d7b3b4f3a36589ee4d33f2f25d70c5d",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Jackie_Chan_03/images/mesh.png",
+      "sha256": "6bb309e88b0ed6bb0374cd8bbdb45c56f7da96187d3371c3b1b552a48c00c501",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Jackie_Chan_03/textures/uniform.png",
+      "sha256": "127e246b1cdff0f78b3b0d988b7826b66a427731ab1f05c7c27113e1a0444752",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Jackie_Chan_03/textures/pro.png",
+      "sha256": "7bceccf89e9e1d14294bef4329efcbca72acaf3007dfb5ec4e1a3dd6e73a6b7d",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Jackie_Chan_03/textures/unwarp.png",
+      "sha256": "74abb111b9c4e6f8929f012b55e67be6d1f79253a22d7a35d433cfa42d6b5cc0",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Jackie_Chan_03/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Emilia_Clarke_02",
+  "archiveScene": "cases/01_avatar_main/Emilia_Clarke_02/scene/final.blend",
+  "sceneSHA256": "6c2d2caa4006cdfcaa6379bd21152d1715da04bbe967ba5bdcba8c6e66158eb0",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Emilia_Clarke_02/images/input.png",
+      "sha256": "1a619e518973f9ad51b9b04555d80226975263ca64f27aacb637ea1b84ac53c9",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Emilia_Clarke_02/images/bald.png",
+      "sha256": "f0edd88f8c58adcbead1d93b9f6bf39731b6af31ee281c40e1773dcab464b5f1",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Emilia_Clarke_02/images/render.png",
+      "sha256": "cec6513076f29aff1ab5f94ee6d5efb8f99879e199c8a33fe005b2c5886580f5",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Emilia_Clarke_02/images/mesh.png",
+      "sha256": "59f950b66b588cf63a2acf3ae45a518d939134602b651fad8e3ae27deab2e5ac",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Emilia_Clarke_02/textures/uniform.png",
+      "sha256": "4762d59bec77b6571b0288c16c77a886c651b235634fc8a944c5e20b8e4c9941",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Emilia_Clarke_02/textures/pro.png",
+      "sha256": "e2525b2e5fcd26e105c1c66e1b6931ce0baa0ef57e98cce5d9e337b595d3e237",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Emilia_Clarke_02/textures/unwarp.png",
+      "sha256": "2158a22d7d8c12f1b7f9d33b875ad334ed1284d156fabe3c4697846f27e6d219",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Emilia_Clarke_02/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

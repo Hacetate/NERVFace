@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Barack_Obama_01",
+  "archiveScene": "cases/01_avatar_main/Barack_Obama_01/scene/final.blend",
+  "sceneSHA256": "d48fbb3074f299da1bff5bbde92c48edcf9577d1e4bda1da6f139b3b1f55bb3d",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Barack_Obama_01/images/input.png",
+      "sha256": "4d53cd3db0af26f83e4610cb00ef1947111d595b93fd92bfd6710ddefdc8c150",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Barack_Obama_01/images/bald.png",
+      "sha256": "f3426c8534f03eaef8cb54d6e941632b124b70a141cac05333c04f255f962c32",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Barack_Obama_01/images/render.png",
+      "sha256": "0bd1a86405d256862d4347546d96c40399e6b7465d221fa50ed9c23c9bb58b02",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Barack_Obama_01/images/mesh.png",
+      "sha256": "cddb5cb3548e92def115da9a64a8b2512af095947b80eeb10bcfb481fae4a8c4",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Barack_Obama_01/textures/uniform.png",
+      "sha256": "b37cd37f2f919c8325ec8b407cd3acabb48ace717dc55566fd9e4b2a88d3651b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Barack_Obama_01/textures/pro.png",
+      "sha256": "de05e938ef7b114719ebd47a3cfdb15e255190b2f49198373a23af6c3297065b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Barack_Obama_01/textures/unwarp.png",
+      "sha256": "c1e26cbbee5b357664ffd7e9d7fec3e7703274f8a8f53d7fb0addf83e347405b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Barack_Obama_01/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

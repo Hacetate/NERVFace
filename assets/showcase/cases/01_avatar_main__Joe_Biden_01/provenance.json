@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Joe_Biden_01",
+  "archiveScene": "cases/01_avatar_main/Joe_Biden_01/scene/final.blend",
+  "sceneSHA256": "625b378ca6b40272e6ea88742561e73fbcfce6a90d4658a750dbc60bfe8f4b38",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Joe_Biden_01/images/input.png",
+      "sha256": "4f1f2d444fcc6dc03d82fb5fefc61e9747ca9432353c9f1fb6b281b6ca9364cd",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Joe_Biden_01/images/bald.png",
+      "sha256": "acd1a636cc17d9401473655f3164409078954a7ed2308c3762519cf0dee3ff7c",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Joe_Biden_01/images/render.png",
+      "sha256": "aaf595e0c6c96de132e3a0cd352f4b28cdf2c30c11ba82c77737f07aaa6b65a3",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Joe_Biden_01/images/mesh.png",
+      "sha256": "7a164b12e65c449399edaa8a45f25630e55813253525a5c03af7a93b6aae6645",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Joe_Biden_01/textures/uniform.png",
+      "sha256": "6ab997e202fcc9ad24d048f9121cf0b2a8cdf5b23f617a92b89c4d40d2cc8fd4",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Joe_Biden_01/textures/pro.png",
+      "sha256": "d6668cd6ad91d16a49aa34142543806ca97f62109358918c752ccb8d79751214",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Joe_Biden_01/textures/unwarp.png",
+      "sha256": "587178f8291bd785646f059777418d0612ba4649327bba98fbecf53c1a06d613",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Joe_Biden_01/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

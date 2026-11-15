@@ -192,6 +192,10 @@ kbd { font: 9px var(--mono); padding: 2px 3px; border: 1px solid var(--line); ma
 .video-card { margin-top: 20px; }
 video { display: block; width: 100%; background: var(--ink); }
 .asset-strip { display: flex; align-items: center; border-block: 1px solid var(--line); gap: 30px; margin-bottom: 22px; padding-block: 10px; }
+.asset-picker { display:flex; flex-wrap:wrap; align-items:center; gap:12px 24px; margin-bottom:14px; }
+.asset-picker label { color:var(--muted); font-size:10px; }
+.asset-picker select { min-width:260px; max-width:100%; padding:12px 36px 12px 12px; border:1px solid var(--line); background:white; color:var(--ink); font:13px var(--sans,Arial,sans-serif); }
+.asset-strip .asset-cases { min-width:0; width:100%; }
 .asset-strip > .mono-label { font-size: 9px; flex-shrink: 0; color: var(--muted); }
 .asset-cases { display: flex; gap: 17px; overflow-x: auto; padding: 5px 2px; scrollbar-width: thin; }
 .asset-cases .case-chip img { width: 41px; height: 47px; }
@@ -439,6 +443,10 @@ dialog > p { text-align: center; font: 9px var(--mono); margin-top: 13px; }
 .pane-title { display: flex; align-items: center; justify-content: space-between; min-height: 34px; gap: 10px; margin: 0 0 12px; }
 .pane-title > strong { font-size: 13px; font-weight: 550; }
 .renderer-switch { display: inline-flex; align-items: center; gap: 3px; padding: 3px; border: 1px solid var(--line); background: var(--soft); }
+.viewer-heading-actions { display:flex; align-items:center; justify-content:flex-end; gap:12px; flex-wrap:wrap; }
+#reloadViewer { padding:8px 10px; min-height:33px; font-size:10px; background:#fff; border:1px solid var(--line); border-radius:3px; }
+#reloadViewer:hover:not(:disabled) { border-color:var(--ink); background:var(--soft); }
+#reloadViewer:disabled { opacity:.55; cursor:wait; }
 .renderer-switch button { min-height: 29px; min-width: 48px; padding: 6px 13px; border: 1px solid transparent; font-size: 11px; color: var(--muted); }
 .renderer-switch button[aria-pressed=true] { color: #fff; background: var(--ink); border-color: var(--ink); }
 .renderer-switch button:hover:not([aria-pressed=true]) { color: var(--ink); background: #fff; border-color: var(--line); }

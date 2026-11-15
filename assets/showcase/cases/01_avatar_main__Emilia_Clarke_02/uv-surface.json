@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "width": 1024,
+  "height": 1024,
+  "encoding": "uint16-delta-x-gzip",
+  "file": "uv-surface.delta.gz",
+  "coordinateSystem": "normalized_image_top_left",
+  "method": "Native mesh UV, perspective-correct barycentric interpolation, nearest-depth rasterization",
+  "background": "Linear extension toward image borders; eye openings interpolated; rows outside head use nearest covered row.",
+  "source": "Final registered scene / original head UV with eye depth occlusion",
+  "visibleHeadPixels": 568233,
+  "eyeOcclusionPixels": 6533,
+  "eyeHandling": "Visible eyeballs occlude the head interior; interpolate native U across each opening from the eyelid boundary.",
+  "interaction": "Mask native U >= slider threshold; U=0.5 is midline. No screen-space translation.",
+  "decodedSHA256": "3cc9a2e0eb82649a750d4eaff445baee5260062c6db5040d89f724d4714bd6e9"
+}

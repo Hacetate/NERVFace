@@ -1,0 +1,109 @@
+{
+  "selectionId": "05_teaser_final/homelander",
+  "archiveScene": "cases/05_teaser_final/homelander/scene/final.blend",
+  "sceneSHA256": "8696e9e009de72c4c5f531c3b3b5c8baf45d8e6b36ab74cb4da33219f50f5a17",
+  "images": {
+    "input": {
+      "archivePath": "cases/05_teaser_final/homelander/images/input.png",
+      "sha256": "11e10c26258e8837d9048b6a14371746d059d612b0fa19fe97e8fa2df62bd7d4",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/05_teaser_final/homelander/images/bald.png",
+      "sha256": "e73dcca05c81799cbf52539cad432b9f3cb6ee9797510e8dca8af4624afd2d6e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/05_teaser_final/homelander/images/render.png",
+      "sha256": "ada0be5b7de692fc8083da9f704188e16e46de7db5c7048b2fff0b7daf5ad62f",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/05_teaser_final/homelander/images/mesh.png",
+      "sha256": "93bfae6ddc40da07c06ee579ec46ab4b171969f4f7deb06b27aded9bb2f48395",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/05_teaser_final/homelander/textures/uniform.png",
+      "sha256": "94a9a11cd8aea3a07b56087313ad5383c3d6084b69064e42dcabb1f02a5b56ea",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/05_teaser_final/homelander/textures/pro.png",
+      "sha256": "b371d4c6b703b417dc9a38b0951a7c4be0c622ac3406cbcee5e54dc080426d02",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/05_teaser_final/homelander/textures/unwarp.png",
+      "sha256": "424909fbe9ac93719cb999d646b44e353cf01c1d4d4e53acb442d50cbcab3081",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/05_teaser_final/homelander/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

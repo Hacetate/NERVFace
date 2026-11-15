@@ -1,0 +1,109 @@
+{
+  "selectionId": "09_avatar_part4_original_branch/IMAGE__7__nobald",
+  "archiveScene": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/scene/final.blend",
+  "sceneSHA256": "774c2b0a351523358bbed78166bf3da40047e89e4bbbe518b62e8b9a020f28d3",
+  "images": {
+    "input": {
+      "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/images/input.png",
+      "sha256": "38802b0e386a1a2dc5a6c8bc7da3aa18e039efa62cb2c1350e409ccfb75c7eb0",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/images/bald.png",
+      "sha256": "f14e85b323ecdf118103e33a3f932c259c5a662d60ad5b0f23cd0ec5375789ad",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/images/render.png",
+      "sha256": "17e4f5d0d6955f45abacb6c8161304b322894612d24da787506cf689bd10a5e7",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/images/mesh.png",
+      "sha256": "2d279f2ec64c4bac55a45196a9c55bc37a461cbd7b462ce3fdb42a0df1e39bf3",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/textures/uniform.png",
+      "sha256": "af563252bf3d28d4be52061105ef949612feae48d6d862afac564f5a29f8486e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/textures/pro.png",
+      "sha256": "c9cff800a92411bc82ba974918e474f4ca4410029e3b93def0f7542ec86004e3",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/textures/unwarp.png",
+      "sha256": "a9f09ec414a3d66d5ff77f868014e4fd13fae78845950f892adfb6c5bab7532d",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/09_avatar_part4_original_branch/IMAGE__7__nobald/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Image Texture.001",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Image Texture.002",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

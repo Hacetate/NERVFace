@@ -1,0 +1,109 @@
+{
+  "selectionId": "05_teaser_final/zkbg",
+  "archiveScene": "cases/05_teaser_final/zkbg/scene/final.blend",
+  "sceneSHA256": "8fcaad2068bd4a155914bf612645a1de26c16329de321f7090fa56230d853855",
+  "images": {
+    "input": {
+      "archivePath": "cases/05_teaser_final/zkbg/images/input.png",
+      "sha256": "ad3953838bc03d7f2915bfc753a491f1f6a4afc20c5fea4332d97fb782b8394a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/05_teaser_final/zkbg/images/bald.png",
+      "sha256": "ddf0ac88fa6f288c3c7ec4ae2e8d25a130d8da31a7d250942e606f6fa23d0ec6",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/05_teaser_final/zkbg/images/render.png",
+      "sha256": "a794db61b0765766dc4230ce7f7134de2ae69ce3e254f4e21c89c05fd333e68f",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/05_teaser_final/zkbg/images/mesh.png",
+      "sha256": "847a5d0dffb659ffab45829663baf6c2bad4a64bd73c3409a9e97d11c8172e14",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/05_teaser_final/zkbg/textures/uniform.png",
+      "sha256": "25cd55ac78ee8165e1ea6a66b154d62ecbbd7fd6c5023bbe116d4091a06e4c3e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/05_teaser_final/zkbg/textures/pro.png",
+      "sha256": "ab53ab67723f7936f6bd54ba52a1d0c95a3e551641a0c543248529868f4b27fb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/05_teaser_final/zkbg/textures/unwarp.png",
+      "sha256": "ea0f0222e5b7d10d4be9c2f819782739e42451a17ddbb7b746c75f0bb99f8a10",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/05_teaser_final/zkbg/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

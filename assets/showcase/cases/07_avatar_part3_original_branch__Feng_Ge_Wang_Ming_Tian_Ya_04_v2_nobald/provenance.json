@@ -1,0 +1,109 @@
+{
+  "selectionId": "07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald",
+  "archiveScene": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/scene/final.blend",
+  "sceneSHA256": "2bff24d84bd5a7a38d7751b71ae82c3e5b1a8d10a5f2f630f9c753345892cd4f",
+  "images": {
+    "input": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/images/input.png",
+      "sha256": "3dd52ac318b7e4764a9421ac283fa8e2d81bbcf75ddc85733dc352a126d7cd61",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/images/bald.png",
+      "sha256": "c3e857f47cdc7b240cdb9560d6ee460d88455f40d30bc4467dc38f9102da5026",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/images/render.png",
+      "sha256": "9f509dbad565802cf9e3501541cc8eaa86cf7035a6510c5508fa895bedd916c7",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/images/mesh.png",
+      "sha256": "7f00b8812b3b41ee769f6200341a278886bd22739db7fa73686a3d515f1a8a7a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/textures/uniform.png",
+      "sha256": "458e74892db1e82656045d9810768599fabb1c854ea0407f2e3fd1b8dd4043a7",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/textures/pro.png",
+      "sha256": "6d13e0cca152a51c7393c08c5e16b58d288887f0384c62aff37fd0d2e48c8539",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/textures/unwarp.png",
+      "sha256": "d0e0263a242d4330ebc4cdcb1add55c4ddd9db73ea6f5ce3da4634661f60c55e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

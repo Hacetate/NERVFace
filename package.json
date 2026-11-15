@@ -1,0 +1,17 @@
+{
+  "name": "nervface-renderer61-build",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "node scripts/build.mjs",
+    "build:showcase": "esbuild src/showcase-viewer.js --bundle --minify --format=esm --legal-comments=eof --outfile=assets/showcase/viewer.bundle.js",
+    "test": "node scripts/test-pt-camera.mjs"
+  },
+  "dependencies": {
+    "three": "0.187.0",
+    "three-gpu-pathtracer": "0.0.28",
+    "three-mesh-bvh": "0.9.18",
+    "esbuild": "0.28.2"
+  }
+}

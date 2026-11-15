@@ -1,0 +1,109 @@
+{
+  "selectionId": "05_teaser_final/trump3",
+  "archiveScene": "cases/05_teaser_final/trump3/scene/final.blend",
+  "sceneSHA256": "e015d25fe8479f8d5064f35173a95336836962f199875d408b9a89b22d529615",
+  "images": {
+    "input": {
+      "archivePath": "cases/05_teaser_final/trump3/images/input.png",
+      "sha256": "3e34c0f5bb8fdfb74719088bf03d20629a504e74e414965d6e3037a259d8b165",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/05_teaser_final/trump3/images/bald.png",
+      "sha256": "d53be8d4eb652d0d407571205d6ab053ae8a813baa2acf6a34a3e0e0e45b7c5b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/05_teaser_final/trump3/images/render.png",
+      "sha256": "3798e220f4750a03f0c3044c7ced254e36b12cc7aa49dee74fbe18c17c166c28",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/05_teaser_final/trump3/images/mesh.png",
+      "sha256": "9c6642f6f8527235a9bbec0170f529fe2d65354c78060f83500ca93f887bb867",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/05_teaser_final/trump3/textures/uniform.png",
+      "sha256": "1fb01d7a6595326e915cec6036de554a8a97ea64f226a2315ebf5302aae4e975",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/05_teaser_final/trump3/textures/pro.png",
+      "sha256": "fab656d4ebb13937f159c5d32255d4e8dd727bae43e88312c0d3a1193ccc1331",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/05_teaser_final/trump3/textures/unwarp.png",
+      "sha256": "4e0f0d474ffb534fdfd293c45b50bea5546e31c295ca7dbf23132217744c9d72",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/05_teaser_final/trump3/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

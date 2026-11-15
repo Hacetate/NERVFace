@@ -1,0 +1,109 @@
+{
+  "selectionId": "08_avatar_part4_bald/Jill_Valentine_01",
+  "archiveScene": "cases/08_avatar_part4_bald/Jill_Valentine_01/scene/final.blend",
+  "sceneSHA256": "242c19863694a93755a4d20317f92a38f59bedebba2b196200eb3ead11d41b0f",
+  "images": {
+    "input": {
+      "archivePath": "cases/08_avatar_part4_bald/Jill_Valentine_01/images/input.png",
+      "sha256": "53d2e6163ce20d319f371dd3e592c1ecc5b94f1e41213265461adf80983d717c",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/08_avatar_part4_bald/Jill_Valentine_01/images/bald.png",
+      "sha256": "3a1d99f973a3cbf7e071350e7b0c57e48c87048a5f320c61df695f126e4498bc",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/08_avatar_part4_bald/Jill_Valentine_01/images/render.png",
+      "sha256": "9d9f7f54b72a63447117e6e990914c6dee8d5cabb221a1ce4c157528dbfa8640",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/08_avatar_part4_bald/Jill_Valentine_01/images/mesh.png",
+      "sha256": "0ff4527ee412beefe3bcb46819f54271c44b9f791e7b4b09386fc4c3a5862753",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/08_avatar_part4_bald/Jill_Valentine_01/textures/uniform.png",
+      "sha256": "dde86068941b2297bc585d444c15011b24cf70f3ef0a21fe92a183856fcd42a8",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/08_avatar_part4_bald/Jill_Valentine_01/textures/pro.png",
+      "sha256": "9f9f18227ee597ffde0a6c240cffcb697fb369b02a6af378f982f7b494b5b03c",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/08_avatar_part4_bald/Jill_Valentine_01/textures/unwarp.png",
+      "sha256": "0aaf4c524a626ac16fee5e87f04b950ff57128479f1de8e54a32f7841e71f808",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/08_avatar_part4_bald/Jill_Valentine_01/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Elon_Musk_02",
+  "archiveScene": "cases/01_avatar_main/Elon_Musk_02/scene/final.blend",
+  "sceneSHA256": "94c869701f38347bb7a14dc3a872b033c52972a26d093bcb6081bbe43f07ed4a",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Elon_Musk_02/images/input.png",
+      "sha256": "6c80ea13eec7ec0371de82be4ff93fe706cb83f804d0ba917abecac31d679549",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Elon_Musk_02/images/bald.png",
+      "sha256": "3a72df773e7caa78ec145b076170fceca0d895a2f075bd331268c2d1ea1dcfe0",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Elon_Musk_02/images/render.png",
+      "sha256": "33a132f62bcf200e47a91c066b745c4cd5ace352cd004072565055a2354b6669",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Elon_Musk_02/images/mesh.png",
+      "sha256": "b9196591ff049310d030c4eacbb8f38ccd6bacedfd2fe3ad40c599d3768dd011",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Elon_Musk_02/textures/uniform.png",
+      "sha256": "e73c85e8276c5ff87203ac8b463b4349190134f06dd3c0134ffe4d332a7792bf",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Elon_Musk_02/textures/pro.png",
+      "sha256": "21a60204fbe3aa8f97724f5f7c5e35c16ecfd95df08e8fc5f95af08d7c8fd5d2",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Elon_Musk_02/textures/unwarp.png",
+      "sha256": "469310855ef8bb4f80379987ecbede4dd406785df4297e5bc0a57e73d67714c3",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Elon_Musk_02/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

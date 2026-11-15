@@ -1,0 +1,109 @@
+{
+  "selectionId": "07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald",
+  "archiveScene": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/scene/final.blend",
+  "sceneSHA256": "1f15568f7d9613b35551cfe9d47edc6a607add0f0d82cb564cc5f4cedbbf31eb",
+  "images": {
+    "input": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/input.png",
+      "sha256": "4de6146200797f689b5e85f7aff9145e34de131ea0d52fbd0876ea1ac8a4ba5f",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/bald.png",
+      "sha256": "7fe5857b16ac1b35b430bebff9d0c7bc5a89f08e0e60dcde512f282efc88b3bf",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/render.png",
+      "sha256": "dadb351e3067de3b758e0a6e3ee5bee25a928856cdb2a38864ffca6eb7595e07",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/mesh.png",
+      "sha256": "0c5a5bacec4ff42345c71412fdedbb91d61dee5990e4ed0aa9b0bd482faa8120",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/textures/uniform.png",
+      "sha256": "0770b460879c47e3bf649ddd6f8e7414b22968cadce9a31ffb7d188ea693bd7e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/textures/pro.png",
+      "sha256": "2c13eb90d84df1f1b390b4b48f666ca2abaa97eb1f591fbd03019fd1bdf185f1",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/textures/unwarp.png",
+      "sha256": "c08956ab35412c8fd4f04ce95d6e2d51a2976a708614193956e0c6c50274533a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

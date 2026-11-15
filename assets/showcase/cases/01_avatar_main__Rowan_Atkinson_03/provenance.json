@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Rowan_Atkinson_03",
+  "archiveScene": "cases/01_avatar_main/Rowan_Atkinson_03/scene/final.blend",
+  "sceneSHA256": "29cfbe01de9ee1579aee83437424c6447bac3a07c3a69b8bd3a7dc6149e2d59f",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Rowan_Atkinson_03/images/input.png",
+      "sha256": "5661819506f2d170192634d4e3ec35a4c601cedbafb0972b6d0b4533cc3316ad",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Rowan_Atkinson_03/images/bald.png",
+      "sha256": "1fff22f868481946eed973de583f073508bc4a327cf8d0bc44285bd9b701ac2b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Rowan_Atkinson_03/images/render.png",
+      "sha256": "fdeefc699065bb2693df44a6cbb31e48a358c7a7a5b4a29af2de483ce76667d1",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Rowan_Atkinson_03/images/mesh.png",
+      "sha256": "020d204d0a9d5b57591a9222a60a0a50c495dc888bb0d6faba9d2823951f5584",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Rowan_Atkinson_03/textures/uniform.png",
+      "sha256": "8bccc2e6f8b7bd89c4db369b6526b4521fb5709059881da3d14de228a2b0d777",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Rowan_Atkinson_03/textures/pro.png",
+      "sha256": "f22b6b83e517819e49edcfdf3bfe0869f81d81b0a8656a08cef8c268ee97b18a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Rowan_Atkinson_03/textures/unwarp.png",
+      "sha256": "964e8033fcc42c3790b569691e0e9baa634efcce643e0b3f073e7bcf08e59fbc",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Rowan_Atkinson_03/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Yao_Ming_02",
+  "archiveScene": "cases/01_avatar_main/Yao_Ming_02/scene/final.blend",
+  "sceneSHA256": "aa68ccfb298872b3dab130a4daf0b5e717512f0b5f2728d6f8b128b89366bed6",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Yao_Ming_02/images/input.png",
+      "sha256": "27f1576bae5587acb6004a8559226fafe2c2b1d4e311309e80be4a2cb2cef8d4",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Yao_Ming_02/images/bald.png",
+      "sha256": "6f7e0c915a0bb486eebf32d519a9e192c665f69551e6f8409c8abead7170b54c",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Yao_Ming_02/images/render.png",
+      "sha256": "717f8c6ad5a5ee92f336b438fbd977dbeab0447b2a1c399253fb0364a9e6eedc",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Yao_Ming_02/images/mesh.png",
+      "sha256": "f54e772fbbb44cb6368794d5d83aec2c469e1c82a7fc9eda9d4d236ec7b69dea",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Yao_Ming_02/textures/uniform.png",
+      "sha256": "916fc9d8b41f762eb415f5cfef5cd7c95acaaf7de59ef07254a0b0bc2ceab597",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Yao_Ming_02/textures/pro.png",
+      "sha256": "d7c2f60102b3448334810e9dfad2ac86af6404b9cec67deb247201a20162ff5a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Yao_Ming_02/textures/unwarp.png",
+      "sha256": "0a764dfa7d3ef84d700d76b81575300e9ecaa7de85c2902cbf339eeea74a3284",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Yao_Ming_02/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

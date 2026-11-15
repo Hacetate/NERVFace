@@ -1,0 +1,549 @@
+{
+  "coordinateSystem": "blender_source_no_normalization",
+  "camera": {
+    "type": "PERSP",
+    "matrixWorld": [
+      0.9991089105606079,
+      0.04117647558450699,
+      0.009267367422580719,
+      0.0,
+      -0.0404517836868763,
+      0.9968565702438354,
+      -0.06812089681625366,
+      0.0,
+      -0.012043215334415436,
+      0.0676853209733963,
+      0.9976340532302856,
+      0.0,
+      -0.3875342309474945,
+      2.305544853210449,
+      32.60282897949219,
+      1.0
+    ],
+    "frustum": {
+      "left": -0.02420032484793803,
+      "right": 0.023236240015971188,
+      "bottom": -0.016869839696384552,
+      "top": 0.03056672658124451
+    },
+    "near": 0.05000000074505806,
+    "far": 200.0,
+    "fovYDegrees": 2.717405553589452,
+    "aspect": 0.9999999701976777
+  },
+  "controlsTarget": [
+    -0.000959932804107666,
+    0.0005810856819152832,
+    0.03497835993766785
+  ],
+  "world": {
+    "color": [
+      1.0,
+      0.4864429235458374,
+      0.9583432078361511
+    ],
+    "strength": 0.10646036267280579,
+    "transparent": true
+  },
+  "lights": [
+    {
+      "name": "Disk_02",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.8337063193321228,
+        0.5522080659866333,
+        9.51876444332811e-09,
+        0.0,
+        -0.3582240343093872,
+        -0.5408353209495544,
+        0.7610339522361755,
+        0.0,
+        0.4202491044998169,
+        0.6344788074493408,
+        0.6487120389938354,
+        0.0,
+        1.1528739929199219,
+        1.8725981712341309,
+        2.181610345840454,
+        1.0
+      ],
+      "color": [
+        0.6076091527938843,
+        0.7062084078788757,
+        1.0
+      ],
+      "powerW": 23.81869888305664,
+      "size": 1.1871740818023682,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Disk_04",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.3564446270465851,
+        0.9343164563179016,
+        -1.509838938318353e-07,
+        0.0,
+        -0.3915102779865265,
+        -0.1493622362613678,
+        0.9079706072807312,
+        0.0,
+        0.848331868648529,
+        0.323641300201416,
+        0.41903385519981384,
+        0.0,
+        2.3256633281707764,
+        1.021017074584961,
+        1.5523767471313477,
+        1.0
+      ],
+      "color": [
+        0.6554978489875793,
+        0.8820065855979919,
+        1.0
+      ],
+      "powerW": 79.92337036132812,
+      "size": 0.9132108688354492,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Disk_08",
+      "type": "AREA",
+      "matrixWorld": [
+        0.9998505115509033,
+        -0.017289677634835243,
+        6.253060291783186e-10,
+        0.0,
+        0.015473767183721066,
+        0.8948376178741455,
+        0.44612351059913635,
+        0.0,
+        -0.007713332772254944,
+        -0.4460568130016327,
+        0.8949714303016663,
+        0.0,
+        -0.01958606019616127,
+        -1.087672472000122,
+        2.8562707901000977,
+        1.0
+      ],
+      "color": [
+        1.0,
+        0.33694136142730713,
+        0.5708410739898682
+      ],
+      "powerW": 16.000255584716797,
+      "size": 1.278495192527771,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Disk_10",
+      "type": "AREA",
+      "matrixWorld": [
+        0.20517098903656006,
+        0.9787261486053467,
+        3.2684528861182116e-08,
+        0.0,
+        -0.858598530292511,
+        0.1799885481595993,
+        0.4800131618976593,
+        0.0,
+        0.4698014259338379,
+        -0.09848480671644211,
+        0.8772612810134888,
+        0.0,
+        1.2886286973953247,
+        -0.1354529708623886,
+        2.8077516555786133,
+        1.0
+      ],
+      "color": [
+        0.601836621761322,
+        0.7404637932777405,
+        1.0
+      ],
+      "powerW": 30.119773864746094,
+      "size": 1.0958530902862549,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Disk_12",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.6755406260490417,
+        0.7373227477073669,
+        3.310033491743525e-08,
+        0.0,
+        0.10956073552370071,
+        0.1003803238272667,
+        0.988898515701294,
+        0.0,
+        0.7291373610496521,
+        0.6680411100387573,
+        -0.14859260618686676,
+        0.0,
+        1.9991137981414795,
+        1.9645469188690186,
+        -0.0027108245994895697,
+        1.0
+      ],
+      "color": [
+        0.3432920277118683,
+        0.7259469628334045,
+        1.0
+      ],
+      "powerW": 41.38941192626953,
+      "size": 0.8218897581100464,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Disk_19",
+      "type": "AREA",
+      "matrixWorld": [
+        0.15564073622226715,
+        0.9878137111663818,
+        -1.9346111912454944e-07,
+        0.0,
+        -0.2104460448026657,
+        0.03315824270248413,
+        0.9770429730415344,
+        0.0,
+        0.9651364684104919,
+        -0.1520676463842392,
+        0.2130422741174698,
+        0.0,
+        2.645664930343628,
+        -0.2822505533695221,
+        0.9880359172821045,
+        1.0
+      ],
+      "color": [
+        0.6433495283126831,
+        0.8542958498001099,
+        1.0
+      ],
+      "powerW": 49.91896057128906,
+      "size": 1.004531979560852,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Regional -65 15 1.0",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.2700110673904419,
+        -0.9628572463989258,
+        5.680006864849929e-08,
+        0.0,
+        0.36733782291412354,
+        -0.103011354804039,
+        0.9243655204772949,
+        0.0,
+        -0.8900319933891296,
+        0.24958893656730652,
+        0.38150808215141296,
+        0.0,
+        -2.436815023422241,
+        0.8181410431861877,
+        1.4495701789855957,
+        1.0
+      ],
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "powerW": 2.073805093765259,
+      "size": 1.8264217376708984,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Regional 65 15 0.25",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.350607693195343,
+        0.9365224242210388,
+        1.859413778504404e-08,
+        0.0,
+        -0.37248659133911133,
+        -0.13944853842258453,
+        0.9175008535385132,
+        0.0,
+        0.8592601418495178,
+        0.3216828405857086,
+        0.39773377776145935,
+        0.0,
+        2.355602502822876,
+        1.0156519412994385,
+        1.4940229654312134,
+        1.0
+      ],
+      "color": [
+        0.0,
+        0.051593929529190063,
+        1.0
+      ],
+      "powerW": 9.831192016601562,
+      "size": 0.4566054344177246,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Regional 65 15 1.0",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.350607693195343,
+        0.9365224242210388,
+        1.859413778504404e-08,
+        0.0,
+        -0.37248659133911133,
+        -0.13944853842258453,
+        0.9175008535385132,
+        0.0,
+        0.8592601418495178,
+        0.3216828405857086,
+        0.39773377776145935,
+        0.0,
+        2.355602502822876,
+        1.0156519412994385,
+        1.4940229654312134,
+        1.0
+      ],
+      "color": [
+        0.0,
+        0.3784618079662323,
+        1.0
+      ],
+      "powerW": 13.283853530883789,
+      "size": 1.8264217376708984,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Regional 65 50 0.25",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.827070951461792,
+        0.5620974898338318,
+        3.834904838129205e-09,
+        0.0,
+        -0.12603703141212463,
+        -0.18545106053352356,
+        0.9745371341705322,
+        0.0,
+        0.5477848649024963,
+        0.8060113787651062,
+        0.22422629594802856,
+        0.0,
+        1.5022748708724976,
+        2.342534065246582,
+        1.0186755657196045,
+        1.0
+      ],
+      "color": [
+        0.690850555896759,
+        0.6843085885047913,
+        1.0
+      ],
+      "powerW": 19.65888214111328,
+      "size": 0.4566054344177246,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Regional 65 50 1.0",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.827070951461792,
+        0.5620974898338318,
+        3.834904838129205e-09,
+        0.0,
+        -0.12603703141212463,
+        -0.18545106053352356,
+        0.9745371341705322,
+        0.0,
+        0.5477848649024963,
+        0.8060113787651062,
+        0.22422629594802856,
+        0.0,
+        1.5022748708724976,
+        2.342534065246582,
+        1.0186755657196045,
+        1.0
+      ],
+      "color": [
+        0.33284792304039,
+        0.48704925179481506,
+        1.0
+      ],
+      "powerW": 11.781388282775879,
+      "size": 1.8264217376708984,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    },
+    {
+      "name": "Regional 0 75 0.4",
+      "type": "AREA",
+      "matrixWorld": [
+        -0.9990753531455994,
+        -0.04299379140138626,
+        2.2714761627185e-08,
+        0.0,
+        0.008272325620055199,
+        -0.1922290176153183,
+        0.9813152551651001,
+        0.0,
+        -0.04219045862555504,
+        0.9804078340530396,
+        0.19240693747997284,
+        0.0,
+        -0.11404065787792206,
+        2.8203163146972656,
+        0.9315023422241211,
+        1.0
+      ],
+      "color": [
+        1.0,
+        0.20387797057628632,
+        0.325376033782959
+      ],
+      "powerW": 7.559162616729736,
+      "size": 0.7305687069892883,
+      "sizeY": 0.25,
+      "shape": "DISK",
+      "normalize": true,
+      "spread": 3.1415927410125732,
+      "visibleToCameraRays": false
+    }
+  ],
+  "colorManagement": {
+    "viewTransform": "Standard",
+    "look": "None",
+    "exposure": 0.0,
+    "gamma": 1.0
+  },
+  "meshes": [
+    {
+      "name": "Registered head",
+      "vertices": 24049,
+      "polygons": 48004
+    },
+    {
+      "name": "left eye",
+      "vertices": 1154,
+      "polygons": 2304
+    },
+    {
+      "name": "right eye",
+      "vertices": 1154,
+      "polygons": 2304
+    }
+  ],
+  "notes": [
+    "Final registered head and eyes; unchanged vertices. Head UVs unchanged; separate eye bake atlases.",
+    "GLB keeps Blender source coordinates (export_yup=False); no normalization.",
+    "Source eye base color baked without UV overlap into 1024px atlases; material maps capped at 2048px.",
+    "Web preview uses approximate area lighting; Cycles light linking, eye coat and source color management may differ. Use Render for the final offline result.",
+    "Dual renderer uses the compressed per-case material bake and native shifted camera frustum. Cycles light linking is not reproduced."
+  ],
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "eyeMaterials": [
+    {
+      "object": "left eye",
+      "sourceUV": "NativeUV",
+      "webUV": "WebEyeAtlas",
+      "size": 1024,
+      "method": "Non-overlapping smart UV atlas; emission bake of source Base Color"
+    },
+    {
+      "object": "right eye",
+      "sourceUV": "NativeUV",
+      "webUV": "WebEyeAtlas",
+      "size": 1024,
+      "method": "Non-overlapping smart UV atlas; emission bake of source Base Color"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Registered left eye.001",
+      "sourceName": "Registered left eye",
+      "ior": 1.5,
+      "clearcoatIor": 1.5,
+      "sss": {
+        "weight": 0.0
+      }
+    },
+    {
+      "name": "Pro skin.001",
+      "sourceName": "Pro skin",
+      "ior": 1.5,
+      "clearcoatIor": 1.5,
+      "sss": {
+        "weight": 0.0
+      }
+    },
+    {
+      "name": "Registered right eye.001",
+      "sourceName": "Registered right eye",
+      "ior": 1.5,
+      "clearcoatIor": 1.5,
+      "sss": {
+        "weight": 0.0
+      }
+    }
+  ]
+}

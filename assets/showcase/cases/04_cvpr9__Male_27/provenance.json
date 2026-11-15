@@ -1,0 +1,109 @@
+{
+  "selectionId": "04_cvpr9/Male_27",
+  "archiveScene": "cases/04_cvpr9/Male_27/scene/final.blend",
+  "sceneSHA256": "8082d8a4d1de87ffd4ab912b906d96d516a32141d3ed184ef863c17dcd2810c4",
+  "images": {
+    "input": {
+      "archivePath": "cases/04_cvpr9/Male_27/images/input.png",
+      "sha256": "324eb54a1b5bad84d9f0c09ae4401d11fcea9bea932701ad831f01b84a9d4440",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/04_cvpr9/Male_27/images/bald.png",
+      "sha256": "d5db5ef489c2591411d2154341eb696fa2cd400446e9c07f4587553fa0f622de",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/04_cvpr9/Male_27/images/render.png",
+      "sha256": "6b16629c9485df363b0e7fe96da0427f8e7c31e88076cf81221f1b962ab96975",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/04_cvpr9/Male_27/images/mesh.png",
+      "sha256": "4edcf6c040c9e6973365b85eb2d43dad81a281a49879d7c124f5a703d6f4e4f4",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/04_cvpr9/Male_27/textures/uniform.png",
+      "sha256": "e83e1ab233a61ea8f97724f70d205354168ebab2fdf3711f031857772d4bd98d",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/04_cvpr9/Male_27/textures/pro.png",
+      "sha256": "37224b2d9e02384cf321ca3a0196da5bfe2920fc18a19f9230684557713988cf",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/04_cvpr9/Male_27/textures/unwarp.png",
+      "sha256": "e66c8ebd7c8f807bb84d03f216d43b8027026ffef37ee9353e305d12399d7f39",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/04_cvpr9/Male_27/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

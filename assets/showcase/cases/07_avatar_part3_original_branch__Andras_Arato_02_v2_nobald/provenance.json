@@ -1,0 +1,109 @@
+{
+  "selectionId": "07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald",
+  "archiveScene": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/scene/final.blend",
+  "sceneSHA256": "8b77f765fb59d0c0510afb4b4239f0a3db9a777677060e2a38e94d74a83c7209",
+  "images": {
+    "input": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/images/input.png",
+      "sha256": "3ba0330f7ea2486b39a5db1ead7f1c14e34ccd06ca0c73b5d24e8541f0e2edee",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/images/bald.png",
+      "sha256": "fd9672c5337585eaa767725d107ccc3ef6cadabc45ddb970b1d5130975fca1b4",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/images/render.png",
+      "sha256": "70770ebfc84ae91a558e14e53e861c10dc2e86e16e62b00a4dbf6ff874feed26",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/images/mesh.png",
+      "sha256": "e11a5887cf6c4457e18dbc200269d285b758b3d9c568e6202bb9191627cdcd60",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/textures/uniform.png",
+      "sha256": "502f9bc82fdd47ca7f3d2adaf3d7e611e854544beeb4bd423b264cdad4b6f7dd",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/textures/pro.png",
+      "sha256": "553f48519165ff946fe87deae7de3448b37c95a43cc25c68f452cf586ef86b94",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/textures/unwarp.png",
+      "sha256": "0ca01c842993cd7ceb07a9f03bee51a4f75a3ce51ef0eec5f45225ad1a356fc0",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Chiang_Kai_shek_01",
+  "archiveScene": "cases/01_avatar_main/Chiang_Kai_shek_01/scene/final.blend",
+  "sceneSHA256": "401da8dda07224f430afb69f3c28496b5f741fc6b007ba4d39bb611fc8496076",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Chiang_Kai_shek_01/images/input.png",
+      "sha256": "43b853a71f536923d41fe55ccb792244a75380baf0272eb73e56e3653109d8fb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Chiang_Kai_shek_01/images/bald.png",
+      "sha256": "4b2bed6e638835f596620c806ee056bd8e0e43cc55f6862580323dd3411dbed3",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Chiang_Kai_shek_01/images/render.png",
+      "sha256": "48e4acf92526f72006bd3b1dd50d219436d469f15cf752230d9f644e935567eb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Chiang_Kai_shek_01/images/mesh.png",
+      "sha256": "4a6acea9cc3a99719b6696e90b5e180b3def6c1667232e15674d3bb4d77eacdc",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Chiang_Kai_shek_01/textures/uniform.png",
+      "sha256": "4025eb23a090dbda0c5ef19bae2cf96f82771a3a5a1151dbc58ce1a974cb88ae",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Chiang_Kai_shek_01/textures/pro.png",
+      "sha256": "f0574e33093deaca782c2f11970ed693c6435416303fc88992035fc96e9c6215",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Chiang_Kai_shek_01/textures/unwarp.png",
+      "sha256": "47d272343a46feb534757e609948c6d905d8623d1aaad14e52e308bbd929bca5",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Chiang_Kai_shek_01/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

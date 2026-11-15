@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Cristiano_Ronaldo_04",
+  "archiveScene": "cases/01_avatar_main/Cristiano_Ronaldo_04/scene/final.blend",
+  "sceneSHA256": "6b33caf3deb16d68fa38632f2f273099b90839d8b800e3f807d98ff353b7a333",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_04/images/input.png",
+      "sha256": "d7a5fbfc2342ac909509eb2e26264b80f49b6d464f1881925494d86a19c3e48c",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_04/images/bald.png",
+      "sha256": "ed02fadaf5eb9805dfc4da508dad0e9b361d8e33b1cee95c2c22b047223b9c17",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_04/images/render.png",
+      "sha256": "97897a9e5a4836ad2e89f5d10f8b3ade0e2d0cca061bccdf50236d2cd5ef6fec",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_04/images/mesh.png",
+      "sha256": "1aacd6215f1ceb5bdac3a44ab8607875b3ccca2d0715a5802e9beeef63c92b98",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_04/textures/uniform.png",
+      "sha256": "ddee055150cf0f3ba9cd6c655d0b547ea70da9bf3f2ccc03a5263be863ba7f65",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_04/textures/pro.png",
+      "sha256": "c6ea43599cf71aa7dbcb2271341d47d6158299652a47faecae23d7311ef09817",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Cristiano_Ronaldo_04/textures/unwarp.png",
+      "sha256": "83492f7f53a53f91edd0a72b52789e3a36ad408b460c682d37d07dba92706f40",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Cristiano_Ronaldo_04/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

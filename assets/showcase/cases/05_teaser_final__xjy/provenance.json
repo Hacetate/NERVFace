@@ -1,0 +1,109 @@
+{
+  "selectionId": "05_teaser_final/xjy",
+  "archiveScene": "cases/05_teaser_final/xjy/scene/final.blend",
+  "sceneSHA256": "9a071a1bc293dddeed21828d14fad25dabfad4949bc93455c4d5e03059ed8bb5",
+  "images": {
+    "input": {
+      "archivePath": "cases/05_teaser_final/xjy/images/input.png",
+      "sha256": "cd32a467774d7d00355c8a1c7c10b0c69afdb154c03113c95b631af1cbe38994",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/05_teaser_final/xjy/images/bald.png",
+      "sha256": "addb683f47ba42a165fc84faca934a8d86de990ee839cc05f7c94b47112bc696",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/05_teaser_final/xjy/images/render.png",
+      "sha256": "8918ed623eb8e2f67e677fbb0c55010c0fd7b85b0347ece7ae6b27765921035f",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/05_teaser_final/xjy/images/mesh.png",
+      "sha256": "f2f087559fdc39aa3c788773331081e085f48f400f3e4f953017a23d2cc5e7d7",
+      "sourceSize": [
+        1536,
+        1536
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/05_teaser_final/xjy/textures/uniform.png",
+      "sha256": "4ea637f49202a93f977003719d57351abf13638a3d5ed1a92dfdadf9d42df9e9",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/05_teaser_final/xjy/textures/pro.png",
+      "sha256": "94312a088e7bdd4efeb3ddb9142b93d7d585896c4af0c454236e2d95d0507aa7",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/05_teaser_final/xjy/textures/unwarp.png",
+      "sha256": "90fd39204b31e0231b118ec09265fe8e6fd305dbddffdd4c364c099493c47b9a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/05_teaser_final/xjy/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

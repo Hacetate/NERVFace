@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/IShowSpeed_03",
+  "archiveScene": "cases/01_avatar_main/IShowSpeed_03/scene/final.blend",
+  "sceneSHA256": "3966f6f534138b187f9ad0aba55e8397f667a5fc5bd9e4e089ed4c099a08745e",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/IShowSpeed_03/images/input.png",
+      "sha256": "6715b0526169cdc201281ca4bb745baa365c28d20eaadf7fdce06d4c6950c651",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/IShowSpeed_03/images/bald.png",
+      "sha256": "bcb75929c1999d966d65950b6cfc64b81db7f1ca32b8b7944264494c856c3d69",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/IShowSpeed_03/images/render.png",
+      "sha256": "3f1cafd61cbdb08e56928092fd9bc47660d54384c6aaea36e744cf16c4d1ed33",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/IShowSpeed_03/images/mesh.png",
+      "sha256": "494f3dcf839e05cf31652429e722fbe7820528190eff8fbdd88a7b179fca3aa8",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/IShowSpeed_03/textures/uniform.png",
+      "sha256": "45edf5b96067154c7eb9511ec677326094e0d21ed1b560f43d526c0820647e7a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/IShowSpeed_03/textures/pro.png",
+      "sha256": "e22f9ff9f0461ace0721b931dd8e3a6dfdf989d835e653258532ee54e402941d",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/IShowSpeed_03/textures/unwarp.png",
+      "sha256": "fccf2256e625633ef3302d56f96593229e17e3e0083637998ae081d284a454eb",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/IShowSpeed_03/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

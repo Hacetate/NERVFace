@@ -1,0 +1,109 @@
+{
+  "selectionId": "02_avatar_added/Jensen_Huang_01",
+  "archiveScene": "cases/02_avatar_added/Jensen_Huang_01/scene/final.blend",
+  "sceneSHA256": "26e0aac49c73662f3810581d00ef12ca46a3248cfc03d9eac507c6eba80247af",
+  "images": {
+    "input": {
+      "archivePath": "cases/02_avatar_added/Jensen_Huang_01/images/input.png",
+      "sha256": "c691900453646f7ab07ef6b64e530501b6ce6e7c0925950db37c92754008f2ae",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/02_avatar_added/Jensen_Huang_01/images/bald.png",
+      "sha256": "3b55d5c8770eda3aba021be5da99ff71f446ebebb766e1d3090485a815cd41a4",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/02_avatar_added/Jensen_Huang_01/images/render.png",
+      "sha256": "b194b6a881bd494d8a09feca91c3eedac026e7bb1d2ff92d3adb1bc72f0c42a9",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/02_avatar_added/Jensen_Huang_01/images/mesh.png",
+      "sha256": "140240125f6b3002149eef35d31e4d0e0921c0cd12aebd76147153aad9f756c5",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/02_avatar_added/Jensen_Huang_01/textures/uniform.png",
+      "sha256": "4da31a90d27bf56dffac27c275500b3241dc8673e99b5aa3be171561d9978eb1",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/02_avatar_added/Jensen_Huang_01/textures/pro.png",
+      "sha256": "10f70832ba67a9168e848de09d0107880203ccff8f520bb42fb0da937c02dc41",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/02_avatar_added/Jensen_Huang_01/textures/unwarp.png",
+      "sha256": "c9119f4659e62cb2ef2c6f223ca1a2cc5d3c7f78a29614675bd6b88f018ff55b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/02_avatar_added/Jensen_Huang_01/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

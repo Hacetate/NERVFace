@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Chun_Doo_hwan_01",
+  "archiveScene": "cases/01_avatar_main/Chun_Doo_hwan_01/scene/final.blend",
+  "sceneSHA256": "16276703df4e409536e0bea4ddb1985a8e7ef64516238f4d4ce2a598ce1aa20e",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Chun_Doo_hwan_01/images/input.png",
+      "sha256": "26904e2698b6b0093e5482d85b2deb872550cc457388af85a7cc3276f0399d20",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Chun_Doo_hwan_01/images/bald.png",
+      "sha256": "28503a593f2042d50c22975a76ef8d06969b0327a12bf746a7cd5f3b98ca68bc",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Chun_Doo_hwan_01/images/render.png",
+      "sha256": "68a2b208211478eeb8be5eaa16acedaa76898b8610b583a97127fbb34574eae7",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Chun_Doo_hwan_01/images/mesh.png",
+      "sha256": "739dbe3c06726786dea44abc72cbcb9c39ec0f0cfe4abc01d82a5a2b0ec43661",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Chun_Doo_hwan_01/textures/uniform.png",
+      "sha256": "e06219e73fa9015f53c7668e23fb4d675f1b67dd370b169d463dea07cd0cbb51",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Chun_Doo_hwan_01/textures/pro.png",
+      "sha256": "717d6a6a7df1d39faa9c1b1d4354114d7a26ee913361b16d282565c59d68b05e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Chun_Doo_hwan_01/textures/unwarp.png",
+      "sha256": "b34177cd81c7ff9f9802f45686b31eed2da61438fc2dc800ad4af43e9019e94d",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Chun_Doo_hwan_01/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

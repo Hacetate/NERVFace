@@ -1,0 +1,109 @@
+{
+  "selectionId": "08_avatar_part4_bald/Kara_02",
+  "archiveScene": "cases/08_avatar_part4_bald/Kara_02/scene/final.blend",
+  "sceneSHA256": "cbabfb60b65e11aa27dbc4bde7acc11470280ba2fa8c69c13a8821621ccdc7fc",
+  "images": {
+    "input": {
+      "archivePath": "cases/08_avatar_part4_bald/Kara_02/images/input.png",
+      "sha256": "0c7aabe203cabdcec08bf350224bb4cfaea707775ed475051e53206c974fd972",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/08_avatar_part4_bald/Kara_02/images/bald.png",
+      "sha256": "51c695beca9dc1b3784814a708afab50f55514504d1f1058388e533d2d846161",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/08_avatar_part4_bald/Kara_02/images/render.png",
+      "sha256": "bde020e5e29dedb18c95078fcb1ef870505f8f9d5652f04a1bb7e7e40aaa4e08",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/08_avatar_part4_bald/Kara_02/images/mesh.png",
+      "sha256": "ed9c2ff5bf421921644a7ac885c66d881ac16ed6acaed7f5b75e392a90e02707",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/08_avatar_part4_bald/Kara_02/textures/uniform.png",
+      "sha256": "f553d82d8d47cf1061d2f287cbe503caf2d33fd0617dc3f2d158264c1ee56372",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/08_avatar_part4_bald/Kara_02/textures/pro.png",
+      "sha256": "247979e31169362d4fac60f85fa93034ef1383e9db46e9de5f10800645ccf19e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/08_avatar_part4_bald/Kara_02/textures/unwarp.png",
+      "sha256": "5babd45d2cf01595bc8b46b4bca814a0517124b76e1109118fcab56d18afd903",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/08_avatar_part4_bald/Kara_02/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

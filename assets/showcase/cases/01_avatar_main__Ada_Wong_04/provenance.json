@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Ada_Wong_04",
+  "archiveScene": "cases/01_avatar_main/Ada_Wong_04/scene/final.blend",
+  "sceneSHA256": "29085c86ac2a5831e9514bbebb6f7d71c2751d616d7f9096abc2245c7e93d229",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Ada_Wong_04/images/input.png",
+      "sha256": "f832db9f3e470d319f9046841d9a14c18e2ea5d0fb32657f7c7e12e86b3f0de4",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Ada_Wong_04/images/bald.png",
+      "sha256": "d458760bf5ce5433e25bb61066d618039cca69e4d3fdffa29012f86b5ce8d954",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Ada_Wong_04/images/render.png",
+      "sha256": "88b1f11a405b76f33c64e8723860c5b687305e9a35197119d3a965f256fe3650",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Ada_Wong_04/images/mesh.png",
+      "sha256": "4b566b36f67dcc691a49b9984f6c328e8a3396d321db8984d4362c78b2715a6e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Ada_Wong_04/textures/uniform.png",
+      "sha256": "6dde2340333ec246123f3e3c956bcbd3d44b0c7e90aaf7d1b6979cef40421810",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Ada_Wong_04/textures/pro.png",
+      "sha256": "6f35aa2b3777fcbbab341c9ebcab9787d4630f21fc0c6f465b0f0baec5ae9f13",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Ada_Wong_04/textures/unwarp.png",
+      "sha256": "3a8726f5fd2b672e50b30d9dd87d47832fc2380b116a131995eee0f75d911517",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Ada_Wong_04/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

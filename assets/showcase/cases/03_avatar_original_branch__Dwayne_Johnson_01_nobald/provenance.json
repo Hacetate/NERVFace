@@ -1,0 +1,109 @@
+{
+  "selectionId": "03_avatar_original_branch/Dwayne_Johnson_01_nobald",
+  "archiveScene": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/scene/final.blend",
+  "sceneSHA256": "f6fd8d97b5b9b1ad9615bf609a5f80caa3dfce55118d61a67290e46ab3fb73d1",
+  "images": {
+    "input": {
+      "archivePath": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/input.png",
+      "sha256": "921aaeb6517fbe2e65cb7675a39c870a9abb98c88600861836499cb468321014",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/bald.png",
+      "sha256": "22d314189165fd9a2f93a9d6ecf2971d6f5dd4b5fbc96c20f6beeb808be26a16",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/render.png",
+      "sha256": "ac2c103b1d947a869508c90aa54acd8d3eca613dbe2016c72ae60558b62a2a4e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/mesh.png",
+      "sha256": "d6003305422025518024088066850b444117daf8a4576325af1c47678f58862a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/textures/uniform.png",
+      "sha256": "352fcd985867cc91be4687a241feac4b1220a96f2c506067003bd78395f0ea2f",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/textures/pro.png",
+      "sha256": "22c0ffeccbf03b6bd44246ef18fa20abe3d5408ee874118dca15346559906118",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/textures/unwarp.png",
+      "sha256": "554c0dfcc29b302e8c6518d4894fd95ddc6d6671e7ee20a2abc9b0af1acb69ea",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

@@ -1,0 +1,2133 @@
+[
+  {
+    "id": "01_avatar_main__Ada_Wong_04",
+    "selectionId": "01_avatar_main/Ada_Wong_04",
+    "name": "Ada Wong 04",
+    "label": "Ada Wong 04",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": true,
+    "featureOrder": 2,
+    "order": 0,
+    "root": "assets/showcase/cases/01_avatar_main__Ada_Wong_04",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Barack_Obama_01",
+    "selectionId": "01_avatar_main/Barack_Obama_01",
+    "name": "Barack Obama 01",
+    "label": "Barack Obama 01",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": true,
+    "featureOrder": 1,
+    "order": 1,
+    "root": "assets/showcase/cases/01_avatar_main__Barack_Obama_01",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Barack_Obama_03",
+    "selectionId": "01_avatar_main/Barack_Obama_03",
+    "name": "Barack Obama 03",
+    "label": "Barack Obama 03",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 2,
+    "root": "assets/showcase/cases/01_avatar_main__Barack_Obama_03",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Bill_Clinton_03",
+    "selectionId": "01_avatar_main/Bill_Clinton_03",
+    "name": "Bill Clinton 03",
+    "label": "Bill Clinton 03",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 3,
+    "root": "assets/showcase/cases/01_avatar_main__Bill_Clinton_03",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Chiang_Kai_shek_01",
+    "selectionId": "01_avatar_main/Chiang_Kai_shek_01",
+    "name": "Chiang Kai shek 01",
+    "label": "Chiang Kai shek 01",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 4,
+    "root": "assets/showcase/cases/01_avatar_main__Chiang_Kai_shek_01",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Chun_Doo_hwan_01",
+    "selectionId": "01_avatar_main/Chun_Doo_hwan_01",
+    "name": "Chun Doo hwan 01",
+    "label": "Chun Doo hwan 01",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 5,
+    "root": "assets/showcase/cases/01_avatar_main__Chun_Doo_hwan_01",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Cristiano_Ronaldo_01",
+    "selectionId": "01_avatar_main/Cristiano_Ronaldo_01",
+    "name": "Cristiano Ronaldo 01",
+    "label": "Cristiano Ronaldo 01",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 6,
+    "root": "assets/showcase/cases/01_avatar_main__Cristiano_Ronaldo_01",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Cristiano_Ronaldo_04",
+    "selectionId": "01_avatar_main/Cristiano_Ronaldo_04",
+    "name": "Cristiano Ronaldo 04",
+    "label": "Cristiano Ronaldo 04",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 7,
+    "root": "assets/showcase/cases/01_avatar_main__Cristiano_Ronaldo_04",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Elon_Musk_02",
+    "selectionId": "01_avatar_main/Elon_Musk_02",
+    "name": "Elon Musk 02",
+    "label": "Elon Musk 02",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 8,
+    "root": "assets/showcase/cases/01_avatar_main__Elon_Musk_02",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Emilia_Clarke_02",
+    "selectionId": "01_avatar_main/Emilia_Clarke_02",
+    "name": "Emilia Clarke 02",
+    "label": "Emilia Clarke 02",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": true,
+    "featureOrder": 4,
+    "order": 9,
+    "root": "assets/showcase/cases/01_avatar_main__Emilia_Clarke_02",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__IShowSpeed_03",
+    "selectionId": "01_avatar_main/IShowSpeed_03",
+    "name": "IShowSpeed 03",
+    "label": "IShowSpeed 03",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 10,
+    "root": "assets/showcase/cases/01_avatar_main__IShowSpeed_03",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Jackie_Chan_03",
+    "selectionId": "01_avatar_main/Jackie_Chan_03",
+    "name": "Jackie Chan 03",
+    "label": "Jackie Chan 03",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 11,
+    "root": "assets/showcase/cases/01_avatar_main__Jackie_Chan_03",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Joe_Biden_01",
+    "selectionId": "01_avatar_main/Joe_Biden_01",
+    "name": "Joe Biden 01",
+    "label": "Joe Biden 01",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 12,
+    "root": "assets/showcase/cases/01_avatar_main__Joe_Biden_01",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__John_Cena_01",
+    "selectionId": "01_avatar_main/John_Cena_01",
+    "name": "John Cena 01",
+    "label": "John Cena 01",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 13,
+    "root": "assets/showcase/cases/01_avatar_main__John_Cena_01",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__John_Cena_03",
+    "selectionId": "01_avatar_main/John_Cena_03",
+    "name": "John Cena 03",
+    "label": "John Cena 03",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 14,
+    "root": "assets/showcase/cases/01_avatar_main__John_Cena_03",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Lee_Hsien_Loong_05",
+    "selectionId": "01_avatar_main/Lee_Hsien_Loong_05",
+    "name": "Lee Hsien Loong 05",
+    "label": "Lee Hsien Loong 05",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 15,
+    "root": "assets/showcase/cases/01_avatar_main__Lee_Hsien_Loong_05",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Leon_S_Kennedy_01",
+    "selectionId": "01_avatar_main/Leon_S_Kennedy_01",
+    "name": "Leon S Kennedy 01",
+    "label": "Leon S Kennedy 01",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 16,
+    "root": "assets/showcase/cases/01_avatar_main__Leon_S_Kennedy_01",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Leonardo_DiCaprio_04",
+    "selectionId": "01_avatar_main/Leonardo_DiCaprio_04",
+    "name": "Leonardo DiCaprio 04",
+    "label": "Leonardo DiCaprio 04",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 17,
+    "root": "assets/showcase/cases/01_avatar_main__Leonardo_DiCaprio_04",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Liu_Qiangdong_03",
+    "selectionId": "01_avatar_main/Liu_Qiangdong_03",
+    "name": "Liu Qiangdong 03",
+    "label": "Liu Qiangdong 03",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 18,
+    "root": "assets/showcase/cases/01_avatar_main__Liu_Qiangdong_03",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Rowan_Atkinson_02",
+    "selectionId": "01_avatar_main/Rowan_Atkinson_02",
+    "name": "Rowan Atkinson 02",
+    "label": "Rowan Atkinson 02",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 19,
+    "root": "assets/showcase/cases/01_avatar_main__Rowan_Atkinson_02",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Rowan_Atkinson_03",
+    "selectionId": "01_avatar_main/Rowan_Atkinson_03",
+    "name": "Rowan Atkinson 03",
+    "label": "Rowan Atkinson 03",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 20,
+    "root": "assets/showcase/cases/01_avatar_main__Rowan_Atkinson_03",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "01_avatar_main__Yao_Ming_02",
+    "selectionId": "01_avatar_main/Yao_Ming_02",
+    "name": "Yao Ming 02",
+    "label": "Yao Ming 02",
+    "category": "Portraits",
+    "tags": [
+      "Portraits",
+      "Prepared input"
+    ],
+    "group": "01_avatar_main",
+    "featured": true,
+    "featureOrder": 8,
+    "order": 21,
+    "root": "assets/showcase/cases/01_avatar_main__Yao_Ming_02",
+    "batch": "01_avatar_main",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "02_avatar_added__Jensen_Huang_01",
+    "selectionId": "02_avatar_added/Jensen_Huang_01",
+    "name": "Jensen Huang 01",
+    "label": "Jensen Huang 01",
+    "category": "Additional portraits",
+    "tags": [
+      "Additional portraits",
+      "Prepared input"
+    ],
+    "group": "02_avatar_added",
+    "featured": true,
+    "featureOrder": 6,
+    "order": 22,
+    "root": "assets/showcase/cases/02_avatar_added__Jensen_Huang_01",
+    "batch": "02_avatar_added",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "03_avatar_original_branch__Dwayne_Johnson_01_nobald",
+    "selectionId": "03_avatar_original_branch/Dwayne_Johnson_01_nobald",
+    "name": "Dwayne Johnson 01 nobald",
+    "label": "Dwayne Johnson 01 nobald",
+    "category": "Original-input reconstruction",
+    "tags": [
+      "Original-input reconstruction",
+      "Original input"
+    ],
+    "group": "03_avatar_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 23,
+    "root": "assets/showcase/cases/03_avatar_original_branch__Dwayne_Johnson_01_nobald",
+    "batch": "03_avatar_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Bald reference (not the reconstruction input)",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "03_avatar_original_branch__Dwayne_Johnson_02_nobald",
+    "selectionId": "03_avatar_original_branch/Dwayne_Johnson_02_nobald",
+    "name": "Dwayne Johnson 02 nobald",
+    "label": "Dwayne Johnson 02 nobald",
+    "category": "Original-input reconstruction",
+    "tags": [
+      "Original-input reconstruction",
+      "Original input"
+    ],
+    "group": "03_avatar_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 24,
+    "root": "assets/showcase/cases/03_avatar_original_branch__Dwayne_Johnson_02_nobald",
+    "batch": "03_avatar_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Bald reference (not the reconstruction input)",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "04_cvpr9__Female_001778",
+    "selectionId": "04_cvpr9/Female_001778",
+    "name": "Female 001778",
+    "label": "Female 001778",
+    "category": "CVPR portraits",
+    "tags": [
+      "CVPR portraits",
+      "Prepared input"
+    ],
+    "group": "04_cvpr9",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 25,
+    "root": "assets/showcase/cases/04_cvpr9__Female_001778",
+    "batch": "04_cvpr9",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "04_cvpr9__Male_000016",
+    "selectionId": "04_cvpr9/Male_000016",
+    "name": "Male 000016",
+    "label": "Male 000016",
+    "category": "CVPR portraits",
+    "tags": [
+      "CVPR portraits",
+      "Prepared input"
+    ],
+    "group": "04_cvpr9",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 26,
+    "root": "assets/showcase/cases/04_cvpr9__Male_000016",
+    "batch": "04_cvpr9",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "04_cvpr9__Male_000221",
+    "selectionId": "04_cvpr9/Male_000221",
+    "name": "Male 000221",
+    "label": "Male 000221",
+    "category": "CVPR portraits",
+    "tags": [
+      "CVPR portraits",
+      "Prepared input"
+    ],
+    "group": "04_cvpr9",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 27,
+    "root": "assets/showcase/cases/04_cvpr9__Male_000221",
+    "batch": "04_cvpr9",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "04_cvpr9__Male_005382",
+    "selectionId": "04_cvpr9/Male_005382",
+    "name": "Male 005382",
+    "label": "Male 005382",
+    "category": "CVPR portraits",
+    "tags": [
+      "CVPR portraits",
+      "Prepared input"
+    ],
+    "group": "04_cvpr9",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 28,
+    "root": "assets/showcase/cases/04_cvpr9__Male_005382",
+    "batch": "04_cvpr9",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "04_cvpr9__Male_27",
+    "selectionId": "04_cvpr9/Male_27",
+    "name": "Male 27",
+    "label": "Male 27",
+    "category": "CVPR portraits",
+    "tags": [
+      "CVPR portraits",
+      "Prepared input"
+    ],
+    "group": "04_cvpr9",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 29,
+    "root": "assets/showcase/cases/04_cvpr9__Male_27",
+    "batch": "04_cvpr9",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "04_cvpr9__Male_28",
+    "selectionId": "04_cvpr9/Male_28",
+    "name": "Male 28",
+    "label": "Male 28",
+    "category": "CVPR portraits",
+    "tags": [
+      "CVPR portraits",
+      "Prepared input"
+    ],
+    "group": "04_cvpr9",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 30,
+    "root": "assets/showcase/cases/04_cvpr9__Male_28",
+    "batch": "04_cvpr9",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "04_cvpr9__Male_29",
+    "selectionId": "04_cvpr9/Male_29",
+    "name": "Male 29",
+    "label": "Male 29",
+    "category": "CVPR portraits",
+    "tags": [
+      "CVPR portraits",
+      "Prepared input"
+    ],
+    "group": "04_cvpr9",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 31,
+    "root": "assets/showcase/cases/04_cvpr9__Male_29",
+    "batch": "04_cvpr9",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "04_cvpr9__Male_30",
+    "selectionId": "04_cvpr9/Male_30",
+    "name": "Male 30",
+    "label": "Male 30",
+    "category": "CVPR portraits",
+    "tags": [
+      "CVPR portraits",
+      "Prepared input"
+    ],
+    "group": "04_cvpr9",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 32,
+    "root": "assets/showcase/cases/04_cvpr9__Male_30",
+    "batch": "04_cvpr9",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "05_teaser_final__homelander",
+    "selectionId": "05_teaser_final/homelander",
+    "name": "homelander",
+    "label": "homelander",
+    "category": "Teaser collection",
+    "tags": [
+      "Teaser collection",
+      "Prepared input"
+    ],
+    "group": "05_teaser_final",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 33,
+    "root": "assets/showcase/cases/05_teaser_final__homelander",
+    "batch": "05_teaser_final",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "05_teaser_final__male_z_13",
+    "selectionId": "05_teaser_final/male_z_13",
+    "name": "male z 13",
+    "label": "male z 13",
+    "category": "Teaser collection",
+    "tags": [
+      "Teaser collection",
+      "Prepared input"
+    ],
+    "group": "05_teaser_final",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 34,
+    "root": "assets/showcase/cases/05_teaser_final__male_z_13",
+    "batch": "05_teaser_final",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "05_teaser_final__sam",
+    "selectionId": "05_teaser_final/sam",
+    "name": "sam",
+    "label": "sam",
+    "category": "Teaser collection",
+    "tags": [
+      "Teaser collection",
+      "Prepared input"
+    ],
+    "group": "05_teaser_final",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 35,
+    "root": "assets/showcase/cases/05_teaser_final__sam",
+    "batch": "05_teaser_final",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "05_teaser_final__trump2",
+    "selectionId": "05_teaser_final/trump2",
+    "name": "trump2",
+    "label": "trump2",
+    "category": "Teaser collection",
+    "tags": [
+      "Teaser collection",
+      "Prepared input"
+    ],
+    "group": "05_teaser_final",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 36,
+    "root": "assets/showcase/cases/05_teaser_final__trump2",
+    "batch": "05_teaser_final",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "05_teaser_final__trump3",
+    "selectionId": "05_teaser_final/trump3",
+    "name": "trump3",
+    "label": "trump3",
+    "category": "Teaser collection",
+    "tags": [
+      "Teaser collection",
+      "Prepared input"
+    ],
+    "group": "05_teaser_final",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 37,
+    "root": "assets/showcase/cases/05_teaser_final__trump3",
+    "batch": "05_teaser_final",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "05_teaser_final__xjy",
+    "selectionId": "05_teaser_final/xjy",
+    "name": "xjy",
+    "label": "xjy",
+    "category": "Teaser collection",
+    "tags": [
+      "Teaser collection",
+      "Prepared input"
+    ],
+    "group": "05_teaser_final",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 38,
+    "root": "assets/showcase/cases/05_teaser_final__xjy",
+    "batch": "05_teaser_final",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "05_teaser_final__zkbg",
+    "selectionId": "05_teaser_final/zkbg",
+    "name": "zkbg",
+    "label": "zkbg",
+    "category": "Teaser collection",
+    "tags": [
+      "Teaser collection",
+      "Prepared input"
+    ],
+    "group": "05_teaser_final",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 39,
+    "root": "assets/showcase/cases/05_teaser_final__zkbg",
+    "batch": "05_teaser_final",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "06_avatar_part3_bald__Junpei_01",
+    "selectionId": "06_avatar_part3_bald/Junpei_01",
+    "name": "Junpei 01",
+    "label": "Junpei 01",
+    "category": "Portraits \u00b7 Part 3",
+    "tags": [
+      "Portraits \u00b7 Part 3",
+      "Prepared input"
+    ],
+    "group": "06_avatar_part3_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 40,
+    "root": "assets/showcase/cases/06_avatar_part3_bald__Junpei_01",
+    "batch": "06_avatar_part3_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "06_avatar_part3_bald__Junpei_03",
+    "selectionId": "06_avatar_part3_bald/Junpei_03",
+    "name": "Junpei 03",
+    "label": "Junpei 03",
+    "category": "Portraits \u00b7 Part 3",
+    "tags": [
+      "Portraits \u00b7 Part 3",
+      "Prepared input"
+    ],
+    "group": "06_avatar_part3_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 41,
+    "root": "assets/showcase/cases/06_avatar_part3_bald__Junpei_03",
+    "batch": "06_avatar_part3_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "06_avatar_part3_bald__Tokugawa_06_face_AI_v2",
+    "selectionId": "06_avatar_part3_bald/Tokugawa_06_face_AI_v2",
+    "name": "Tokugawa 06 face AI v2",
+    "label": "Tokugawa 06 face AI v2",
+    "category": "Portraits \u00b7 Part 3",
+    "tags": [
+      "Portraits \u00b7 Part 3",
+      "Prepared input"
+    ],
+    "group": "06_avatar_part3_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 42,
+    "root": "assets/showcase/cases/06_avatar_part3_bald__Tokugawa_06_face_AI_v2",
+    "batch": "06_avatar_part3_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "06_avatar_part3_bald__yajuu_01",
+    "selectionId": "06_avatar_part3_bald/yajuu_01",
+    "name": "yajuu 01",
+    "label": "yajuu 01",
+    "category": "Portraits \u00b7 Part 3",
+    "tags": [
+      "Portraits \u00b7 Part 3",
+      "Prepared input"
+    ],
+    "group": "06_avatar_part3_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 43,
+    "root": "assets/showcase/cases/06_avatar_part3_bald__yajuu_01",
+    "batch": "06_avatar_part3_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "07_avatar_part3_original_branch__Andras_Arato_02_v2_nobald",
+    "selectionId": "07_avatar_part3_original_branch/Andras_Arato_02_v2_nobald",
+    "name": "Andras Arato 02 v2 nobald",
+    "label": "Andras Arato 02 v2 nobald",
+    "category": "Original-input reconstruction \u00b7 Part 3",
+    "tags": [
+      "Original-input reconstruction \u00b7 Part 3",
+      "Original input"
+    ],
+    "group": "07_avatar_part3_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 44,
+    "root": "assets/showcase/cases/07_avatar_part3_original_branch__Andras_Arato_02_v2_nobald",
+    "batch": "07_avatar_part3_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Original-image reconstruction",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald",
+    "selectionId": "07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald",
+    "name": "Feng Ge Wang Ming Tian Ya 04 v2 nobald",
+    "label": "Feng Ge Wang Ming Tian Ya 04 v2 nobald",
+    "category": "Original-input reconstruction \u00b7 Part 3",
+    "tags": [
+      "Original-input reconstruction \u00b7 Part 3",
+      "Original input"
+    ],
+    "group": "07_avatar_part3_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 45,
+    "root": "assets/showcase/cases/07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_04_v2_nobald",
+    "batch": "07_avatar_part3_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Original-image reconstruction",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_12_v2_nobald",
+    "selectionId": "07_avatar_part3_original_branch/Feng_Ge_Wang_Ming_Tian_Ya_12_v2_nobald",
+    "name": "Feng Ge Wang Ming Tian Ya 12 v2 nobald",
+    "label": "Feng Ge Wang Ming Tian Ya 12 v2 nobald",
+    "category": "Original-input reconstruction \u00b7 Part 3",
+    "tags": [
+      "Original-input reconstruction \u00b7 Part 3",
+      "Original input"
+    ],
+    "group": "07_avatar_part3_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 46,
+    "root": "assets/showcase/cases/07_avatar_part3_original_branch__Feng_Ge_Wang_Ming_Tian_Ya_12_v2_nobald",
+    "batch": "07_avatar_part3_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Original-image reconstruction",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald",
+    "selectionId": "07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald",
+    "name": "Leonardo DiCaprio 01 v2 nobald",
+    "label": "Leonardo DiCaprio 01 v2 nobald",
+    "category": "Original-input reconstruction \u00b7 Part 3",
+    "tags": [
+      "Original-input reconstruction \u00b7 Part 3",
+      "Original input"
+    ],
+    "group": "07_avatar_part3_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 47,
+    "root": "assets/showcase/cases/07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald",
+    "batch": "07_avatar_part3_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Original-image reconstruction",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "07_avatar_part3_original_branch__Leonardo_DiCaprio_02_v2_nobald",
+    "selectionId": "07_avatar_part3_original_branch/Leonardo_DiCaprio_02_v2_nobald",
+    "name": "Leonardo DiCaprio 02 v2 nobald",
+    "label": "Leonardo DiCaprio 02 v2 nobald",
+    "category": "Original-input reconstruction \u00b7 Part 3",
+    "tags": [
+      "Original-input reconstruction \u00b7 Part 3",
+      "Original input"
+    ],
+    "group": "07_avatar_part3_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 48,
+    "root": "assets/showcase/cases/07_avatar_part3_original_branch__Leonardo_DiCaprio_02_v2_nobald",
+    "batch": "07_avatar_part3_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Original-image reconstruction",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "07_avatar_part3_original_branch__Yao_Ming_01_v2_nobald",
+    "selectionId": "07_avatar_part3_original_branch/Yao_Ming_01_v2_nobald",
+    "name": "Yao Ming 01 v2 nobald",
+    "label": "Yao Ming 01 v2 nobald",
+    "category": "Original-input reconstruction \u00b7 Part 3",
+    "tags": [
+      "Original-input reconstruction \u00b7 Part 3",
+      "Original input"
+    ],
+    "group": "07_avatar_part3_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 49,
+    "root": "assets/showcase/cases/07_avatar_part3_original_branch__Yao_Ming_01_v2_nobald",
+    "batch": "07_avatar_part3_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Original-image reconstruction",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "07_avatar_part3_original_branch__Yao_Ming_03_v2_nobald",
+    "selectionId": "07_avatar_part3_original_branch/Yao_Ming_03_v2_nobald",
+    "name": "Yao Ming 03 v2 nobald",
+    "label": "Yao Ming 03 v2 nobald",
+    "category": "Original-input reconstruction \u00b7 Part 3",
+    "tags": [
+      "Original-input reconstruction \u00b7 Part 3",
+      "Original input"
+    ],
+    "group": "07_avatar_part3_original_branch",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 50,
+    "root": "assets/showcase/cases/07_avatar_part3_original_branch__Yao_Ming_03_v2_nobald",
+    "batch": "07_avatar_part3_original_branch",
+    "version": "Final registered Pro",
+    "prepLabel": "Original-image reconstruction",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "Aerith_01",
+    "selectionId": "08_avatar_part4_bald/Aerith_01",
+    "name": "Aerith 01",
+    "label": "Aerith 01",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": true,
+    "featureOrder": 0,
+    "order": 51,
+    "root": "assets/showcase/cases/Aerith_01",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "08_avatar_part4_bald__Aerith_02",
+    "selectionId": "08_avatar_part4_bald/Aerith_02",
+    "name": "Aerith 02",
+    "label": "Aerith 02",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 52,
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Aerith_02",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "08_avatar_part4_bald__Connor_01",
+    "selectionId": "08_avatar_part4_bald/Connor_01",
+    "name": "Connor 01",
+    "label": "Connor 01",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": true,
+    "featureOrder": 5,
+    "order": 53,
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Connor_01",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "08_avatar_part4_bald__Connor_03",
+    "selectionId": "08_avatar_part4_bald/Connor_03",
+    "name": "Connor 03",
+    "label": "Connor 03",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 54,
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Connor_03",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "08_avatar_part4_bald__Jill_Valentine_01",
+    "selectionId": "08_avatar_part4_bald/Jill_Valentine_01",
+    "name": "Jill Valentine 01",
+    "label": "Jill Valentine 01",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 55,
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Jill_Valentine_01",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "08_avatar_part4_bald__Jill_Valentine_02",
+    "selectionId": "08_avatar_part4_bald/Jill_Valentine_02",
+    "name": "Jill Valentine 02",
+    "label": "Jill Valentine 02",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 56,
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Jill_Valentine_02",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "08_avatar_part4_bald__Kara_02",
+    "selectionId": "08_avatar_part4_bald/Kara_02",
+    "name": "Kara 02",
+    "label": "Kara 02",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 57,
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Kara_02",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "08_avatar_part4_bald__Markus_01",
+    "selectionId": "08_avatar_part4_bald/Markus_01",
+    "name": "Markus 01",
+    "label": "Markus 01",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 58,
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Markus_01",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "08_avatar_part4_bald__Markus_03",
+    "selectionId": "08_avatar_part4_bald/Markus_03",
+    "name": "Markus 03",
+    "label": "Markus 03",
+    "category": "CG characters",
+    "tags": [
+      "CG characters",
+      "Prepared input"
+    ],
+    "group": "08_avatar_part4_bald",
+    "featured": false,
+    "featureOrder": 99,
+    "order": 59,
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Markus_03",
+    "batch": "08_avatar_part4_bald",
+    "version": "Final registered Pro",
+    "prepLabel": "Prepared reconstruction input",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    },
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json"
+  },
+  {
+    "id": "09_avatar_part4_original_branch__IMAGE__7__nobald",
+    "selectionId": "09_avatar_part4_original_branch/IMAGE__7__nobald",
+    "name": "IMAGE  7  nobald",
+    "label": "IMAGE  7  nobald",
+    "order": 60,
+    "group": "09_avatar_part4_original_branch",
+    "root": "assets/showcase/cases/09_avatar_part4_original_branch__IMAGE__7__nobald",
+    "images": {
+      "input": "input.webp",
+      "bald": "bald.webp",
+      "render": "render.webp",
+      "mesh": "mesh.webp",
+      "uv/uniform": "uv/uniform.webp",
+      "uv/pro": "uv/pro.webp",
+      "uv/unwarp": "uv/unwarp.webp"
+    },
+    "model": "model.glb",
+    "scene": "scene.json",
+    "category": "Original-input reconstruction",
+    "tags": [
+      "Original-input reconstruction"
+    ],
+    "featured": false,
+    "prepLabel": "Original-image reconstruction",
+    "comparison": {
+      "width": 1024,
+      "height": 1024,
+      "crop": null
+    }
+  }
+]

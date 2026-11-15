@@ -51,7 +51,7 @@ function setPublicationInfo() {
     $('#copyCitation').disabled = false;
   }
   const video = mediaUrl(config.teaserVideo);
-  if (video) { $('#videoSlot').hidden = false; $('#teaserVideo').src = video; }
+  if (video && $('#videoSlot')) { $('#videoSlot').hidden = false; $('#teaserVideo').src = video; }
   const method = mediaUrl(config.methodFigure);
   if (method) {
     $('#methodPlaceholder').hidden = true; $('#methodDraftNote').hidden = true;
@@ -128,6 +128,7 @@ document.querySelectorAll('.compare-modes button').forEach((button) => {
 });
 
 let cases = [];
+let assetCases = [];
 let selectedHero = 1;
 let selectedAsset = 1;
 let heroSequence = 0;
@@ -152,11 +153,11 @@ syncRenderControls();
 function selectButtons(container, index) {
   container.querySelectorAll('button').forEach((button, i) => button.setAttribute('aria-pressed', String(i === index)));
 }
-function makeCaseButtons(container, callback) {
-  cases.forEach((item, index) => {
+function makeCaseButtons(container, callback, collection=cases, active=selectedHero) {
+  collection.forEach((item, index) => {
     const button = document.createElement('button'); button.className = 'case-chip';
-    button.setAttribute('aria-pressed', String(index === selectedHero)); button.setAttribute('aria-label', `Select ${item.label}`);
-    const image = new Image(); image.src = `${item.root}/thumb.webp`; image.alt = ''; image.width = 128; image.height = 128;
+    button.setAttribute('aria-pressed', String(index === active)); button.setAttribute('aria-label', `Select ${item.label}`);
+    const image = new Image(); image.loading='lazy'; image.src = `${item.root}/${item.images?.input || 'thumb.webp'}`; image.alt = ''; image.width = 128; image.height = 128;
     const label = document.createElement('span'); label.textContent = item.label;
     button.append(image, label); button.addEventListener('click', () => callback(index)); container.append(button);
   });
@@ -193,7 +194,8 @@ function viewerError(message) {
   $('#viewerFrame').dataset.state = 'error'; $('#viewerStatusText').textContent = message; $('#retryViewer').hidden = false;
 }
 async function loadCase(index) {
-  await viewer.load(`${cases[index].root}/full.gltf`);
+  const item=assetCases[index];
+  await viewer.load(`${item.root}/${item.model}`, 'viewer-scene.json');
   if (index === selectedAsset) showSceneReport();
 }
 async function ensureViewer() {
@@ -201,7 +203,7 @@ async function ensureViewer() {
   if (viewer) return viewer;
   viewerPromise = (async () => {
     try {
-      const module = await import('./viewer.bundle.js');
+      const module = await import('./viewer.bundle.js?v=viewer-recovery7');
       viewer = await module.createViewer({
         host: $('#viewerCanvas'), initialRenderMode: selectedRenderMode,
         onState(state, text, progress = 0) {
@@ -231,14 +233,54 @@ async function ensureViewer() {
   return viewerPromise;
 }
 async function selectAsset(index) {
-  selectedAsset = index; const item = cases[index];
+  selectedAsset = index; const item = assetCases[index];
+  $('#assetCaseSelect').value=String(index);
   selectButtons($('#assetCases'), index);
   $('#assetInput').src = `${item.root}/input.webp`; $('#assetInput').alt = `${item.label} input portrait`;
-  $('#assetInputLabel').textContent = item.label; $('#viewerTitle').textContent = `${item.label} / ${item.sourceName}`;
+  $('#assetInputLabel').textContent = item.label; $('#viewerTitle').textContent = `${String(index+1).padStart(2,'0')} / ${assetCases.length} · ${item.label}`;
   try {
     if (viewer) await loadCase(index);
     else await ensureViewer();
   } catch (error) { if (index === selectedAsset) viewerError(error.message); }
+}
+let recoveryPromise = null;
+function recoverViewer() {
+  if (recoveryPromise) return recoveryPromise;
+  const controls = [...document.querySelectorAll('#assets button, #assets select, #assets input')];
+  const disabled = controls.map(control => control.disabled);
+  controls.forEach(control => { control.disabled = true; });
+  $('#reloadViewer').textContent = 'Reloading…';
+  recoveryPromise = (async () => {
+    try {
+      if (viewerPromise) await viewerPromise;
+      const previous = viewer;
+      const report = previous?.getReport();
+      viewer = null;
+      viewerPromise = null;
+      $('#viewerFrame').dataset.state = 'loading';
+      $('#viewerStatusText').textContent = 'Rebuilding the viewer and reloading textures…';
+      $('#retryViewer').hidden = true;
+      // Recreate GPU resources as well as the model: a material refresh alone
+      // cannot recover stale atlas bindings or a lost WebGPU device.
+      await previous?.dispose().catch(error => console.warn('Previous viewer cleanup:', error));
+      const instance = await ensureViewer();
+      if (instance && report?.sourceURL) {
+        instance.setCameraMatrix(report.camera.matrixWorld);
+        if (report.environment.id !== 'source') {
+          instance.setEnvironmentIntensity(report.environment.intensity);
+          instance.setEnvironmentRotation(report.environment.rotationDegrees);
+        }
+        showSceneReport();
+      }
+    } catch (error) {
+      viewerError(`Viewer recovery failed: ${error.message} Try Reload viewer again.`);
+    } finally {
+      controls.forEach((control, i) => { control.disabled = disabled[i]; });
+      $('#reloadViewer').textContent = '↻ Reload viewer';
+      recoveryPromise = null;
+    }
+  })();
+  return recoveryPromise;
 }
 // Lighting environments. 'source' is the inherited Blender world + area lights.
 let environments = [];
@@ -360,7 +402,8 @@ $('#fullscreenButton').addEventListener('click', async () => {
   catch { notify('Fullscreen is not supported in this browser.'); }
 });
 if (!document.fullscreenEnabled) $('#fullscreenButton').hidden = true;
-$('#retryViewer').addEventListener('click', () => location.reload());
+$('#retryViewer').addEventListener('click', recoverViewer);
+$('#reloadViewer').addEventListener('click', recoverViewer);
 
 async function initializeCases() {
   try {
@@ -369,7 +412,17 @@ async function initializeCases() {
     cases = await response.json();
     if (!cases.length) throw new Error('No cases available');
     makeCaseButtons($('#heroCases'), selectHero);
-    makeCaseButtons($('#assetCases'), selectAsset);
+    const assetResponse=await fetch('assets/showcase/cases.json');
+    if(!assetResponse.ok) throw new Error('Missing full character collection');
+    assetCases=(await assetResponse.json()).map(item=>({...item,sourceName:item.selectionId.split('/').pop()}));
+    if(!assetCases.length) throw new Error('No 3D characters available');
+    selectedAsset=Math.max(0,assetCases.findIndex(item=>item.sourceName===cases[selectedHero]?.sourceName));
+    makeCaseButtons($('#assetCases'), selectAsset, assetCases, selectedAsset);
+    $('#assetCaseSelect').replaceChildren(...assetCases.map((item,index)=>{
+      const option=document.createElement('option'); option.value=String(index); option.textContent=`${String(index+1).padStart(2,'0')} · ${item.label}`; return option;
+    }));
+    $('#assetCaseSelect').value=String(selectedAsset);
+    $('#assetCaseSelect').addEventListener('change',event=>selectAsset(Number(event.target.value)));
     cases.forEach((item, index) => {
       const button = document.createElement('button');
       button.textContent = String(index + 1).padStart(2, '0');
@@ -379,28 +432,12 @@ async function initializeCases() {
       $('#stageCases').append(button);
     });
     selectedHero = Math.min(selectedHero, cases.length - 1);
-    selectedAsset = selectedHero;
     await selectHero(selectedHero);
-    $('#assetInput').src = `${cases[selectedAsset].root}/input.webp`;
-    $('#assetInputLabel').textContent = cases[selectedAsset].label;
-    $('#viewerTitle').textContent = `${cases[selectedAsset].label} / ${cases[selectedAsset].sourceName}`;
+    $('#assetInput').src = `${assetCases[selectedAsset].root}/input.webp`;
+    $('#assetInput').alt = `${assetCases[selectedAsset].label} input portrait`;
+    $('#assetInputLabel').textContent = assetCases[selectedAsset].label;
+    $('#viewerTitle').textContent = `${String(selectedAsset+1).padStart(2,'0')} / ${assetCases.length} · ${assetCases[selectedAsset].label}`;
     selectButtons($('#assetCases'), selectedAsset);
-    for (const [index, item] of cases.entries()) {
-      const figure = document.createElement('figure'); figure.className = 'figure-card';
-      const button = document.createElement('button'); button.className = 'figure-zoom';
-      button.dataset.lightbox = `${item.root}/comparison.webp`; button.dataset.caption = `${item.label} · Registered comparison`;
-      button.setAttribute('aria-label', `Enlarge ${item.label} comparison`);
-      const image = new Image(); image.src = button.dataset.lightbox; image.alt = `${item.label}: photo/appearance and geometry/photo pairs`; image.loading = 'lazy';
-      button.append(image);
-      const caption = document.createElement('figcaption');
-      const label = document.createElement('span'); label.className = 'gallery-case-label'; label.textContent = item.label;
-      const detail = document.createElement('span'); detail.className = 'gallery-detail'; detail.textContent = 'REGISTERED COMPARISON';
-      const open = document.createElement('button'); open.className = 'gallery-view'; open.textContent = 'View in 3D';
-      open.setAttribute('aria-label', `View ${item.label} in 3D`);
-      const arrow = document.createElement('span'); arrow.textContent = '↗'; arrow.setAttribute('aria-hidden', 'true'); open.append(arrow);
-      open.addEventListener('click', () => inspectAsset(index));
-      caption.append(label, detail, open); figure.append(button, caption); $('#galleryGrid').append(figure);
-    }
     const observer = new IntersectionObserver((entries) => {
       if (entries.some((entry) => entry.isIntersecting)) { observer.disconnect(); ensureViewer(); }
     }, { rootMargin: '250px' });
@@ -434,7 +471,9 @@ document.querySelectorAll('[data-presentation]').forEach((button) => {
 });
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 function inspectAsset(index) {
-  selectAsset(index);
+  const assetIndex=assetCases.findIndex(item=>item.sourceName===cases[index].sourceName);
+  if(assetIndex<0)return;
+  selectAsset(assetIndex);
   $('#assets').scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start' });
 }
 $('#inspectCase').addEventListener('click', (event) => {

@@ -1,0 +1,109 @@
+{
+  "selectionId": "08_avatar_part4_bald/Aerith_02",
+  "archiveScene": "cases/08_avatar_part4_bald/Aerith_02/scene/final.blend",
+  "sceneSHA256": "96c05cf85a3b0623a5ecd2b6bb5897ebc67ac380edd3c4492e8f0ec98bd533fc",
+  "images": {
+    "input": {
+      "archivePath": "cases/08_avatar_part4_bald/Aerith_02/images/input.png",
+      "sha256": "9f3e4d4a632dc0ab4fd9d07a99140944b2180fab1947b3e68f0bac914ce921fa",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/08_avatar_part4_bald/Aerith_02/images/bald.png",
+      "sha256": "e5170b4468f549b9e2114f4bd5f6c655db81d2da0fb453a6598316799c975bb5",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/08_avatar_part4_bald/Aerith_02/images/render.png",
+      "sha256": "1eb9c90f1ab8d112932a56d7801476b54c27c050deeaaf86bbf217b43973c683",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/08_avatar_part4_bald/Aerith_02/images/mesh.png",
+      "sha256": "fd8f94bb5e0d2bb5fcf662764822e679eea929ce9c2626189e879ffa2cb5a525",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/08_avatar_part4_bald/Aerith_02/textures/uniform.png",
+      "sha256": "dbafce99e2a65744bda1575f5d3617b2d5033e99af55d83516b258093576d4f2",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/08_avatar_part4_bald/Aerith_02/textures/pro.png",
+      "sha256": "27de40e233d692e2818a92644106aab039310a41b83dec8dee8c33a28c6165d6",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/08_avatar_part4_bald/Aerith_02/textures/unwarp.png",
+      "sha256": "4cff45bc9b7d27aae51486ae3e5674e17ad02cba3f9d2a2c7cd98a372c3ed57c",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/08_avatar_part4_bald/Aerith_02/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

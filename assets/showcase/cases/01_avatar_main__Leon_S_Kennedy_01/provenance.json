@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Leon_S_Kennedy_01",
+  "archiveScene": "cases/01_avatar_main/Leon_S_Kennedy_01/scene/final.blend",
+  "sceneSHA256": "fc206ea83434239ac7ef6fb658e4312fb19c40ebfaf8ff5f88322f54e600d6bc",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Leon_S_Kennedy_01/images/input.png",
+      "sha256": "1d0738c776bc8cfde9429db74839ab01c365881bc6dd4bbc92be06d58b11dc1e",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Leon_S_Kennedy_01/images/bald.png",
+      "sha256": "c52ec7312267a98d94c8487833c8b25e94c219618fa5e1a015360e321f3ef757",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Leon_S_Kennedy_01/images/render.png",
+      "sha256": "250db34190b0e59575acc8ec4b1df65449a8410cc403c3b5fdf704563d1e318b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Leon_S_Kennedy_01/images/mesh.png",
+      "sha256": "732893b32df0b6f6b170f108521bd0090cef1db32d4b4a045c9fa87d0cb1bf0f",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Leon_S_Kennedy_01/textures/uniform.png",
+      "sha256": "81501ff0948fb8736028145249b3cde00e3e18fb951a5b3710289dbc98977778",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Leon_S_Kennedy_01/textures/pro.png",
+      "sha256": "2e6e7c066f6c44171554ac59ea86fa7adb0e0dfd83b01a45186bae32b8293f37",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Leon_S_Kennedy_01/textures/unwarp.png",
+      "sha256": "0a8c432cdfc406c4f93868080fa9023082655d2618e94ff6cef32bc26ce2fa24",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Leon_S_Kennedy_01/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

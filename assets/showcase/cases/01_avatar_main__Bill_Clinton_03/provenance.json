@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Bill_Clinton_03",
+  "archiveScene": "cases/01_avatar_main/Bill_Clinton_03/scene/final.blend",
+  "sceneSHA256": "331ab551d910306f16efe4a8d8b84f0f0e70cf705c20b49e6b9aeeda0bea556f",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Bill_Clinton_03/images/input.png",
+      "sha256": "6fd3873ec26bd1aa0a928a9070c0304eda557725076c2b0e33a7a8ed0220f7df",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Bill_Clinton_03/images/bald.png",
+      "sha256": "5aa9f2946e92f2fdd379d34dc7d0109396bce9806482ae84af00fc2bb9c24fb5",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Bill_Clinton_03/images/render.png",
+      "sha256": "df20c1e2ff9c889427be5f7e25ac086468472a9f8f994a410f5ce5ae8166068a",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Bill_Clinton_03/images/mesh.png",
+      "sha256": "fb02c490bcd4e5cf93dc6b7441b044bca87f9307dd34130d4d02714a7d2ef67b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Bill_Clinton_03/textures/uniform.png",
+      "sha256": "afa08375ccbda61db8043ba8bd2bc1938cdde2dc12500340dacb295dd111e0cd",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Bill_Clinton_03/textures/pro.png",
+      "sha256": "7808600393a1e983491307fcf665938db0dbeb8da7525b188c841c24ad73c2e0",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Bill_Clinton_03/textures/unwarp.png",
+      "sha256": "219150b32b8270b6067354241f380560bb1e779b41c3b555dffc1a74b2125e64",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Bill_Clinton_03/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}

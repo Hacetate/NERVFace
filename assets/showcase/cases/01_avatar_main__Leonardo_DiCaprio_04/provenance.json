@@ -1,0 +1,109 @@
+{
+  "selectionId": "01_avatar_main/Leonardo_DiCaprio_04",
+  "archiveScene": "cases/01_avatar_main/Leonardo_DiCaprio_04/scene/final.blend",
+  "sceneSHA256": "fc9c38df8433c9afbc1191ed186aa6fa409962f210626bf5ce7ed9810914837c",
+  "images": {
+    "input": {
+      "archivePath": "cases/01_avatar_main/Leonardo_DiCaprio_04/images/input.png",
+      "sha256": "686b00168b27f2f1dd2887972cc0d224e524f3745edbc507107a14c64f2579bf",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "bald": {
+      "archivePath": "cases/01_avatar_main/Leonardo_DiCaprio_04/images/bald.png",
+      "sha256": "e28abbb8601e999f3d309c6242e2ab2ad370095db87f9b33045d1c1ba6fef9c7",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "render": {
+      "archivePath": "cases/01_avatar_main/Leonardo_DiCaprio_04/images/render.png",
+      "sha256": "08a9ec3d1a2376d806522cf97b5d3f2103963e125632c56e9ab61d8c6fc5c443",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "mesh": {
+      "archivePath": "cases/01_avatar_main/Leonardo_DiCaprio_04/images/mesh.png",
+      "sha256": "8c66c7616c44bb38a581b9af939d22988ec66a760e234c56ae9a0c9f781f2ded",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/uniform": {
+      "archivePath": "cases/01_avatar_main/Leonardo_DiCaprio_04/textures/uniform.png",
+      "sha256": "21aa8aee194edc31c89175d41a4b49127ef2cc13c81a8e404d2e66b9069fea13",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/pro": {
+      "archivePath": "cases/01_avatar_main/Leonardo_DiCaprio_04/textures/pro.png",
+      "sha256": "cd3def6a7f1da5b33846c52f303e12973237a12a153f5a4ae165778ddf7cf21b",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    },
+    "uv/unwarp": {
+      "archivePath": "cases/01_avatar_main/Leonardo_DiCaprio_04/textures/unwarp.png",
+      "sha256": "ef2889d5a6b3aa966719ce15bfa6d15f8d15e20502a819f47731a438c45c5c5f",
+      "sourceSize": [
+        1024,
+        1024
+      ],
+      "webSize": [
+        1024,
+        1024
+      ]
+    }
+  },
+  "archiveProvenance": "cases/01_avatar_main/Leonardo_DiCaprio_04/provenance.json",
+  "surfaceMaterials": [
+    {
+      "channel": "Roughness",
+      "upstream": "Brow Roughness",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    },
+    {
+      "channel": "Specular IOR Level",
+      "upstream": "Brow Specular IOR Level",
+      "size": 1024,
+      "method": "Emission bake of the final source node chain, including beard and brow masks",
+      "webPrecision": "glTF material export conversion; source high-bit-depth textures preserved in archive"
+    }
+  ],
+  "sourceArchiveUnchanged": true
+}
