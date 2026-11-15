@@ -1,0 +1,263 @@
+{
+  "id": "01_avatar_main/John_Cena_01",
+  "group": "14_other_residuals",
+  "source": {
+    "id": "01_avatar_main/John_Cena_01",
+    "case_name": "John_Cena_01",
+    "group": "01_avatar_main",
+    "order": 13,
+    "web_id": "01_avatar_main__John_Cena_01",
+    "assets": {
+      "input": {
+        "path": "cases/01_avatar_main/John_Cena_01/images/input.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\inputs\\John_Cena_01.png",
+        "bytes": 1027234,
+        "sha256": "9e1fc6e43427b78cf887ea005a8239a70fc93f242a344f6e370e8e1f7bc41378"
+      },
+      "bald": {
+        "path": "cases/01_avatar_main/John_Cena_01/images/bald.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\bald\\John_Cena_01\\John_Cena_01_bald.png",
+        "bytes": 1154062,
+        "sha256": "2c237489df749c942a503d97748fcf1a20db208f427b0451e796a2f26e646212"
+      },
+      "render": {
+        "path": "cases/01_avatar_main/John_Cena_01/images/render.png",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\John_Cena_01\\render.png",
+        "bytes": 1022590,
+        "sha256": "ebe9db558dde3915e6f2cdbd20efc3894db331e370f83cf52a3ea3b74529d53c"
+      },
+      "mesh": {
+        "path": "cases/01_avatar_main/John_Cena_01/images/mesh.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_registered\\John_Cena_01\\mesh.png",
+        "bytes": 772905,
+        "sha256": "8478a004396ce94fb982dbdeaf2e346faeefdabab597d79034ddbf11b17c9b6b"
+      },
+      "uniform": {
+        "path": "cases/01_avatar_main/John_Cena_01/textures/uniform.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\John_Cena_01\\uniform.png",
+        "bytes": 1354667,
+        "sha256": "700877f71a52d13810dd303741e6d5b3b50ce9f4aa98d069e4ed0069dffa54ea"
+      },
+      "pro": {
+        "path": "cases/01_avatar_main/John_Cena_01/textures/pro.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\John_Cena_01\\pro.png",
+        "bytes": 1253368,
+        "sha256": "b5596f65a213f619af1e96195cbf0687d710a0893d47fc6f237916621534047f"
+      },
+      "unwarp": {
+        "path": "cases/01_avatar_main/John_Cena_01/textures/unwarp.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\John_Cena_01\\unwarp.png",
+        "bytes": 390744,
+        "sha256": "ca69b4dcb427a50cc1f391a2ecf37c81298fd5f5c9046ab3c843ba598e61383d"
+      },
+      "registration_target": {
+        "path": "cases/01_avatar_main/John_Cena_01/images/registration_target.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\inputs\\John_Cena_01.png",
+        "bytes": 1027234,
+        "sha256": "9e1fc6e43427b78cf887ea005a8239a70fc93f242a344f6e370e8e1f7bc41378"
+      },
+      "scene": {
+        "path": "cases/01_avatar_main/John_Cena_01/scene/final.blend",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\John_Cena_01\\registered.blend",
+        "bytes": 27274123,
+        "sha256": "cd2c3115af11cb36e3f675c120567006ec84412c71f3f24110f7220add4890c4"
+      },
+      "concat": {
+        "path": "cases/01_avatar_main/John_Cena_01/concat.png",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\01_avatar_main\\John_Cena_01.png",
+        "bytes": 1733312,
+        "sha256": "e18c3c2a0782aa0d45a33febfa622c2c4d49f83211afd65c3f9f56cf0081ee14"
+      },
+      "preview": {
+        "path": "cases/01_avatar_main/John_Cena_01/concat.jpg",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\01_avatar_main\\John_Cena_01.jpg",
+        "bytes": 87509,
+        "sha256": "7597228a1251760d8eaea7e5419f8a2ac86fb85f7dfb7cf6b815e22b03771dd6"
+      }
+    },
+    "reports": {
+      "final_report": {
+        "path": "cases/01_avatar_main/John_Cena_01/reports/final_report.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\John_Cena_01\\report.json",
+        "bytes": 38464,
+        "sha256": "93016a67b71ac56f0e06d8831553a741044c9d81de9dde83e3de107f8137420d"
+      },
+      "lighting.json": {
+        "path": "cases/01_avatar_main/John_Cena_01/reports/lighting.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\John_Cena_01\\lighting.json",
+        "bytes": 32374,
+        "sha256": "031ef5152ba360fb58f7fb54d0a0b1238fd2cdcb69eafe7b198d48823391b6e1"
+      },
+      "score.json": {
+        "path": "cases/01_avatar_main/John_Cena_01/reports/score.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\John_Cena_01\\score.json",
+        "bytes": 356,
+        "sha256": "ecc2cf4f9ccea1d8f646db9918fa6d45cd4468901264e28bf4fda7db8e60f673"
+      },
+      "report.json": {
+        "path": "cases/01_avatar_main/John_Cena_01/reports/report.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\John_Cena_01\\report.json",
+        "bytes": 38464,
+        "sha256": "93016a67b71ac56f0e06d8831553a741044c9d81de9dde83e3de107f8137420d"
+      }
+    },
+    "notes": " Regional lighting fit includes visible scalp, left/right rim highlights and shadow regions, with spatial holdout validation. Original head and eye geometry/UV/transforms, camera, all texture bytes and all material nodes preserved.",
+    "material_policy": "Use per-case scene graphs and image precision; do not replace beard/brow maps with a shared generic material."
+  },
+  "initial": {
+    "matrix_world": [
+      [
+        0.996616780757904,
+        -0.00759099330753088,
+        -0.0818365067243576,
+        -2.653007984161377
+      ],
+      [
+        0.012816744856536388,
+        0.9978981614112854,
+        0.0635211169719696,
+        2.209294080734253
+      ],
+      [
+        0.08118230849504471,
+        -0.06435509026050568,
+        0.9946194291114807,
+        32.6950569152832
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 858.7496337890626,
+    "shift_x": -0.033478379249572865,
+    "shift_y": 0.1362764835357667
+  },
+  "current": {
+    "matrix_world": [
+      [
+        0.9950801356886746,
+        -0.007709095588406794,
+        -0.09877215246974756,
+        -4.797092850125406
+      ],
+      [
+        0.013604906419804306,
+        0.9981559305689719,
+        0.05915730377059379,
+        3.021778542972455
+      ],
+      [
+        0.09813395915975306,
+        -0.06021004493289709,
+        0.9933501045300598,
+        48.70026684186307
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 1276.41984486278,
+    "shift_x": -0.033478379249572865,
+    "shift_y": 0.1362764835357667
+  },
+  "before": {
+    "bridge": 5.511948813520821,
+    "nose": 6.083168798397925,
+    "lip": 8.428067049348748,
+    "chin": 3.7180652651958326,
+    "eyes": 7.496927311253666,
+    "iris": 3.468125967463428
+  },
+  "after": {
+    "bridge": 4.9384892797978495,
+    "nose": 4.448222538618802,
+    "lip": 6.767511558147614,
+    "chin": 6.468214039173793,
+    "eyes": 6.583055255199352,
+    "iris": 3.631951807750911
+  },
+  "selectedRender": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__John_Cena_01\\r1-balanced.png",
+  "history": [
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__John_Cena_01\\r1-balanced.png",
+      "metrics": {
+        "bridge": 4.9384892797978495,
+        "nose": 4.448222538618802,
+        "lip": 6.767511558147614,
+        "chin": 6.468214039173793,
+        "eyes": 6.583055255199352,
+        "iris": 3.631951807750911
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__John_Cena_01\\r1-worst.png",
+      "metrics": {
+        "bridge": 5.3394410762660565,
+        "nose": 3.708970457698059,
+        "lip": 6.38784988927744,
+        "chin": 9.438063917802234,
+        "eyes": 5.705530262375235,
+        "iris": 2.531479560836793
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__John_Cena_01\\r2-balanced.png",
+      "metrics": {
+        "bridge": 5.789149789225421,
+        "nose": 4.301292913904431,
+        "lip": 6.9695472885272345,
+        "chin": 7.16980901996729,
+        "eyes": 6.8357644497206955,
+        "iris": 3.0944306066221183
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__John_Cena_01\\r2-worst.png",
+      "metrics": {
+        "bridge": 5.761557173889282,
+        "nose": 4.336787836539886,
+        "lip": 6.783233827015459,
+        "chin": 6.115926042547633,
+        "eyes": 7.031353613275833,
+        "iris": 3.6716723328314123
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__John_Cena_01\\r3-balanced.png",
+      "metrics": {
+        "bridge": 5.846698831923272,
+        "nose": 4.303074577042606,
+        "lip": 6.9636738897760475,
+        "chin": 7.159621437717116,
+        "eyes": 6.836532965134747,
+        "iris": 3.096531749486514
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__John_Cena_01\\r3-worst.png",
+      "metrics": {
+        "bridge": 5.772903258048886,
+        "nose": 4.33949999045881,
+        "lip": 6.777738412110667,
+        "chin": 6.122163652173959,
+        "eyes": 7.030067450964271,
+        "iris": 3.6490907170562403
+      }
+    }
+  ],
+  "stalled": 2,
+  "finalMetrics": {
+    "bridge": 3.712553691550235,
+    "nose": 4.107459572447416,
+    "lip": 6.971511650832117,
+    "chin": 6.470093244171444,
+    "eyes": 6.454939811834206,
+    "iris": 3.419443048884706
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "id": "01_avatar_main/Chiang_Kai_shek_01",
+  "group": "14_other_residuals",
+  "source": {
+    "id": "01_avatar_main/Chiang_Kai_shek_01",
+    "case_name": "Chiang_Kai_shek_01",
+    "group": "01_avatar_main",
+    "order": 4,
+    "web_id": "01_avatar_main__Chiang_Kai_shek_01",
+    "assets": {
+      "input": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/images/input.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\inputs\\Chiang_Kai_shek_01.png",
+        "bytes": 686285,
+        "sha256": "43b853a71f536923d41fe55ccb792244a75380baf0272eb73e56e3653109d8fb"
+      },
+      "bald": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/images/bald.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\bald\\Chiang_Kai_shek_01\\Chiang_Kai_shek_01_bald.png",
+        "bytes": 962066,
+        "sha256": "4b2bed6e638835f596620c806ee056bd8e0e43cc55f6862580323dd3411dbed3"
+      },
+      "render": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/images/render.png",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\Chiang_Kai_shek_01\\render.png",
+        "bytes": 964932,
+        "sha256": "48e4acf92526f72006bd3b1dd50d219436d469f15cf752230d9f644e935567eb"
+      },
+      "mesh": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/images/mesh.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_registered\\Chiang_Kai_shek_01\\mesh.png",
+        "bytes": 719305,
+        "sha256": "4a6acea9cc3a99719b6696e90b5e180b3def6c1667232e15674d3bb4d77eacdc"
+      },
+      "uniform": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/textures/uniform.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\Chiang_Kai_shek_01\\uniform.png",
+        "bytes": 1379988,
+        "sha256": "4025eb23a090dbda0c5ef19bae2cf96f82771a3a5a1151dbc58ce1a974cb88ae"
+      },
+      "pro": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/textures/pro.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\Chiang_Kai_shek_01\\pro.png",
+        "bytes": 1344533,
+        "sha256": "f0574e33093deaca782c2f11970ed693c6435416303fc88992035fc96e9c6215"
+      },
+      "unwarp": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/textures/unwarp.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\Chiang_Kai_shek_01\\unwarp.png",
+        "bytes": 375884,
+        "sha256": "47d272343a46feb534757e609948c6d905d8623d1aaad14e52e308bbd929bca5"
+      },
+      "registration_target": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/images/registration_target.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\inputs\\Chiang_Kai_shek_01.png",
+        "bytes": 686285,
+        "sha256": "43b853a71f536923d41fe55ccb792244a75380baf0272eb73e56e3653109d8fb"
+      },
+      "scene": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/scene/final.blend",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\Chiang_Kai_shek_01\\registered.blend",
+        "bytes": 27349748,
+        "sha256": "401da8dda07224f430afb69f3c28496b5f741fc6b007ba4d39bb611fc8496076"
+      },
+      "concat": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/concat.png",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\01_avatar_main\\Chiang_Kai_shek_01.png",
+        "bytes": 1752309,
+        "sha256": "2d4f46df7d24f84472018ab815bd724f8e4e176ca375b7d1469585b245666e0c"
+      },
+      "preview": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/concat.jpg",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\01_avatar_main\\Chiang_Kai_shek_01.jpg",
+        "bytes": 99337,
+        "sha256": "2ddb879efef6ef634418ed0000b49eab0854fc2bffaa7b5e789e4129dad94752"
+      }
+    },
+    "reports": {
+      "final_report": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/reports/final_report.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\Chiang_Kai_shek_01\\report.json",
+        "bytes": 14413,
+        "sha256": "1645493169e2c0233a792eb4dcdb5da5673d809e61189e628b6af6d328df1c15"
+      },
+      "lighting.json": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/reports/lighting.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\Chiang_Kai_shek_01\\lighting.json",
+        "bytes": 10338,
+        "sha256": "07257203bea195f0a2d45a7a9079500c7251a04d869b2401d0c0cc17dde277a9"
+      },
+      "score.json": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/reports/score.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\Chiang_Kai_shek_01\\score.json",
+        "bytes": 354,
+        "sha256": "48190678ff0a3831958e188c0ba120621938049442f934b7b6edac53d3829f62"
+      },
+      "report.json": {
+        "path": "cases/01_avatar_main/Chiang_Kai_shek_01/reports/report.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\01_avatar_main\\Chiang_Kai_shek_01\\report.json",
+        "bytes": 14413,
+        "sha256": "1645493169e2c0233a792eb4dcdb5da5673d809e61189e628b6af6d328df1c15"
+      }
+    },
+    "notes": " Regional lighting fit includes visible scalp, left/right rim highlights and shadow regions, with spatial holdout validation. Original head and eye geometry/UV/transforms, camera, all texture bytes and all material nodes preserved.",
+    "material_policy": "Use per-case scene graphs and image precision; do not replace beard/brow maps with a shared generic material."
+  },
+  "initial": {
+    "matrix_world": [
+      [
+        0.9991089105606079,
+        -0.0404517836868763,
+        -0.012043215334415436,
+        -0.3875342309474945
+      ],
+      [
+        0.04117647558450699,
+        0.9968565702438354,
+        0.0676853209733963,
+        2.305544853210449
+      ],
+      [
+        0.009267367422580719,
+        -0.06812089681625366,
+        0.9976340532302856,
+        32.60282897949219
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 758.9082410010171,
+    "shift_x": -0.010161832277829408,
+    "shift_y": 0.14437057508142515
+  },
+  "current": {
+    "matrix_world": [
+      [
+        0.9989037436841541,
+        -0.04132814687914714,
+        -0.021983997133446814,
+        -1.0562909903219917
+      ],
+      [
+        0.04193032136460549,
+        0.9987371050753437,
+        0.027674348251022742,
+        1.4575603550142273
+      ],
+      [
+        0.020812506444525484,
+        -0.028565794163741595,
+        0.9993752447534288,
+        48.56283001054252
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 1132.1580571687891,
+    "shift_x": -0.010161832277829408,
+    "shift_y": 0.14437057508142515
+  },
+  "before": {
+    "bridge": 1.4509184145339977,
+    "nose": 2.2748945181516738,
+    "lip": 7.803421238436779,
+    "chin": 4.516566793070465,
+    "eyes": 4.987463218550347,
+    "iris": 2.1306686156756434
+  },
+  "after": {
+    "bridge": 4.449981812874288,
+    "nose": 4.1275711949966265,
+    "lip": 5.651543037787551,
+    "chin": 3.0371271592741604,
+    "eyes": 4.850581869018346,
+    "iris": 2.4452228817525974
+  },
+  "selectedRender": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Chiang_Kai_shek_01\\r1-worst.png",
+  "history": [
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Chiang_Kai_shek_01\\r1-balanced.png",
+      "metrics": {
+        "bridge": 3.3071556180491437,
+        "nose": 3.1733438921175643,
+        "lip": 7.227174547662332,
+        "chin": 3.04432468991716,
+        "eyes": 5.138145469349261,
+        "iris": 1.7058158578924767
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Chiang_Kai_shek_01\\r1-worst.png",
+      "metrics": {
+        "bridge": 4.449981812874288,
+        "nose": 4.1275711949966265,
+        "lip": 5.651543037787551,
+        "chin": 3.0371271592741604,
+        "eyes": 4.850581869018346,
+        "iris": 2.4452228817525974
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Chiang_Kai_shek_01\\r2-balanced.png",
+      "metrics": {
+        "bridge": 3.173469689438265,
+        "nose": 3.192018788943237,
+        "lip": 6.392118497634563,
+        "chin": 3.7292683185339817,
+        "eyes": 4.4823568037559705,
+        "iris": 2.3295617823696846
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Chiang_Kai_shek_01\\r2-worst.png",
+      "metrics": {
+        "bridge": 3.896269555365195,
+        "nose": 3.8141200377791598,
+        "lip": 6.079052159215422,
+        "chin": 3.7906632313243227,
+        "eyes": 4.152581222879195,
+        "iris": 2.3376443431100773
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Chiang_Kai_shek_01\\r3-balanced.png",
+      "metrics": {
+        "bridge": 3.1831230536744144,
+        "nose": 3.192109608949686,
+        "lip": 6.392621155151998,
+        "chin": 3.7353872276885824,
+        "eyes": 4.477328239123708,
+        "iris": 2.3342263730339843
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Chiang_Kai_shek_01\\r3-worst.png",
+      "metrics": {
+        "bridge": 3.827077371693732,
+        "nose": 3.7836739661351126,
+        "lip": 6.079109259094304,
+        "chin": 3.801728922641605,
+        "eyes": 4.148766531018279,
+        "iris": 2.337390941117888
+      }
+    }
+  ],
+  "stalled": 2,
+  "finalMetrics": {
+    "bridge": 4.5132006273872145,
+    "nose": 4.188766250781467,
+    "lip": 5.4485902734429015,
+    "chin": 3.6610375801757677,
+    "eyes": 4.816173208824453,
+    "iris": 2.0329796012833277
+  }
+}

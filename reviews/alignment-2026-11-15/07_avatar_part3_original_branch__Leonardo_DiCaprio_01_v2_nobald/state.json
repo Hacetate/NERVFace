@@ -1,0 +1,285 @@
+{
+  "id": "07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald",
+  "group": "7_target_mismatch",
+  "source": {
+    "id": "07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald",
+    "case_name": "Leonardo_DiCaprio_01_v2_nobald",
+    "group": "07_avatar_part3_original_branch",
+    "order": 47,
+    "web_id": "07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald",
+    "assets": {
+      "input": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/input.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\inputs\\Leonardo_DiCaprio_01.png",
+        "bytes": 1438537,
+        "sha256": "4de6146200797f689b5e85f7aff9145e34de131ea0d52fbd0876ea1ac8a4ba5f"
+      },
+      "bald": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/bald.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part3\\nobald_inputs\\Leonardo_DiCaprio_01_v2_nobald.png",
+        "bytes": 1525919,
+        "sha256": "7fe5857b16ac1b35b430bebff9d0c7bc5a89f08e0e60dcde512f282efc88b3bf"
+      },
+      "render": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/render.png",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\07_avatar_part3_original_branch\\Leonardo_DiCaprio_01_v2_nobald\\render.png",
+        "bytes": 1079735,
+        "sha256": "dadb351e3067de3b758e0a6e3ee5bee25a928856cdb2a38864ffca6eb7595e07"
+      },
+      "mesh": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/mesh.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part3_registered\\Leonardo_DiCaprio_01_v2_nobald\\mesh.png",
+        "bytes": 788818,
+        "sha256": "0c5a5bacec4ff42345c71412fdedbb91d61dee5990e4ed0aa9b0bd482faa8120"
+      },
+      "uniform": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/textures/uniform.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part3\\ours\\texture_inputs\\Leonardo_DiCaprio_01_v2_nobald\\uniform.png",
+        "bytes": 1660274,
+        "sha256": "0770b460879c47e3bf649ddd6f8e7414b22968cadce9a31ffb7d188ea693bd7e"
+      },
+      "pro": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/textures/pro.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part3\\ours\\texture_inputs\\Leonardo_DiCaprio_01_v2_nobald\\pro.png",
+        "bytes": 1468527,
+        "sha256": "2c13eb90d84df1f1b390b4b48f666ca2abaa97eb1f591fbd03019fd1bdf185f1"
+      },
+      "unwarp": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/textures/unwarp.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part3\\ours\\texture_inputs\\Leonardo_DiCaprio_01_v2_nobald\\unwarp.png",
+        "bytes": 533120,
+        "sha256": "c08956ab35412c8fd4f04ce95d6e2d51a2976a708614193956e0c6c50274533a"
+      },
+      "registration_target": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/images/registration_target.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part3\\nobald_inputs\\Leonardo_DiCaprio_01_v2_nobald.png",
+        "bytes": 1525919,
+        "sha256": "7fe5857b16ac1b35b430bebff9d0c7bc5a89f08e0e60dcde512f282efc88b3bf"
+      },
+      "scene": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/scene/final.blend",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\07_avatar_part3_original_branch\\Leonardo_DiCaprio_01_v2_nobald\\registered.blend",
+        "bytes": 27504345,
+        "sha256": "1f15568f7d9613b35551cfe9d47edc6a607add0f0d82cb564cc5f4cedbbf31eb"
+      },
+      "concat": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/concat.png",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\07_avatar_part3_original_branch\\Leonardo_DiCaprio_01_v2_nobald.png",
+        "bytes": 2084596,
+        "sha256": "94aaad9afbc2886c44805926f4f6b04d66afb94a7e5de4386b8df7d6359baaf7"
+      },
+      "preview": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/concat.jpg",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\07_avatar_part3_original_branch\\Leonardo_DiCaprio_01_v2_nobald.jpg",
+        "bytes": 111966,
+        "sha256": "0446838b320598d9f5f42732d15e6c06e37935a604d396a17d18a7a83215479a"
+      }
+    },
+    "reports": {
+      "final_report": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/reports/final_report.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\07_avatar_part3_original_branch\\Leonardo_DiCaprio_01_v2_nobald\\report.json",
+        "bytes": 29345,
+        "sha256": "2de139c1263660d37c2d419dcf7cb5201703a8c7b32cb49650171c6e03d3731f"
+      },
+      "lighting.json": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/reports/lighting.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\07_avatar_part3_original_branch\\Leonardo_DiCaprio_01_v2_nobald\\lighting.json",
+        "bytes": 23939,
+        "sha256": "21bc8aecc386d4ee8b241daf1ad8693a1f4e2c45ebc672ce2c1bb46c01c57861"
+      },
+      "score.json": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/reports/score.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\07_avatar_part3_original_branch\\Leonardo_DiCaprio_01_v2_nobald\\score.json",
+        "bytes": 360,
+        "sha256": "36371c3aacf25dad354f5e567db4805a3613da9fad2f542d1ece2543fb5f5bd4"
+      },
+      "report.json": {
+        "path": "cases/07_avatar_part3_original_branch/Leonardo_DiCaprio_01_v2_nobald/reports/report.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_batch_20261115\\07_avatar_part3_original_branch\\Leonardo_DiCaprio_01_v2_nobald\\report.json",
+        "bytes": 29345,
+        "sha256": "2de139c1263660d37c2d419dcf7cb5201703a8c7b32cb49650171c6e03d3731f"
+      }
+    },
+    "notes": "Beard-restored reconstruction input in column 2; column 1 is the original portrait. Registration and rendering still use the supplied synthesized bald image. Compare bald and original branches for beard preservation. Regional lighting fit includes visible scalp, left/right rim highlights and shadow regions, with spatial holdout validation. Original head and eye geometry/UV/transforms, camera, all texture bytes and all material nodes preserved.",
+    "material_policy": "Use per-case scene graphs and image precision; do not replace beard/brow maps with a shared generic material."
+  },
+  "initial": {
+    "matrix_world": [
+      [
+        0.9994243383407593,
+        -0.024315927177667618,
+        -0.02365812659263611,
+        -0.7593274116516113
+      ],
+      [
+        0.028180614113807678,
+        0.9832916259765625,
+        0.17984281480312347,
+        5.920259475708008
+      ],
+      [
+        0.018889794126152992,
+        -0.18040598928928375,
+        0.9834108352661133,
+        32.141822814941406
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 801.338722229004,
+    "shift_x": -0.017017364501953236,
+    "shift_y": 0.12701523303985607
+  },
+  "current": {
+    "matrix_world": [
+      [
+        0.9985451846987322,
+        -0.030146065193774236,
+        -0.044706914504972356,
+        -3.304439473913332
+      ],
+      [
+        0.0378597074706037,
+        0.9823442614217587,
+        0.18321135708725544,
+        13.693713460173
+      ],
+      [
+        0.03839448083896245,
+        -0.1846374117387341,
+        0.98205646794871,
+        73.15844170541544
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 1783.4121239028877,
+    "shift_x": -0.017017364501953236,
+    "shift_y": 0.12701523303985607
+  },
+  "before": {
+    "bridge": 9.231886139897608,
+    "nose": 3.711137479572461,
+    "lip": 5.49397054413523,
+    "chin": 5.10276838140762,
+    "eyes": 10.95966034628663,
+    "iris": 8.540032320439256
+  },
+  "after": {
+    "bridge": 2.397406653432288,
+    "nose": 2.3415597010289724,
+    "lip": 4.232187021810038,
+    "chin": 2.877686725559178,
+    "eyes": 2.690739079534598,
+    "iris": 2.1388436988115194
+  },
+  "selectedRender": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r2-worst.png",
+  "history": [
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r1-balanced.png",
+      "metrics": {
+        "bridge": 2.923982916663849,
+        "nose": 2.8142541839296458,
+        "lip": 4.3826962705276316,
+        "chin": 2.7167130758285474,
+        "eyes": 2.8474430071060275,
+        "iris": 2.0083148422308064
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r1-worst.png",
+      "metrics": {
+        "bridge": 2.393991864608228,
+        "nose": 2.409101550432956,
+        "lip": 4.554346131359596,
+        "chin": 3.562570383908986,
+        "eyes": 2.656901118220179,
+        "iris": 2.436245153591311
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r2-balanced.png",
+      "metrics": {
+        "bridge": 2.284070971804424,
+        "nose": 2.203802278885835,
+        "lip": 4.270284632565531,
+        "chin": 2.9760939122154992,
+        "eyes": 2.577802100295354,
+        "iris": 2.4627000765259117
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r2-worst.png",
+      "metrics": {
+        "bridge": 2.397406653432288,
+        "nose": 2.3415597010289724,
+        "lip": 4.232187021810038,
+        "chin": 2.877686725559178,
+        "eyes": 2.690739079534598,
+        "iris": 2.1388436988115194
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r3-balanced.png",
+      "metrics": {
+        "bridge": 2.683987013079563,
+        "nose": 2.4899449759029078,
+        "lip": 4.531377435533957,
+        "chin": 2.882050531460888,
+        "eyes": 2.646036890779838,
+        "iris": 2.2377197662804176
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r3-worst.png",
+      "metrics": {
+        "bridge": 2.8175690607503934,
+        "nose": 2.5408953006823034,
+        "lip": 4.490189290155976,
+        "chin": 2.902516088623126,
+        "eyes": 2.74934220559456,
+        "iris": 2.255606301141806
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r4-balanced.png",
+      "metrics": {
+        "bridge": 2.6844170291521485,
+        "nose": 2.493853196511948,
+        "lip": 4.527533958109709,
+        "chin": 2.8811307779103004,
+        "eyes": 2.6466833375014587,
+        "iris": 2.2272380628235355
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\07_avatar_part3_original_branch__Leonardo_DiCaprio_01_v2_nobald\\r4-worst.png",
+      "metrics": {
+        "bridge": 2.8247398802307795,
+        "nose": 2.5401983619311697,
+        "lip": 4.476904685289048,
+        "chin": 2.9063522247666405,
+        "eyes": 2.740722507211605,
+        "iris": 2.2571264201600947
+      }
+    }
+  ],
+  "stalled": 2,
+  "finalMetrics": {
+    "bridge": 2.2510855223164623,
+    "nose": 2.315646306400614,
+    "lip": 4.4624577839542034,
+    "chin": 2.50875283858508,
+    "eyes": 2.7777851033702294,
+    "iris": 2.5773065492824867
+  }
+}

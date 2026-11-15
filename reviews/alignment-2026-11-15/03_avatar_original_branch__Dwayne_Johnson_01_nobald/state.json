@@ -1,0 +1,235 @@
+{
+  "id": "03_avatar_original_branch/Dwayne_Johnson_01_nobald",
+  "group": "14_other_residuals",
+  "source": {
+    "id": "03_avatar_original_branch/Dwayne_Johnson_01_nobald",
+    "case_name": "Dwayne_Johnson_01_nobald",
+    "group": "03_avatar_original_branch",
+    "order": 23,
+    "web_id": "03_avatar_original_branch__Dwayne_Johnson_01_nobald",
+    "assets": {
+      "input": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/input.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part2\\nobald_inputs\\Dwayne_Johnson_01_nobald.png",
+        "bytes": 1200493,
+        "sha256": "921aaeb6517fbe2e65cb7675a39c870a9abb98c88600861836499cb468321014"
+      },
+      "bald": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/bald.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\bald\\Dwayne_Johnson_01\\Dwayne_Johnson_01_bald.png",
+        "bytes": 1291762,
+        "sha256": "22d314189165fd9a2f93a9d6ecf2971d6f5dd4b5fbc96c20f6beeb808be26a16"
+      },
+      "render": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/render.png",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_refine_20261115\\Dwayne_Johnson_01_nobald\\render.png",
+        "bytes": 1038122,
+        "sha256": "ac2c103b1d947a869508c90aa54acd8d3eca613dbe2016c72ae60558b62a2a4e"
+      },
+      "mesh": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/mesh.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part2_registered\\Dwayne_Johnson_01_nobald\\mesh.png",
+        "bytes": 739044,
+        "sha256": "d6003305422025518024088066850b444117daf8a4576325af1c47678f58862a"
+      },
+      "uniform": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/textures/uniform.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part2\\ours\\texture_inputs\\Dwayne_Johnson_01_nobald\\uniform.png",
+        "bytes": 1998479,
+        "sha256": "352fcd985867cc91be4687a241feac4b1220a96f2c506067003bd78395f0ea2f"
+      },
+      "pro": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/textures/pro.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part2\\ours\\texture_inputs\\Dwayne_Johnson_01_nobald\\pro.png",
+        "bytes": 1590729,
+        "sha256": "22c0ffeccbf03b6bd44246ef18fa20abe3d5408ee874118dca15346559906118"
+      },
+      "unwarp": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/textures/unwarp.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part2\\ours\\texture_inputs\\Dwayne_Johnson_01_nobald\\unwarp.png",
+        "bytes": 540585,
+        "sha256": "554c0dfcc29b302e8c6518d4894fd95ddc6d6671e7ee20a2abc9b0af1acb69ea"
+      },
+      "registration_target": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/images/registration_target.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_part2\\nobald_inputs\\Dwayne_Johnson_01_nobald.png",
+        "bytes": 1200493,
+        "sha256": "921aaeb6517fbe2e65cb7675a39c870a9abb98c88600861836499cb468321014"
+      },
+      "scene": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/scene/final.blend",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_refine_20261115\\Dwayne_Johnson_01_nobald\\registered.blend",
+        "bytes": 27650597,
+        "sha256": "f6fd8d97b5b9b1ad9615bf609a5f80caa3dfce55118d61a67290e46ab3fb73d1"
+      },
+      "concat": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/concat.png",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\03_avatar_original_branch\\Dwayne_Johnson_01_nobald.png",
+        "bytes": 1951656,
+        "sha256": "68f7beaf4ddab4da3fb8b0910591786b46ff58f02ff6ff5a9f5a0e90a4b6339f"
+      },
+      "preview": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/concat.jpg",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\03_avatar_original_branch\\Dwayne_Johnson_01_nobald.jpg",
+        "bytes": 102784,
+        "sha256": "ebde009dbffe1b8f4ef2aa3955eb765456927b4fa386ef7c9ee91a0012393b4f"
+      }
+    },
+    "reports": {
+      "final_report": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/reports/final_report.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_refine_20261115\\Dwayne_Johnson_01_nobald\\report.json",
+        "bytes": 10331,
+        "sha256": "8424d3618ae82da540271e88cdd57e1d34fe9091aabcabd04dd69ce93efea822"
+      },
+      "lighting.json": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/reports/lighting.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_refine_20261115\\Dwayne_Johnson_01_nobald\\lighting.json",
+        "bytes": 8545,
+        "sha256": "940a17f77bf6a3688665139f59c67fb212831dbcef60bfe4927b177005756d6d"
+      },
+      "report.json": {
+        "path": "cases/03_avatar_original_branch/Dwayne_Johnson_01_nobald/reports/report.json",
+        "source": "D:\\ours_bundle_20261113\\regional_lighting_refine_20261115\\Dwayne_Johnson_01_nobald\\report.json",
+        "bytes": 10331,
+        "sha256": "8424d3618ae82da540271e88cdd57e1d34fe9091aabcabd04dd69ce93efea822"
+      }
+    },
+    "notes": "Original-input reconstruction branch; bald image is the companion bald reference, not the mesh input. Regional lighting refit includes scalp, bilateral rim highlights and shadows. All mesh geometry/UV/transforms, camera, Pro and all material nodes/textures remain exact. Eight head area lights, unchanged eye-only lamps, and environment lighting.",
+    "material_policy": "Use per-case scene graphs and image precision; do not replace beard/brow maps with a shared generic material."
+  },
+  "initial": {
+    "matrix_world": [
+      [
+        0.999363899230957,
+        0.0020819930359721184,
+        0.03560183569788933,
+        1.1508188247680664
+      ],
+      [
+        -0.006326681934297085,
+        0.9928099513053894,
+        0.11953411251306534,
+        3.9867379665374756
+      ],
+      [
+        -0.03509698808193207,
+        -0.11968331784009933,
+        0.9921915531158447,
+        32.241973876953125
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 738.5196533203125,
+    "shift_x": -0.009942412376403809,
+    "shift_y": 0.10876691341400146
+  },
+  "current": {
+    "matrix_world": [
+      [
+        0.999363899230957,
+        0.0020819930359721184,
+        0.03560183569788933,
+        1.1508188247680664
+      ],
+      [
+        -0.006326681934297085,
+        0.9928099513053894,
+        0.11953411251306534,
+        3.9867379665374756
+      ],
+      [
+        -0.03509698808193207,
+        -0.11968331784009933,
+        0.9921915531158447,
+        32.241973876953125
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 738.5196533203125,
+    "shift_x": -0.009942412376403809,
+    "shift_y": 0.10876691341400146
+  },
+  "before": {
+    "bridge": 6.663089906489975,
+    "nose": 3.0347082739673397,
+    "lip": 4.30838940606825,
+    "chin": 4.299739414874119,
+    "eyes": 4.79625322475983,
+    "iris": 2.2050588342181228
+  },
+  "after": {
+    "bridge": 6.663089906489975,
+    "nose": 3.0347082739673397,
+    "lip": 4.30838940606825,
+    "chin": 4.299739414874119,
+    "eyes": 4.79625322475983,
+    "iris": 2.2050588342181228
+  },
+  "selectedRender": "F:\\NERVFaceWeb\\selected_cases_archive\\cases\\03_avatar_original_branch\\Dwayne_Johnson_01_nobald\\images\\render.png",
+  "history": [
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\03_avatar_original_branch__Dwayne_Johnson_01_nobald\\r1-balanced.png",
+      "metrics": {
+        "bridge": 6.984546002300158,
+        "nose": 2.8904712615768133,
+        "lip": 4.244279695750981,
+        "chin": 4.315472622937327,
+        "eyes": 4.384120033091994,
+        "iris": 2.311311256521316
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\03_avatar_original_branch__Dwayne_Johnson_01_nobald\\r1-worst.png",
+      "metrics": {
+        "bridge": 7.909874385099724,
+        "nose": 3.281217503630275,
+        "lip": 4.4013568718372325,
+        "chin": 4.455384960043018,
+        "eyes": 4.544890174979363,
+        "iris": 2.4011456125087625
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\03_avatar_original_branch__Dwayne_Johnson_01_nobald\\r2-balanced.png",
+      "metrics": {
+        "bridge": 6.960077485811568,
+        "nose": 2.8912056400710284,
+        "lip": 4.243342552277064,
+        "chin": 4.321482032743689,
+        "eyes": 4.381933678263439,
+        "iris": 2.3141197658024866
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\03_avatar_original_branch__Dwayne_Johnson_01_nobald\\r2-worst.png",
+      "metrics": {
+        "bridge": 7.907677545750891,
+        "nose": 3.2795920028477883,
+        "lip": 4.40341019021995,
+        "chin": 4.441106062618901,
+        "eyes": 4.542330673547829,
+        "iris": 2.400205570265701
+      }
+    }
+  ],
+  "stalled": 2,
+  "finalMetrics": {
+    "bridge": 7.120943249636739,
+    "nose": 3.0778064572696113,
+    "lip": 4.276467542027478,
+    "chin": 4.538392700601761,
+    "eyes": 4.936449982162263,
+    "iris": 2.207278076524205
+  }
+}

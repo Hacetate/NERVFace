@@ -1,0 +1,235 @@
+{
+  "id": "04_cvpr9/Male_000016",
+  "group": "14_other_residuals",
+  "source": {
+    "id": "04_cvpr9/Male_000016",
+    "case_name": "Male_000016",
+    "group": "04_cvpr9",
+    "order": 26,
+    "web_id": "04_cvpr9__Male_000016",
+    "assets": {
+      "input": {
+        "path": "cases/04_cvpr9/Male_000016/images/input.png",
+        "source": "D:\\ours_bundle_20261113\\cvpr9_rebald_20261113\\inputs\\Male_000016.png",
+        "bytes": 61861,
+        "sha256": "e468ba226564efe41118231125d7fda58f130e350366199c6c331ed4cf019e06"
+      },
+      "bald": {
+        "path": "cases/04_cvpr9/Male_000016/images/bald.png",
+        "source": "D:\\ours_bundle_20261113\\cvpr9_rebald_20261113\\bald\\Male_000016\\Male_000016_bald.png",
+        "bytes": 914058,
+        "sha256": "1ee4b672cac5ac0effc7b088fb05931bc47dbe8c16e7d0602ae824a8217267f9"
+      },
+      "render": {
+        "path": "cases/04_cvpr9/Male_000016/images/render.png",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\04_cvpr9\\Male_000016\\render.png",
+        "bytes": 909508,
+        "sha256": "e3a57b5c51b95736cb81c5e0377a9521bf85e969b1806eb14e96616111961860"
+      },
+      "mesh": {
+        "path": "cases/04_cvpr9/Male_000016/images/mesh.png",
+        "source": "D:\\ours_bundle_20261113\\cvpr9_rigid_input_view\\Male_000016\\mesh.png",
+        "bytes": 768278,
+        "sha256": "4d0d0e18540a41cc522dc741a5bd82dfc386e97564b8c7ab0939a327518f0490"
+      },
+      "uniform": {
+        "path": "cases/04_cvpr9/Male_000016/textures/uniform.png",
+        "source": "D:\\ours_bundle_20261113\\cvpr9_rebald_20261113\\ours\\texture_inputs\\Male_000016\\uniform.png",
+        "bytes": 1157436,
+        "sha256": "4beaf2d146fede4c0bc43f1892b0ede036b5e96c73f59522b13fd0a8b6b89934"
+      },
+      "pro": {
+        "path": "cases/04_cvpr9/Male_000016/textures/pro.png",
+        "source": "D:\\ours_bundle_20261113\\cvpr9_rebald_20261113\\ours\\texture_inputs\\Male_000016\\pro.png",
+        "bytes": 1066241,
+        "sha256": "6c5d975f0ea87fbd6fd693d7d3f1aff766b289a780b1f0f1dda2c25763e64eb3"
+      },
+      "unwarp": {
+        "path": "cases/04_cvpr9/Male_000016/textures/unwarp.png",
+        "source": "D:\\ours_bundle_20261113\\cvpr9_rebald_20261113\\ours\\texture_inputs\\Male_000016\\unwarp.png",
+        "bytes": 340266,
+        "sha256": "3b628793cb3fd5b23d839c50e9e94c80b0f95964b6b783d6a19167d8cf5fa469"
+      },
+      "scene": {
+        "path": "cases/04_cvpr9/Male_000016/scene/final.blend",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\04_cvpr9\\Male_000016\\registered.blend",
+        "bytes": 27112807,
+        "sha256": "c498d7ecb97bf6f5f7f2d0cb79084dc741dc22fd14c8a1d4dd21e8345ad498ea"
+      },
+      "concat": {
+        "path": "cases/04_cvpr9/Male_000016/concat.png",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\04_cvpr9\\Male_000016.png",
+        "bytes": 1507050,
+        "sha256": "0eef459d99c733fc9ff249915bef80a5b9ff4c78c4ac59b3494b7b551f09296e"
+      },
+      "preview": {
+        "path": "cases/04_cvpr9/Male_000016/concat.jpg",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\04_cvpr9\\Male_000016.jpg",
+        "bytes": 88749,
+        "sha256": "ddcfdafb5159328d6c5502d9c47fcb99f0828bc8e9b747bc04077257d281b355"
+      }
+    },
+    "reports": {
+      "final_report": {
+        "path": "cases/04_cvpr9/Male_000016/reports/final_report.json",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\04_cvpr9\\Male_000016\\report.json",
+        "bytes": 5283,
+        "sha256": "dfad7464f71d351ade79cbfc9673015c87346aac3dde581360be1acc8ad62994"
+      },
+      "fit.json": {
+        "path": "cases/04_cvpr9/Male_000016/reports/fit.json",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\04_cvpr9\\Male_000016\\fit.json",
+        "bytes": 779,
+        "sha256": "5da6d5dbe55fb431c7dfb25473fa7cfe6aca7b8442bf94f85beed5f9a73ea4e1"
+      },
+      "score.json": {
+        "path": "cases/04_cvpr9/Male_000016/reports/score.json",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\04_cvpr9\\Male_000016\\score.json",
+        "bytes": 377,
+        "sha256": "e34c7bb5b2c24c93dfe635b5ce22623217590efd7a9dc3890f15047488033361"
+      },
+      "report.json": {
+        "path": "cases/04_cvpr9/Male_000016/reports/report.json",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\04_cvpr9\\Male_000016\\report.json",
+        "bytes": 5283,
+        "sha256": "dfad7464f71d351ade79cbfc9673015c87346aac3dde581360be1acc8ad62994"
+      }
+    },
+    "notes": "Latest rigid/perspective registration, native mesh and Pro texture. Selected lighting and eye-material revision 20261115; native geometry, Pro color texture and registered camera preserved.",
+    "material_policy": "Use per-case scene graphs and image precision; do not replace beard/brow maps with a shared generic material."
+  },
+  "initial": {
+    "matrix_world": [
+      [
+        0.9935439229011536,
+        -0.0132230119779706,
+        0.11267491430044174,
+        3.616457223892212
+      ],
+      [
+        -0.006934288423508406,
+        0.9842488765716553,
+        0.17665207386016846,
+        5.792869567871094
+      ],
+      [
+        -0.11323603242635727,
+        -0.17629289627075195,
+        0.9778028726577759,
+        31.75358009338379
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 809.9362551588937,
+    "shift_x": 0.0008473247037135145,
+    "shift_y": 0.14008293628445456
+  },
+  "current": {
+    "matrix_world": [
+      [
+        0.9931378013805453,
+        -0.014724738892616525,
+        0.11601939762710195,
+        8.377531304190649
+      ],
+      [
+        -0.005455588414686645,
+        0.9851290272640252,
+        0.17172922519038344,
+        12.524953996679436
+      ],
+      [
+        -0.11682274665678027,
+        -0.17118372030790793,
+        0.9782886188942921,
+        71.01364910280923
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 1802.5462853212728,
+    "shift_x": 0.0008473247037135145,
+    "shift_y": 0.14008293628445456
+  },
+  "before": {
+    "bridge": 7.65047723875242,
+    "nose": 2.8044960349589028,
+    "lip": 8.027167506064815,
+    "chin": 2.724634838291262,
+    "eyes": 5.038429805035643,
+    "iris": 4.102288849003594
+  },
+  "after": {
+    "bridge": 5.232454056955152,
+    "nose": 2.78621610471985,
+    "lip": 6.708787711130791,
+    "chin": 4.264637634447595,
+    "eyes": 3.92430384125453,
+    "iris": 2.8595738514985487
+  },
+  "selectedRender": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\04_cvpr9__Male_000016\\r2-balanced.png",
+  "history": [
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\04_cvpr9__Male_000016\\r1-balanced.png",
+      "metrics": {
+        "bridge": 6.674166954272037,
+        "nose": 3.032311383622975,
+        "lip": 6.835018750159187,
+        "chin": 4.33841684225052,
+        "eyes": 3.876531847768976,
+        "iris": 2.508554896253607
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\04_cvpr9__Male_000016\\r1-worst.png",
+      "metrics": {
+        "bridge": 4.737612193856791,
+        "nose": 2.616765247716153,
+        "lip": 6.355907555412551,
+        "chin": 6.166197481211602,
+        "eyes": 3.5800439774558597,
+        "iris": 3.9927780122756444
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\04_cvpr9__Male_000016\\r2-balanced.png",
+      "metrics": {
+        "bridge": 5.232454056955152,
+        "nose": 2.78621610471985,
+        "lip": 6.708787711130791,
+        "chin": 4.264637634447595,
+        "eyes": 3.92430384125453,
+        "iris": 2.8595738514985487
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\04_cvpr9__Male_000016\\r2-worst.png",
+      "metrics": {
+        "bridge": 6.68042416705907,
+        "nose": 2.817322934769203,
+        "lip": 6.44322655119689,
+        "chin": 4.106777920491468,
+        "eyes": 4.209951160260114,
+        "iris": 2.6629661793784907
+      }
+    }
+  ],
+  "stalled": 2,
+  "finalMetrics": {
+    "bridge": 6.338586708428305,
+    "nose": 2.838275277389829,
+    "lip": 6.780477109193907,
+    "chin": 3.839574463865894,
+    "eyes": 3.958963611507728,
+    "iris": 2.9861518518130663
+  }
+}

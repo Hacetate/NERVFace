@@ -1,0 +1,263 @@
+{
+  "id": "01_avatar_main/Cristiano_Ronaldo_01",
+  "group": "14_other_residuals",
+  "source": {
+    "id": "01_avatar_main/Cristiano_Ronaldo_01",
+    "case_name": "Cristiano_Ronaldo_01",
+    "group": "01_avatar_main",
+    "order": 6,
+    "web_id": "01_avatar_main__Cristiano_Ronaldo_01",
+    "assets": {
+      "input": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/images/input.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\inputs\\Cristiano_Ronaldo_01.png",
+        "bytes": 737954,
+        "sha256": "c31a2fafc5f390d44578facef123de832c5bb51586214e6df75765ce7b5e78c6"
+      },
+      "bald": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/images/bald.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\bald\\Cristiano_Ronaldo_01\\Cristiano_Ronaldo_01_bald.png",
+        "bytes": 1114696,
+        "sha256": "bda2c199cf5189a9a0a00daaa868ab6db9bc72157d355bf764e95c310339f2f5"
+      },
+      "render": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/images/render.png",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\01_avatar_main\\Cristiano_Ronaldo_01\\render.png",
+        "bytes": 1008044,
+        "sha256": "e371c5d627b88fc01fed874b626f567ec8c00e13149679828d2f097e761d3094"
+      },
+      "mesh": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/images/mesh.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114_registered\\Cristiano_Ronaldo_01\\mesh.png",
+        "bytes": 772382,
+        "sha256": "fd106cd3c14fa99660ce5f4452d58ca0f54d2f1b9eea59afcc355a51f009353c"
+      },
+      "uniform": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/textures/uniform.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\Cristiano_Ronaldo_01\\uniform.png",
+        "bytes": 1320892,
+        "sha256": "72ebbe08ae52a7090f87baa3dc1939f397cef5d1b94cfef88a33591113d5d1c0"
+      },
+      "pro": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/textures/pro.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\Cristiano_Ronaldo_01\\pro.png",
+        "bytes": 1272311,
+        "sha256": "ae561a24ced2cab89ef256b2ad3f7f235928bc2c8fc0ee39f2fc6c6639ae89fd"
+      },
+      "unwarp": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/textures/unwarp.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\ours\\texture_inputs\\Cristiano_Ronaldo_01\\unwarp.png",
+        "bytes": 376598,
+        "sha256": "2bdf4ee02969eb5c098c80153c46d3581e11aa9e22dcd3fe5b41d03f575e25d8"
+      },
+      "registration_target": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/images/registration_target.png",
+        "source": "D:\\ours_bundle_20261113\\avatar_20261114\\inputs\\Cristiano_Ronaldo_01.png",
+        "bytes": 737954,
+        "sha256": "c31a2fafc5f390d44578facef123de832c5bb51586214e6df75765ce7b5e78c6"
+      },
+      "scene": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/scene/final.blend",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\01_avatar_main\\Cristiano_Ronaldo_01\\registered.blend",
+        "bytes": 27333610,
+        "sha256": "386f7c43289762f34af79272556960da1f4cc0bfe0c36437f32b449ee248ef79"
+      },
+      "concat": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/concat.png",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\01_avatar_main\\Cristiano_Ronaldo_01.png",
+        "bytes": 1726021,
+        "sha256": "0f88c054c6796efa1f81b99551ed58e9bebebe20a342c1cf20a3135d4d04e17f"
+      },
+      "preview": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/concat.jpg",
+        "source": "D:\\ours_bundle_20261113\\archived_cases_concat_20261114\\01_avatar_main\\Cristiano_Ronaldo_01.jpg",
+        "bytes": 91991,
+        "sha256": "9a0d400fd5cec99c35bb45480761c81e2128bad40c55aa18e6a9321877e0cd1a"
+      }
+    },
+    "reports": {
+      "final_report": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/reports/final_report.json",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\01_avatar_main\\Cristiano_Ronaldo_01\\report.json",
+        "bytes": 4630,
+        "sha256": "f27ac7a9a384e16822f125a43731e3d7c672adb679ea2593a1faf0eaa163ffab"
+      },
+      "fit.json": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/reports/fit.json",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\01_avatar_main\\Cristiano_Ronaldo_01\\fit.json",
+        "bytes": 675,
+        "sha256": "1a40c7ea0f89dcdeb93fde58472822877224bac646120cbe160d2bf348b0d7de"
+      },
+      "score.json": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/reports/score.json",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\01_avatar_main\\Cristiano_Ronaldo_01\\score.json",
+        "bytes": 380,
+        "sha256": "3c0e3ca779b8eea94cc7793785a33b5fd56526825eb276a014db034b393ac1d7"
+      },
+      "report.json": {
+        "path": "cases/01_avatar_main/Cristiano_Ronaldo_01/reports/report.json",
+        "source": "D:\\ours_bundle_20261113\\eye_socket_refine_20261115\\01_avatar_main\\Cristiano_Ronaldo_01\\report.json",
+        "bytes": 4630,
+        "sha256": "f27ac7a9a384e16822f125a43731e3d7c672adb679ea2593a1faf0eaa163ffab"
+      }
+    },
+    "notes": " Selected lighting and eye-material revision 20261115; native geometry, Pro color texture and registered camera preserved.",
+    "material_policy": "Use per-case scene graphs and image precision; do not replace beard/brow maps with a shared generic material."
+  },
+  "initial": {
+    "matrix_world": [
+      [
+        0.9998345971107483,
+        -0.006078239995986223,
+        0.017136503010988235,
+        0.55211341381073
+      ],
+      [
+        0.004473770968616009,
+        0.9957342743873596,
+        0.09215881675481796,
+        3.104957342147827
+      ],
+      [
+        -0.01762356609106064,
+        -0.0920669212937355,
+        0.9955967664718628,
+        32.22251892089844
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 855.4516754150391,
+    "shift_x": -0.010981082916259766,
+    "shift_y": 0.1338489055633545
+  },
+  "current": {
+    "matrix_world": [
+      [
+        0.9998811498783269,
+        -0.010281089679303829,
+        0.011480924592895621,
+        0.8297082788643018
+      ],
+      [
+        0.009178915868211228,
+        0.9956945152023813,
+        0.09223983532849843,
+        6.7749614322179745
+      ],
+      [
+        -0.012379819031079325,
+        -0.09212350283749858,
+        0.995670542796767,
+        71.79994775624576
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "lens_mm": 1903.8427159836153,
+    "shift_x": -0.010981082916259766,
+    "shift_y": 0.1338489055633545
+  },
+  "before": {
+    "bridge": 13.190457679958824,
+    "nose": 5.4886027820229835,
+    "lip": 7.70843828063973,
+    "chin": 6.961203772096588,
+    "eyes": 4.563070810446719,
+    "iris": 1.8119418568812382
+  },
+  "after": {
+    "bridge": 11.0939583406438,
+    "nose": 5.887627485309382,
+    "lip": 7.360364784198317,
+    "chin": 6.870146229581638,
+    "eyes": 3.168062867352,
+    "iris": 3.684577840368124
+  },
+  "selectedRender": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\r2-worst.png",
+  "history": [
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\r1-balanced.png",
+      "metrics": {
+        "bridge": 12.413423109214365,
+        "nose": 5.724971486558625,
+        "lip": 7.671624159401028,
+        "chin": 5.736779298802572,
+        "eyes": 3.3255808490358953,
+        "iris": 2.973411468508309
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\r1-worst.png",
+      "metrics": {
+        "bridge": 9.836682956818665,
+        "nose": 6.991204151521823,
+        "lip": 8.401836047381332,
+        "chin": 6.708465589219915,
+        "eyes": 3.86917364299116,
+        "iris": 4.99734610668213
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\r2-balanced.png",
+      "metrics": {
+        "bridge": 12.595316737587753,
+        "nose": 5.732754112205039,
+        "lip": 7.301134829012238,
+        "chin": 6.357498425860473,
+        "eyes": 3.348949274122245,
+        "iris": 2.8254343280355467
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\r2-worst.png",
+      "metrics": {
+        "bridge": 11.0939583406438,
+        "nose": 5.887627485309382,
+        "lip": 7.360364784198317,
+        "chin": 6.870146229581638,
+        "eyes": 3.168062867352,
+        "iris": 3.684577840368124
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\r3-balanced.png",
+      "metrics": {
+        "bridge": 12.277114134398845,
+        "nose": 5.5285773073733235,
+        "lip": 7.347479984757083,
+        "chin": 6.269813468896453,
+        "eyes": 3.390995071870166,
+        "iris": 2.9521751450003997
+      }
+    },
+    {
+      "output": "F:\\NERVFaceWeb\\_build\\release61\\alignment-repair\\01_avatar_main__Cristiano_Ronaldo_01\\r3-worst.png",
+      "metrics": {
+        "bridge": 10.151404730281806,
+        "nose": 6.7983215394353715,
+        "lip": 7.980680070135681,
+        "chin": 7.391603952681894,
+        "eyes": 3.744153236235722,
+        "iris": 4.930316536020799
+      }
+    }
+  ],
+  "stalled": 2,
+  "finalMetrics": {
+    "bridge": 11.116548490431594,
+    "nose": 5.97601918430752,
+    "lip": 7.408711498622596,
+    "chin": 7.09444494802802,
+    "eyes": 3.3303329984186045,
+    "iris": 3.467897227150611
+  }
+}
