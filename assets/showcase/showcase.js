@@ -30,7 +30,7 @@ const pageSize=24;
 let page=0, query='', group='', cardObserver=null, cardGeneration=0;
 const cardLoaders=new WeakMap();
 function filteredCases() {
-  return cases.filter(c=>(!group || c.group===group) && (!query || (c.label+' '+c.category+' '+c.id).toLowerCase().includes(query)));
+  return cases.filter(c=>(!group || c.collection===group) && (!query || (c.label+' '+c.category+' '+c.id+' '+(c.aliases||[]).join(' ')).toLowerCase().includes(query)));
 }
 function fetchSeam(root) {
   if(!seamCache.has(root)) seamCache.set(root,loadSurface(root).catch(error=>{seamCache.delete(root);throw error;}));
@@ -217,10 +217,12 @@ $('#scPrev').onclick=()=>{if(index>0)openCase(index-1);}; $('#scNext').onclick=(
 document.querySelector('#scGridModes').onclick=e=>{const b=e.target.closest('[data-mode]');if(!b)return; gridMode=b.dataset.mode;pressed(document.querySelector('#scGridModes'),b);renderCards();};
 try {
   const response=await fetch('assets/showcase/cases.json'); if(!response.ok)throw new Error('Collection manifest unavailable');
-  cases=await response.json(); cases.sort((a,b)=>a.order-b.order);
+  cases=await response.json();
+  const collectionOrder=['western','asian','games','memes','unclassified'];
+  cases.sort((a,b)=>collectionOrder.indexOf(a.collection)-collectionOrder.indexOf(b.collection) || a.order-b.order);
   document.querySelector('#scCount').textContent=`${String(cases.length).padStart(2,'0')} ${cases.length===1?'CASE':'CASES'}`;
-  const batches=new Map(cases.map(c=>[c.group,c.category]));
-  for(const [value,label] of batches) {const option=document.createElement('option');option.value=value;option.textContent=label;document.querySelector('#scBatch').append(option);}
+  const collections=new Map(cases.map(c=>[c.collection,c.category]));
+  for(const [value,label] of collections) {const option=document.createElement('option');option.value=value;option.textContent=`${label} (${cases.filter(c=>c.collection===value).length})`;document.querySelector('#scBatch').append(option);}
   renderCards(); followHash();
   const initial=cases.findIndex(c=>location.hash===`#case-${c.id}`); if(initial>=0)openCase(initial);
 } catch(error) {document.querySelector('#scCount').textContent='COLLECTION UNAVAILABLE';document.querySelector('#scCollectionNote').textContent=error.message;}
