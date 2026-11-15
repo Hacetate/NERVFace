@@ -1,5 +1,6 @@
 import { loadSurface, createSurfaceMask } from './uv-seam.js?v=smooth24';
 const mount = document.querySelector('#showcase');
+const collectionLabels = {western:'Western portraits', asian:'Asian portraits', games:'Game characters', memes:'Memes', unclassified:'Unclassified'};
 mount.innerHTML = `
   <div class="section-heading"><div><p class="eyebrow"><span class="section-index">01</span> CASE COLLECTION</p><h2>One face.<br>Every detail<span class="red">.</span></h2></div><p>Original portrait and registered render, together. Use the slider below each card to move through the UV surface, then open the details to explore 3D and textures.</p></div>
   <div class="sc-toolbar"><div class="sc-switch" id="scGridModes" role="group" aria-label="Card image"><button data-mode="compare" aria-pressed="true">Compare</button><button data-mode="input" aria-pressed="false">Input</button><button data-mode="render" aria-pressed="false">Render</button><button data-mode="mesh" aria-pressed="false">Mesh</button></div><span class="sc-count" id="scCount">LOADING COLLECTION</span></div>
@@ -30,7 +31,7 @@ const pageSize=24;
 let page=0, query='', group='', cardObserver=null, cardGeneration=0;
 const cardLoaders=new WeakMap();
 function filteredCases() {
-  return cases.filter(c=>(!group || c.collection===group) && (!query || (c.label+' '+c.category+' '+c.id+' '+(c.aliases||[]).join(' ')).toLowerCase().includes(query)));
+  return cases.filter(c=>(!group || c.collections.includes(group)) && (!query || (c.label+' '+c.category+' '+c.id+' '+(c.aliases||[]).join(' ')).toLowerCase().includes(query)));
 }
 function fetchSeam(root) {
   if(!seamCache.has(root)) seamCache.set(root,loadSurface(root).catch(error=>{seamCache.delete(root);throw error;}));
@@ -216,13 +217,13 @@ $('#scLight').onchange=e=>viewer?.setLighting(e.target.value);
 $('#scPrev').onclick=()=>{if(index>0)openCase(index-1);}; $('#scNext').onclick=()=>{if(index<cases.length-1)openCase(index+1);};
 document.querySelector('#scGridModes').onclick=e=>{const b=e.target.closest('[data-mode]');if(!b)return; gridMode=b.dataset.mode;pressed(document.querySelector('#scGridModes'),b);renderCards();};
 try {
-  const response=await fetch('assets/showcase/cases.json'); if(!response.ok)throw new Error('Collection manifest unavailable');
+  const response=await fetch('assets/showcase/cases.json?v=multi-label-1'); if(!response.ok)throw new Error('Collection manifest unavailable');
   cases=await response.json();
-  const collectionOrder=['western','asian','games','memes','unclassified'];
-  cases.sort((a,b)=>collectionOrder.indexOf(a.collection)-collectionOrder.indexOf(b.collection) || a.order-b.order);
+  const collectionOrder=Object.keys(collectionLabels);
+  const rank=c=>Math.min(...c.collections.map(key=>collectionOrder.indexOf(key)));
+  cases.sort((a,b)=>rank(a)-rank(b) || a.order-b.order);
   document.querySelector('#scCount').textContent=`${String(cases.length).padStart(2,'0')} ${cases.length===1?'CASE':'CASES'}`;
-  const collections=new Map(cases.map(c=>[c.collection,c.category]));
-  for(const [value,label] of collections) {const option=document.createElement('option');option.value=value;option.textContent=`${label} (${cases.filter(c=>c.collection===value).length})`;document.querySelector('#scBatch').append(option);}
+  for(const [value,label] of Object.entries(collectionLabels)) {const count=cases.filter(c=>c.collections.includes(value)).length;if(!count)continue;const option=document.createElement('option');option.value=value;option.textContent=`${label} (${count})`;document.querySelector('#scBatch').append(option);}
   renderCards(); followHash();
   const initial=cases.findIndex(c=>location.hash===`#case-${c.id}`); if(initial>=0)openCase(initial);
 } catch(error) {document.querySelector('#scCount').textContent='COLLECTION UNAVAILABLE';document.querySelector('#scCollectionNote').textContent=error.message;}
