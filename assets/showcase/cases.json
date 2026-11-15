@@ -266,7 +266,8 @@
     "scene": "scene.json",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 22
   },
   {
     "id": "01_avatar_main__Cristiano_Ronaldo_04",
@@ -342,7 +343,8 @@
     "scene": "scene.json",
     "collections": [
       "western"
-    ]
+    ],
+    "frontPageOrder": 21
   },
   {
     "id": "01_avatar_main__Emilia_Clarke_02",
@@ -1995,7 +1997,8 @@
     "scene": "scene.json",
     "collections": [
       "asian"
-    ]
+    ],
+    "frontPageOrder": 23
   },
   {
     "id": "07_avatar_part3_original_branch__Yao_Ming_03_v2_nobald",
@@ -2389,7 +2392,7 @@
     "group": "09_avatar_part4_original_branch",
     "root": "assets/showcase/cases/09_avatar_part4_original_branch__IMAGE__7__nobald",
     "images": {
-      "input": "input.webp",
+      "input": "input.webp?v=original-hair-20261115",
       "bald": "bald.webp",
       "render": "render.webp",
       "mesh": "mesh.webp",

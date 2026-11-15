@@ -62,7 +62,7 @@ function fetchSeam(root) {
   if(seamCache.size>16) seamCache.delete(seamCache.keys().next().value);
   return result;
 }
-const asset = name => `${cases[index].root}/${name}`;
+const asset = name => `${cases[index].root}/${name==='input.webp' ? cases[index].images.input : name}`;
 function pressed(container, selected) { container.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===selected))); }
 function setImage(selector,name,alt) { const img=$(selector); img.src=asset(name); if(alt) img.alt=alt; }
 function split(value) {
@@ -168,7 +168,7 @@ function renderCards() {
     card.innerHTML=`<div class="sc-card-image"><img class="sc-card-base" loading="lazy" width="512" height="512"><canvas class="sc-card-overlay" width="512" height="512" role="img"></canvas><svg class="sc-seam" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><path fill="none" stroke="white" stroke-width="1" vector-effect="non-scaling-stroke"/></svg><span class="sc-image-label left">INPUT</span><span class="sc-image-label right">RENDER</span></div><div class="sc-card-controls"><input type="range" min="0" max="1" step="0.001" value="0.5" disabled><span class="sc-card-status" role="status">Loading UV midline…</span></div><div class="sc-card-caption"><strong></strong><button class="sc-card-open">Explore more</button></div>`;
     const q=s=>card.querySelector(s), picture=q('.sc-card-image'), base=q('.sc-card-base'), overlay=q('.sc-card-overlay'), slider=q('input'), status=q('.sc-card-status');
     const comparing=gridMode==='compare'; card.dataset.comparing=String(comparing);
-    base.src=`${c.root}/${comparing?'input':gridMode}.webp`; base.alt=`${c.label} ${comparing?'original portrait':gridMode}`;
+    base.src=`${c.root}/${c.images[comparing?'input':gridMode]}`; base.alt=`${c.label} ${comparing?'original portrait':gridMode}`;
     overlay.setAttribute('aria-label',`${c.label} registered render masked by native UV`);
     q('strong').textContent=c.label; q('strong').title=c.label;
     q('.sc-card-open').setAttribute('aria-label',`Explore ${c.label} in 3D and UV`); q('.sc-card-open').onclick=()=>openCase(i);
@@ -240,7 +240,7 @@ $('#scLight').onchange=e=>viewer?.setLighting(e.target.value);
 $('#scPrev').onclick=()=>{if(index>0)openCase(index-1);}; $('#scNext').onclick=()=>{if(index<cases.length-1)openCase(index+1);};
 document.querySelector('#scGridModes').onclick=e=>{const b=e.target.closest('[data-mode]');if(!b)return; gridMode=b.dataset.mode;pressed(document.querySelector('#scGridModes'),b);renderCards();};
 try {
-  const response=await fetch('assets/showcase/cases.json?v=priority-collections-1'); if(!response.ok)throw new Error('Collection manifest unavailable');
+  const response=await fetch('assets/showcase/cases.json?v=first-page-24-hair'); if(!response.ok)throw new Error('Collection manifest unavailable');
   cases=await response.json();
   cases=orderCollection(cases);
   document.querySelector('#scCount').textContent=`${String(cases.length).padStart(2,'0')} ${cases.length===1?'CASE':'CASES'}`;

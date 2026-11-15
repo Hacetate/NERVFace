@@ -236,7 +236,7 @@ async function selectAsset(index) {
   selectedAsset = index; const item = assetCases[index];
   $('#assetCaseSelect').value=String(index);
   selectButtons($('#assetCases'), index);
-  $('#assetInput').src = `${item.root}/input.webp`; $('#assetInput').alt = `${item.label} input portrait`;
+  $('#assetInput').src = `${item.root}/${item.images.input}`; $('#assetInput').alt = `${item.label} input portrait`;
   $('#assetInputLabel').textContent = item.label; $('#viewerTitle').textContent = `${String(index+1).padStart(2,'0')} / ${assetCases.length} · ${item.label}`;
   try {
     if (viewer) await loadCase(index);
@@ -412,7 +412,7 @@ async function initializeCases() {
     cases = await response.json();
     if (!cases.length) throw new Error('No cases available');
     makeCaseButtons($('#heroCases'), selectHero);
-    const assetResponse=await fetch('assets/showcase/cases.json');
+    const assetResponse=await fetch('assets/showcase/cases.json?v=first-page-24-hair');
     if(!assetResponse.ok) throw new Error('Missing full character collection');
     assetCases=(await assetResponse.json()).map(item=>({...item,sourceName:item.selectionId.split('/').pop()}));
     if(!assetCases.length) throw new Error('No 3D characters available');
@@ -433,7 +433,7 @@ async function initializeCases() {
     });
     selectedHero = Math.min(selectedHero, cases.length - 1);
     await selectHero(selectedHero);
-    $('#assetInput').src = `${assetCases[selectedAsset].root}/input.webp`;
+    $('#assetInput').src = `${assetCases[selectedAsset].root}/${assetCases[selectedAsset].images.input}`;
     $('#assetInput').alt = `${assetCases[selectedAsset].label} input portrait`;
     $('#assetInputLabel').textContent = assetCases[selectedAsset].label;
     $('#viewerTitle').textContent = `${String(selectedAsset+1).padStart(2,'0')} / ${assetCases.length} · ${assetCases[selectedAsset].label}`;
