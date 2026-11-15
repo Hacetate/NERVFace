@@ -1,6 +1,14 @@
 import { loadSurface, createSurfaceMask } from './uv-seam.js?v=smooth24';
 const mount = document.querySelector('#showcase');
 const collectionLabels = {western:'Western portraits', asian:'Asian portraits', games:'Game characters', memes:'Memes', unclassified:'Unclassified'};
+function balanceCollections(items) {
+  // Assign one scheduling bucket per case; filtering still uses all its labels.
+  const priority=['games','memes','western','asian','unclassified'];
+  const buckets=priority.map(key=>items.filter(c=>priority.find(k=>c.collections.includes(k))===key).sort((a,b)=>a.order-b.order));
+  // Evenly space each bucket across the full list so later pages stay varied too.
+  return buckets.flatMap((bucket,rank)=>bucket.map((item,i)=>({item,rank,position:(i+.5)/bucket.length})))
+    .sort((a,b)=>a.position-b.position || a.rank-b.rank).map(entry=>entry.item);
+}
 mount.innerHTML = `
   <div class="section-heading"><div><p class="eyebrow"><span class="section-index">01</span> CASE COLLECTION</p><h2>One face.<br>Every detail<span class="red">.</span></h2></div><p>Original portrait and registered render, together. Use the slider below each card to move through the UV surface, then open the details to explore 3D and textures.</p></div>
   <div class="sc-toolbar"><div class="sc-switch" id="scGridModes" role="group" aria-label="Card image"><button data-mode="compare" aria-pressed="true">Compare</button><button data-mode="input" aria-pressed="false">Input</button><button data-mode="render" aria-pressed="false">Render</button><button data-mode="mesh" aria-pressed="false">Mesh</button></div><span class="sc-count" id="scCount">LOADING COLLECTION</span></div>
@@ -219,9 +227,7 @@ document.querySelector('#scGridModes').onclick=e=>{const b=e.target.closest('[da
 try {
   const response=await fetch('assets/showcase/cases.json?v=multi-label-1'); if(!response.ok)throw new Error('Collection manifest unavailable');
   cases=await response.json();
-  const collectionOrder=Object.keys(collectionLabels);
-  const rank=c=>Math.min(...c.collections.map(key=>collectionOrder.indexOf(key)));
-  cases.sort((a,b)=>rank(a)-rank(b) || a.order-b.order);
+  cases=balanceCollections(cases);
   document.querySelector('#scCount').textContent=`${String(cases.length).padStart(2,'0')} ${cases.length===1?'CASE':'CASES'}`;
   for(const [value,label] of Object.entries(collectionLabels)) {const count=cases.filter(c=>c.collections.includes(value)).length;if(!count)continue;const option=document.createElement('option');option.value=value;option.textContent=`${label} (${count})`;document.querySelector('#scBatch').append(option);}
   renderCards(); followHash();
