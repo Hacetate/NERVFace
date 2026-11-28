@@ -6,7 +6,7 @@ window.NERVFACE_CONFIG = {
   description: null,
   venue: null, // Add only a confirmed publication / venue label.
   authors: [], // Example shape: { name: 'Author name', affiliation: 'Institution' }
-  links: { paper: null, code: null, dataset: null, weights: null },
+  links: { paper: 'assets/paper/NERVFace_arXiv.pdf', arxiv: null, code: 'https://github.com/Hacetate/NERVFace', dataset: null, weights: null },
   bibtex: null,
   teaserVideo: null,
   methodFigure: null

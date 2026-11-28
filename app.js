@@ -30,8 +30,9 @@ function setPublicationInfo() {
       body.append(line);
     }
   }
-  $('#projectLinks').querySelectorAll('button').forEach((button) => button.remove());
-  for (const [key, label] of [['paper', 'Paper'], ['code', 'Code'], ['dataset', 'Dataset']]) {
+  const projectLinks = $('#projectLinks');
+  projectLinks.replaceChildren();
+  for (const [key, label] of [['paper', 'Paper'], ['arxiv', 'arXiv'], ['code', 'Code'], ['dataset', 'Dataset']]) {
     const url = mediaUrl(config.links[key]);
     const control = document.createElement(url ? 'a' : 'button');
     control.className = 'button';
@@ -42,7 +43,7 @@ function setPublicationInfo() {
       control.title = `${label} URL has not been provided`;
       const badge = document.createElement('span'); badge.className = 'soon'; badge.textContent = 'TBA'; control.append(badge);
     }
-    $('#projectLinks').append(control);
+    projectLinks.append(control);
   }
   const video = mediaUrl(config.teaserVideo);
   if (video && $('#videoSlot')) { $('#videoSlot').hidden = false; $('#teaserVideo').src = video; }
