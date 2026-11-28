@@ -5,13 +5,18 @@
     "sourceName": "Andras_Arato_02_v2_nobald",
     "root": "assets/showcase/cases/07_avatar_part3_original_branch__Andras_Arato_02_v2_nobald",
     "images": {
-      "input": "input.webp",
-      "geometry": "mesh.webp",
-      "render": "render.webp"
+      "input": "cover/input.webp",
+      "geometry": "cover/geometry.webp",
+      "render": "cover/render.webp",
+      "uv": "cover/uv.webp"
     },
     "nose": [
-      56.26,
-      61.99
+      56.255,
+      63.3721
+    ],
+    "frameSize": [
+      955,
+      1191
     ]
   },
   {
@@ -20,13 +25,18 @@
     "sourceName": "Elon_Musk_02",
     "root": "assets/showcase/cases/01_avatar_main__Elon_Musk_02",
     "images": {
-      "input": "input.webp",
-      "geometry": "mesh.webp",
-      "render": "render.webp"
+      "input": "cover/input.webp",
+      "geometry": "cover/geometry.webp",
+      "render": "cover/render.webp",
+      "uv": "cover/uv.webp"
     },
     "nose": [
-      57.05,
-      63.91
+      60.7761,
+      66.0475
+    ],
+    "frameSize": [
+      852,
+      1278
     ]
   },
   {
@@ -35,13 +45,18 @@
     "sourceName": "Jill_Valentine_01",
     "root": "assets/showcase/cases/08_avatar_part4_bald__Jill_Valentine_01",
     "images": {
-      "input": "input.webp",
-      "geometry": "mesh.webp",
-      "render": "render.webp"
+      "input": "cover/input.webp",
+      "geometry": "cover/geometry.webp",
+      "render": "cover/render.webp",
+      "uv": "cover/uv.webp"
     },
     "nose": [
-      51.77,
-      65.3
+      47.2169,
+      67.7222
+    ],
+    "frameSize": [
+      1197,
+      1315
     ]
   },
   {
@@ -50,20 +65,18 @@
     "sourceName": "sam",
     "root": "assets/cases/case-02",
     "images": {
-      "input": "hero/input.webp",
-      "geometry": "hero/geometry.webp",
-      "render": "hero/render.webp",
-      "uv": "hero/uv.webp"
+      "input": "cover/input.webp",
+      "geometry": "cover/geometry.webp",
+      "render": "cover/render.webp",
+      "uv": "cover/uv.webp"
     },
     "nose": [
-      47.36,
-      63.95
+      45.1859,
+      64.186
     ],
-    "crop": [
-      68,
-      132,
-      926,
-      990
+    "frameSize": [
+      723,
+      1017
     ]
   }
 ]

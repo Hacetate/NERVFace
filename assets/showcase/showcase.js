@@ -240,7 +240,7 @@ $('#scLight').onchange=e=>viewer?.setLighting(e.target.value);
 $('#scPrev').onclick=()=>{if(index>0)openCase(index-1);}; $('#scNext').onclick=()=>{if(index<cases.length-1)openCase(index+1);};
 document.querySelector('#scGridModes').onclick=e=>{const b=e.target.closest('[data-mode]');if(!b)return; gridMode=b.dataset.mode;pressed(document.querySelector('#scGridModes'),b);renderCards();};
 try {
-  const response=await fetch('assets/showcase/cases.json?v=web-20261128'); if(!response.ok)throw new Error('Collection manifest unavailable');
+  const response=await fetch('assets/showcase/cases.json?v=rgb-cover-2'); if(!response.ok)throw new Error('Collection manifest unavailable');
   cases=await response.json();
   cases=orderCollection(cases);
   document.querySelector('#scCount').textContent=`${String(cases.length).padStart(2,'0')} ${cases.length===1?'CASE':'CASES'}`;

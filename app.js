@@ -77,15 +77,8 @@ const split = { x: parseFloat(frame.style.getPropertyValue('--x')), y: parseFloa
 let splitAtNose = true;
 function resetSplitToNose(announce = false) {
   const nose = cases[selectedHero]?.nose;
-  if (!nose || !frame.clientWidth || !frame.clientHeight) return;
-  // Nose coordinates are relative to the image inside the padded comparison frame.
-  const image = frame.querySelector('.compare-image');
-  const style = getComputedStyle(image);
-  const side = Math.min(image.clientWidth - 2 * parseFloat(style.paddingLeft),
-                        image.clientHeight - 2 * parseFloat(style.paddingTop));
-  const anchorY = nose[1] - 3; // Three percent of the portrait height above the nose tip.
-  updateSplit(50 + (nose[0] - 50) * side / frame.clientWidth,
-              50 + (anchorY - 50) * side / frame.clientHeight, announce);
+  if (!nose) return;
+  updateSplit(nose[0], nose[1] - 3, announce);
   splitAtNose = true;
 }
 new ResizeObserver(() => { if (splitAtNose) resetSplitToNose(); }).observe(frame);
@@ -126,17 +119,12 @@ function setHeroRegion(item, { select, image, badge }) {
   const kind = select.value;
   const label = select.selectedOptions[0].textContent;
   badge.textContent = label;
-  image.src = heroRegionUrl(item, kind);
+  image.src = heroImageUrl(item, kind);
   image.alt = `${item.label} · ${kind === 'uv' ? 'UV coordinates on the head' : label}`;
 }
 
 function syncHeroRegions(item) {
   for (const region of heroRegions) setHeroRegion(item, region);
-}
-
-function heroRegionUrl(item, kind) {
-  if (kind === 'uv' && !item.images.uv) return `assets/motion/${item.id}-uv.webp`;
-  return heroImageUrl(item, kind);
 }
 
 for (const region of heroRegions) {
@@ -174,7 +162,8 @@ function makeCaseButtons(container, callback, collection=cases, active=selectedH
   collection.forEach((item, index) => {
     const button = document.createElement('button'); button.className = 'case-chip';
     button.setAttribute('aria-pressed', String(index === active)); button.setAttribute('aria-label', `Select ${item.label}`);
-    const image = new Image(); image.loading='lazy'; image.src = `${item.root}/${item.images?.input || 'thumb.webp'}`; image.alt = ''; image.width = 128; image.height = 128;
+    const image = new Image(); image.loading='lazy'; image.src = `${item.root}/${item.images?.input || 'thumb.webp'}`; image.alt = '';
+    [image.width, image.height] = item.frameSize || [128, 128];
     const label = document.createElement('span'); label.textContent = item.label;
     button.append(image, label); button.addEventListener('click', () => callback(index)); container.append(button);
   });
@@ -190,11 +179,12 @@ async function selectHero(index) {
   try {
     const filenames = [...new Set(heroRegions.map(region => region.select.value))];
     await Promise.all(filenames.map((filename) => new Promise((resolve, reject) => {
-      const image = new Image(); image.onload = resolve; image.onerror = reject; image.src = heroRegionUrl(item, filename);
+      const image = new Image(); image.onload = resolve; image.onerror = reject; image.src = heroImageUrl(item, filename);
     })));
     if (sequence !== heroSequence) return;
     selectedHero = index;
     syncHeroRegions(item);
+    frame.closest('.comparison').style.setProperty('--portrait-ratio', item.frameSize[0] / item.frameSize[1]);
     resetSplitToNose(true);
     selectButtons($('#heroCases'), index);
     selectButtons($('#stageCases'), index);
@@ -421,12 +411,12 @@ $('#reloadViewer').addEventListener('click', recoverViewer);
 
 async function initializeCases() {
   try {
-    const response = await fetch('assets/cases.json?v=web-20261128');
+    const response = await fetch('assets/cases.json?v=rgb-cover-2');
     if (!response.ok) throw new Error('Missing case manifest');
     cases = await response.json();
     if (!cases.length) throw new Error('No cases available');
     selectedHero = Math.max(0, cases.findIndex(item => item.sourceName === 'sam'));
-    const assetResponse=await fetch('assets/showcase/cases.json?v=web-20261128');
+    const assetResponse=await fetch('assets/showcase/cases.json?v=rgb-cover-2');
     if(!assetResponse.ok) throw new Error('Missing full character collection');
     const gallery = (await assetResponse.json()).map(item => ({...item, sourceName: item.selectionId.split('/').pop()}));
     heroCatalog = new Map(gallery.map(item => [item.sourceName, item]));

@@ -21,7 +21,8 @@ Open http://127.0.0.1:8084/. WebGPU/PT needs a supported browser and GPU.
 | --- | --- |
 | `index.html`, `styles.css`, `app.js`, `site-config.js` | Main page and interactions |
 | `assets/showcase/showcase.js`, `showcase.css`, `uv-seam.js` | Gallery, dialog and UV slider; edit directly |
-| `assets/motion/` | Facial animation, expression and speech clips, and additional cover UV views |
+| `assets/cases.json` | Cover characters, image paths, frame sizes and comparison handle positions |
+| `assets/motion/` | Facial animation, blendshape controls, expression clips and speech animation |
 | `src/dual-viewer.js` | Main real-time and PT viewer source |
 | `src/showcase-viewer.js` | Case dialog's 3D viewer source |
 | `scripts/build.mjs`, `scripts/pt-atlas-patch.mjs` | PT build, including texture atlas fix |
