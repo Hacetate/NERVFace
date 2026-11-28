@@ -25,15 +25,15 @@ function orderCollection(items, pageSize=24) {
   return [...first,...remaining];
 }
 mount.innerHTML = `
-  <div class="section-heading"><div><p class="eyebrow"><span class="section-index">01</span> CASE COLLECTION</p><h2>One face.<br>Every detail<span class="red">.</span></h2></div><p>Original portrait and registered render, together. Use the slider below each card to move through the UV surface, then open the details to explore 3D and textures.</p></div>
+  <div class="section-heading"><h2>Character gallery</h2><p>Drag a slider to compare the input portrait with the render.</p></div>
   <div class="sc-toolbar"><div class="sc-switch" id="scGridModes" role="group" aria-label="Card image"><button data-mode="compare" aria-pressed="true">Compare</button><button data-mode="input" aria-pressed="false">Input</button><button data-mode="render" aria-pressed="false">Render</button><button data-mode="mesh" aria-pressed="false">Mesh</button></div><span class="sc-count" id="scCount">LOADING COLLECTION</span></div>
   <div class="sc-filters"><label for="scSearch">FIND A FACE<input id="scSearch" type="search" placeholder="Search name or case…" autocomplete="off"></label><label for="scBatch">COLLECTION<select id="scBatch"><option value="">All collections</option></select></label></div>
-  <div class="sc-grid" id="scGrid"></div><nav class="sc-pagination" aria-label="Case collection pages"><button id="scPagePrev">← Previous</button><span class="sc-count" id="scPageStatus" role="status"></span><button id="scPageNext">Next →</button></nav><p class="sc-section-note" id="scCollectionNote">Move each slider to compare along the native UV surface. Press Home while focused on a slider to restore the midline.</p>`;
+  <div class="sc-grid" id="scGrid"></div><nav class="sc-pagination" aria-label="Case collection pages"><button id="scPagePrev">← Previous</button><span class="sc-count" id="scPageStatus" role="status"></span><button id="scPageNext">Next →</button></nav><p class="sc-section-note" id="scCollectionNote"></p>`;
 const dialog = document.createElement('dialog');
 dialog.className = 'sc-dialog';
 dialog.setAttribute('aria-labelledby','scTitle');
 dialog.innerHTML = `
-  <header class="sc-dialog-header"><div><p class="eyebrow">NERVFACE / CASE STUDY</p><h2 id="scTitle"></h2></div><button class="sc-close" aria-label="Close case">×</button></header>
+  <header class="sc-dialog-header"><div><h2 id="scTitle"></h2></div><button class="sc-close" aria-label="Close case">×</button></header>
   <div class="sc-body"><div class="sc-main">
     <div class="sc-switch sc-tabs" role="group" aria-label="Case detail view"><button data-tab="compare" aria-pressed="true">Compare</button><button data-tab="3d" aria-pressed="false">3D asset</button><button data-tab="uv" aria-pressed="false">UV textures</button><button data-tab="prep" aria-pressed="false">Input prep</button></div>
     <div data-panel="compare">
@@ -43,7 +43,7 @@ dialog.innerHTML = `
     <div data-panel="3d" hidden><div class="sc-stage sc-viewer" id="scViewer"><div class="sc-viewer-status" id="scViewerStatus" role="status"></div></div><div class="sc-viewer-controls"><button id="scReset">Reset view</button><button id="scRotate" aria-pressed="false">Auto rotate</button><button id="scGray" aria-pressed="false">Gray mesh</button><label for="scLight" class="sc-count">LIGHT</label><select id="scLight"><option value="source">Source lighting</option><option value="studio">Neutral studio</option></select></div><p class="sc-caption">Drag to orbit · scroll to zoom. Interactive lighting is an approximation; the Compare tab shows the final Cycles result.</p></div>
     <div data-panel="uv" hidden><div class="sc-stage"><img id="scUV" alt="Pro UV texture"></div><div class="sc-switch" id="scUVModes" role="group" aria-label="UV texture"><button data-mode="pro" aria-pressed="true">Pro</button><button data-mode="uniform" aria-pressed="false">Uniform</button><button data-mode="unwarp" aria-pressed="false">Unwarp</button></div><p class="sc-caption" id="scUVCaption">Pro · final appearance texture used by this case.</p></div>
     <div data-panel="prep" hidden><div class="sc-prep-grid"><figure><img id="scPrepInput" alt="Original input"><figcaption>01 / ORIGINAL PORTRAIT</figcaption></figure><figure><img id="scBald" alt="Bald preparation used for reconstruction"><figcaption>02 / RECONSTRUCTION INPUT</figcaption></figure></div><p class="sc-caption">The original portrait and the prepared bald image are kept as separate assets.</p></div>
-  </div><aside class="sc-aside"><p class="eyebrow">SOURCE PORTRAIT</p><figure><img id="scReference" alt="Original source portrait"><figcaption>ORIGINAL INPUT / FULL FRAME</figcaption></figure><h3>From image to asset.</h3><p>Compare the final appearance with the original portrait, then inspect the same registered head and eyes in 3D.</p><div class="sc-tags" id="scTags"></div><h3>Aligned, together.</h3><p>Input, render, and gray mesh share one image frame. No independent face crops.</p></aside></div>
+  </div><aside class="sc-aside"><figure><img id="scReference" alt="Original source portrait"><figcaption>Source portrait</figcaption></figure><div class="sc-tags" id="scTags"></div></aside></div>
   <footer class="sc-footer"><span class="sc-count" id="scPosition"></span><div><button id="scPrev" aria-label="Previous case">← Previous</button> <button id="scNext" aria-label="Next case">Next →</button></div></footer>`;
 document.body.append(dialog);
 const $ = s => dialog.querySelector(s);
@@ -165,7 +165,7 @@ function renderCards() {
   document.querySelector('#scGrid').replaceChildren(...matches.slice(page*pageSize,(page+1)*pageSize).map(c=>{
     const i=cases.indexOf(c);
     const card=document.createElement('article'); card.className='sc-card'; card.id=`compare-${c.id}`; card.tabIndex=-1; card.setAttribute('aria-label',`${c.label} comparison`);
-    card.innerHTML=`<div class="sc-card-image"><img class="sc-card-base" loading="lazy" width="512" height="512"><canvas class="sc-card-overlay" width="512" height="512" role="img"></canvas><svg class="sc-seam" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><path fill="none" stroke="white" stroke-width="1" vector-effect="non-scaling-stroke"/></svg><span class="sc-image-label left">INPUT</span><span class="sc-image-label right">RENDER</span></div><div class="sc-card-controls"><input type="range" min="0" max="1" step="0.001" value="0.5" disabled><span class="sc-card-status" role="status">Loading UV midline…</span></div><div class="sc-card-caption"><strong></strong><button class="sc-card-open">Explore more</button></div>`;
+    card.innerHTML=`<div class="sc-card-image"><img class="sc-card-base" loading="lazy" width="512" height="512"><canvas class="sc-card-overlay" width="512" height="512" role="img"></canvas><svg class="sc-seam" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true"><path fill="none" stroke="white" stroke-width="1" vector-effect="non-scaling-stroke"/></svg></div><div class="sc-card-controls"><input type="range" min="0" max="1" step="0.001" value="0.5" disabled><span class="sc-card-status" role="status">Loading UV midline…</span></div><div class="sc-card-caption"><strong></strong><button class="sc-card-open">Explore</button></div>`;
     const q=s=>card.querySelector(s), picture=q('.sc-card-image'), base=q('.sc-card-base'), overlay=q('.sc-card-overlay'), slider=q('input'), status=q('.sc-card-status');
     const comparing=gridMode==='compare'; card.dataset.comparing=String(comparing);
     base.src=`${c.root}/${c.images[comparing?'input':gridMode]}`; base.alt=`${c.label} ${comparing?'original portrait':gridMode}`;
@@ -240,7 +240,7 @@ $('#scLight').onchange=e=>viewer?.setLighting(e.target.value);
 $('#scPrev').onclick=()=>{if(index>0)openCase(index-1);}; $('#scNext').onclick=()=>{if(index<cases.length-1)openCase(index+1);};
 document.querySelector('#scGridModes').onclick=e=>{const b=e.target.closest('[data-mode]');if(!b)return; gridMode=b.dataset.mode;pressed(document.querySelector('#scGridModes'),b);renderCards();};
 try {
-  const response=await fetch('assets/showcase/cases.json?v=first-page-24-hair'); if(!response.ok)throw new Error('Collection manifest unavailable');
+  const response=await fetch('assets/showcase/cases.json?v=web-20261128'); if(!response.ok)throw new Error('Collection manifest unavailable');
   cases=await response.json();
   cases=orderCollection(cases);
   document.querySelector('#scCount').textContent=`${String(cases.length).padStart(2,'0')} ${cases.length===1?'CASE':'CASES'}`;

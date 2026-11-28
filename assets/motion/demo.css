@@ -1,0 +1,128 @@
+.motion-demo .section-heading { margin-bottom: 20px; }
+.motion-row + .motion-row, .motion-finale { margin-top: 32px; }
+.motion-row h3, .motion-finale h3 { margin: 0; }
+.motion-controls, .motion-range {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.motion-status { margin: 0 0 8px; font-size: .84rem; color: var(--muted); }
+.motion-controls { padding: 14px 0; gap: 18px; }
+.motion-demo [hidden] { display: none; }
+.motion-demo button, .motion-demo select {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 8px 12px;
+  font: inherit;
+  font-size: .86rem;
+}
+.motion-demo button:disabled, .motion-demo select:disabled { opacity: .5; }
+#expressionPlay { min-width: 74px; }
+.motion-controls label { font-size: .86rem; }
+.motion-controls select { margin-left: 6px; max-width: min(61vw, 260px); }
+.motion-range { flex: 1; min-width: min(240px, 100%); }
+.motion-range input { flex: 1; min-width: 80px; accent-color: var(--accent); }
+.motion-range output { min-width: 3ch; }
+.motion-faces { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.motion-faces figure { margin: 0; min-width: 0; border: 1px solid var(--line); }
+.motion-faces figcaption, .motion-expression figcaption span { padding: 8px 12px; font-size: .85rem; }
+.motion-portrait {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #f5f4f2;
+}
+.motion-portrait img { display: block; width: 100%; height: auto; }
+.motion-expression { margin: 0; border: 1px solid var(--line); }
+.motion-expression video { display: block; width: 100%; height: auto; background: #f5f4f2; }
+.motion-expression figcaption { gap: 0; border-top: 1px solid var(--line); }
+.motion-expression figcaption span + span { border-left: 1px solid var(--line); }
+.motion-finale h3 { margin-bottom: 12px; }
+.motion-finale video { display: block; width: 100%; height: auto; background: #fff; border: 1px solid var(--line); }
+@media (max-width: 540px) {
+  .motion-faces { gap: 5px; }
+  .motion-faces figcaption, .motion-expression figcaption span { padding: 5px; font-size: .7rem; }
+}
+.hero .stage-image-inset { padding-top: 14px; }
+.hero-region-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  padding: 12px 14px 14px;
+  border-top: 1px solid var(--line);
+  background: var(--soft);
+  text-align: left;
+}
+.hero-region-options label {
+  position: relative;
+  min-width: 0;
+}
+.hero-region-options label span {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  font: 12px/1.25 var(--sans, Arial, sans-serif);
+  color: var(--muted);
+  pointer-events: none;
+}
+.hero-region-options label::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  width: 6px;
+  height: 6px;
+  border: solid var(--muted);
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.hero-region-options select {
+  display: block;
+  appearance: none;
+  min-width: 0;
+  width: 100%;
+  padding: 24px 22px 8px 9px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--field);
+  color: var(--ink);
+  font: 500 14px/1.25 var(--sans, Arial, sans-serif);
+  cursor: pointer;
+}
+.hero-region-options select:hover { background: var(--field-hover); border-color: var(--rule); }
+.hero-region-options select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 420px) {
+  .hero-region-options { padding-inline: 8px; gap: 4px; }
+  .hero-region-options select { padding-inline: 7px 15px; font-size: 13px; }
+  .hero-region-options label span { left: 8px; }
+  .hero-region-options label::after { right: 7px; }
+}
+
+/* Use the original typefaces and rules, with readable captions for the interactive figures. */
+.hero .plate-topline > span,
+.hero .stage-cases button,
+.hero .filmstrip-caption > span,
+.hero .filmstrip-caption strong,
+.hero .hero-cases .case-chip span,
+.hero .actions .button:disabled,
+.asset-strip .case-chip span,
+.asset-picker label,
+.environment-panel .mono-label,
+.environment-name, .environment-status,
+.view-presets > span, .view-presets button,
+.viewer-tools button, .viewer-note,
+.input-photo figcaption,
+.sc-filters label, .sc-count,
+.footer-line > a:last-child { font-size: 12px; }
+.hero .image-label, .sc-image-label { font-size: 11px; }
+.sc-card-caption strong { font-size: 13px; }
+.sc-card-open { font-size: 12px; }
+.environment-name { white-space: normal; }
+.hero .hero-cases .case-chip span { white-space: normal; text-align: center; }
+.stage-cases button::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; border: 1px solid currentColor; }
+.stage-cases button[aria-pressed=true]::before { background: currentColor; }
+.sc-section-note:empty { display: none; }
+#expressionTitle { scroll-margin-top: 84px; }

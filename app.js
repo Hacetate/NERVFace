@@ -44,23 +44,8 @@ function setPublicationInfo() {
     }
     $('#projectLinks').append(control);
   }
-  if (config.bibtex) {
-    $('#bibtex').textContent = config.bibtex;
-    $('#citationStatus').textContent = 'BIBTEX';
-    $('#citationDescription').textContent = 'If you find this work useful, please cite the paper using the entry below.';
-    $('#copyCitation').disabled = false;
-  }
   const video = mediaUrl(config.teaserVideo);
   if (video && $('#videoSlot')) { $('#videoSlot').hidden = false; $('#teaserVideo').src = video; }
-  const method = mediaUrl(config.methodFigure);
-  if (method) {
-    $('#methodPlaceholder').hidden = true; $('#methodDraftNote').hidden = true;
-    $('#method .section-heading > p').textContent = 'An overview of the NERVFace generation pipeline.';
-    $('#methodFigure').hidden = false;
-    $('#methodFigure img').src = method;
-    $('#methodFigure button').dataset.lightbox = method;
-    $('#methodFigure button').dataset.caption = 'NERVFace method overview';
-  }
 }
 setPublicationInfo();
 
@@ -73,11 +58,6 @@ $('#navigation').addEventListener('click', (event) => {
   if (!event.target.closest('a')) return;
   $('#navigation').dataset.open = 'false';
   $('#menuButton').setAttribute('aria-expanded', 'false');
-});
-$('#copyCitation').addEventListener('click', async () => {
-  if (!config.bibtex) return;
-  try { await navigator.clipboard.writeText(config.bibtex); notify('Citation copied to clipboard.'); }
-  catch { notify('Clipboard is unavailable. Select and copy the citation manually.'); }
 });
 const lightbox = $('#lightbox');
 document.addEventListener('click', (event) => {
@@ -93,8 +73,24 @@ lightbox.addEventListener('click', (event) => { if (event.target === lightbox) l
 
 const frame = $('#compareFrame');
 const handle = $('#compareHandle');
-const split = { x: 50, y: 48 };
+const split = { x: parseFloat(frame.style.getPropertyValue('--x')), y: parseFloat(frame.style.getPropertyValue('--y')) };
+let splitAtNose = true;
+function resetSplitToNose(announce = false) {
+  const nose = cases[selectedHero]?.nose;
+  if (!nose || !frame.clientWidth || !frame.clientHeight) return;
+  // Nose coordinates are relative to the image inside the padded comparison frame.
+  const image = frame.querySelector('.compare-image');
+  const style = getComputedStyle(image);
+  const side = Math.min(image.clientWidth - 2 * parseFloat(style.paddingLeft),
+                        image.clientHeight - 2 * parseFloat(style.paddingTop));
+  const anchorY = nose[1] - 3; // Three percent of the portrait height above the nose tip.
+  updateSplit(50 + (nose[0] - 50) * side / frame.clientWidth,
+              50 + (anchorY - 50) * side / frame.clientHeight, announce);
+  splitAtNose = true;
+}
+new ResizeObserver(() => { if (splitAtNose) resetSplitToNose(); }).observe(frame);
 function updateSplit(x, y, announce = false) {
+  splitAtNose = false;
   split.x = Math.max(0, Math.min(100, x)); split.y = Math.max(0, Math.min(100, y));
   frame.style.setProperty('--x', `${split.x}%`); frame.style.setProperty('--y', `${split.y}%`);
   if (announce) $('#comparePosition').textContent = `Dividers at ${Math.round(split.x)} percent horizontal and ${Math.round(split.y)} percent vertical.`;
@@ -116,20 +112,43 @@ handle.addEventListener('keydown', (event) => {
   stopReveal();
   const step = event.shiftKey ? 10 : 2;
   const directions = { ArrowLeft: [-step, 0], ArrowRight: [step, 0], ArrowUp: [0, -step], ArrowDown: [0, step] };
-  if (event.key === 'Home') { event.preventDefault(); updateSplit(50, 48, true); }
+  if (event.key === 'Home') { event.preventDefault(); resetSplitToNose(true); }
   else if (directions[event.key]) { event.preventDefault(); const [x, y] = directions[event.key]; updateSplit(split.x + x, split.y + y, true); }
 });
-document.querySelectorAll('.compare-modes button').forEach((button) => {
-  button.addEventListener('click', () => {
+const heroRegions = Array.from(document.querySelectorAll('[data-hero-region]'), select => ({
+  select,
+  image: frame.querySelector(`[data-hero-image="${select.dataset.heroRegion}"]`),
+  badge: frame.querySelector(`[data-hero-label="${select.dataset.heroRegion}"]`),
+}));
+let heroCatalog = new Map();
+
+function setHeroRegion(item, { select, image, badge }) {
+  const kind = select.value;
+  const label = select.selectedOptions[0].textContent;
+  badge.textContent = label;
+  image.src = heroRegionUrl(item, kind);
+  image.alt = `${item.label} · ${kind === 'uv' ? 'UV coordinates on the head' : label}`;
+}
+
+function syncHeroRegions(item) {
+  for (const region of heroRegions) setHeroRegion(item, region);
+}
+
+function heroRegionUrl(item, kind) {
+  if (kind === 'uv' && !item.images.uv) return `assets/motion/${item.id}-uv.webp`;
+  return heroImageUrl(item, kind);
+}
+
+for (const region of heroRegions) {
+  region.select.addEventListener('change', () => {
     stopReveal();
-    frame.dataset.view = button.dataset.view;
-    document.querySelectorAll('.compare-modes button').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+    if (cases[selectedHero]) setHeroRegion(cases[selectedHero], region);
   });
-});
+}
 
 let cases = [];
 let assetCases = [];
-let selectedHero = 1;
+let selectedHero = -1;
 let selectedAsset = 1;
 let heroSequence = 0;
 let viewer;
@@ -140,13 +159,11 @@ function syncRenderControls() {
   document.querySelectorAll('.renderer-switch button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.renderMode === selectedRenderMode)));
   const wire = selectedMaterial === 'wireframe';
   $('#renderModeBadge').textContent = wire ? 'WIREFRAME / RASTER' : selectedRenderMode === 'pathtraced' ? 'PROGRESSIVE / PT' : 'REAL-TIME / RASTER';
-  $('#paneRendererTitle').textContent = wire ? 'Wireframe / Raster' : selectedRenderMode === 'pathtraced' ? 'Path tracing · PT' : 'Real-time / Raster';
 }
 function showSceneReport() {
   const report = viewer?.getReport();
   if (!report) return;
   $('#fidelityNotes').textContent = report.notes.join('\n\n');
-  $('#sourceViewStatus').textContent = 'Switch between PT and real-time rendering without changing the camera.';
   window.dispatchEvent(new CustomEvent('nervface-renderer-ready', { detail: { mode: report.mode, source: report.sourceURL } }));
 }
 syncRenderControls();
@@ -162,33 +179,32 @@ function makeCaseButtons(container, callback, collection=cases, active=selectedH
     button.append(image, label); button.addEventListener('click', () => callback(index)); container.append(button);
   });
 }
+function heroImageUrl(item, kind) {
+  return `${item.root}/${item.images[kind]}`;
+}
 async function selectHero(index) {
   stopReveal();
   const sequence = ++heroSequence;
   const item = cases[index];
-  $('#heroDiagram').setAttribute('aria-busy', 'true');
+  $('#comparisonPanel').setAttribute('aria-busy', 'true');
   try {
-    const filenames = ['input', 'geometry', 'render'];
+    const filenames = [...new Set(heroRegions.map(region => region.select.value))];
     await Promise.all(filenames.map((filename) => new Promise((resolve, reject) => {
-      const image = new Image(); image.onload = resolve; image.onerror = reject; image.src = `${item.root}/${filename}.webp`;
+      const image = new Image(); image.onload = resolve; image.onerror = reject; image.src = heroRegionUrl(item, filename);
     })));
     if (sequence !== heroSequence) return;
-    for (const [i, selector] of ['#compareInput', '#compareGeometry', '#compareRender'].entries()) {
-      const source = `${item.root}/${filenames[i]}.webp`;
-      const caption = `${item.label} · ${['Input photograph', 'Generated geometry', 'Textured appearance'][i]}`;
-      $(selector).src = source; $(selector).alt = caption;
-      const plate = $(`[data-plate-image="${filenames[i]}"]`);
-      plate.src = source; plate.alt = caption;
-      plate.closest('button').dataset.lightbox = source;
-      plate.closest('button').dataset.caption = caption;
-    }
     selectedHero = index;
+    syncHeroRegions(item);
+    resetSplitToNose(true);
     selectButtons($('#heroCases'), index);
     selectButtons($('#stageCases'), index);
-    $('#compareCaseLabel').textContent = `${String(index + 1).padStart(2, '0')} / ${String(cases.length).padStart(2, '0')}`;
-    $('#inspectCase').setAttribute('aria-label', `Explore ${item.label} in 3D`);
+    $('#compareCaseLabel').textContent = item.label;
+    const inSupplement = assetCases.some(asset => asset.sourceName === item.sourceName);
+    const explore = $('#inspectCase');
+    explore.firstChild.textContent = inSupplement ? 'Explore this face in 3D ' : 'Find this face in the collection ';
+    explore.setAttribute('aria-label', inSupplement ? `Explore ${item.label} in 3D` : 'Find this face in the collection');
   } catch { notify('Could not load this comparison. Please check the case image files.'); }
-  finally { if (sequence === heroSequence) $('#heroDiagram').removeAttribute('aria-busy'); }
+  finally { if (sequence === heroSequence) $('#comparisonPanel').removeAttribute('aria-busy'); }
 }
 function viewerError(message) {
   $('#viewerFrame').dataset.state = 'error'; $('#viewerStatusText').textContent = message; $('#retryViewer').hidden = false;
@@ -237,7 +253,7 @@ async function selectAsset(index) {
   $('#assetCaseSelect').value=String(index);
   selectButtons($('#assetCases'), index);
   $('#assetInput').src = `${item.root}/${item.images.input}`; $('#assetInput').alt = `${item.label} input portrait`;
-  $('#assetInputLabel').textContent = item.label; $('#viewerTitle').textContent = `${String(index+1).padStart(2,'0')} / ${assetCases.length} · ${item.label}`;
+  $('#assetInputLabel').textContent = item.label; $('#viewerTitle').textContent = item.label;
   try {
     if (viewer) await loadCase(index);
     else await ensureViewer();
@@ -333,8 +349,6 @@ async function initializeEnvironments() {
       swatch.append(image);
       const name = document.createElement('span'); name.className = 'environment-name';
       name.textContent = entry.name;
-      const detail = document.createElement('small'); detail.textContent = 'HDRI';
-      name.append(detail);
       button.append(swatch, name);
       button.addEventListener('click', () => selectEnvironment(entry.id));
       container.append(button);
@@ -407,36 +421,41 @@ $('#reloadViewer').addEventListener('click', recoverViewer);
 
 async function initializeCases() {
   try {
-    const response = await fetch('assets/cases.json');
+    const response = await fetch('assets/cases.json?v=web-20261128');
     if (!response.ok) throw new Error('Missing case manifest');
     cases = await response.json();
     if (!cases.length) throw new Error('No cases available');
-    makeCaseButtons($('#heroCases'), selectHero);
-    const assetResponse=await fetch('assets/showcase/cases.json?v=first-page-24-hair');
+    selectedHero = Math.max(0, cases.findIndex(item => item.sourceName === 'sam'));
+    const assetResponse=await fetch('assets/showcase/cases.json?v=web-20261128');
     if(!assetResponse.ok) throw new Error('Missing full character collection');
-    assetCases=(await assetResponse.json()).map(item=>({...item,sourceName:item.selectionId.split('/').pop()}));
+    const gallery = (await assetResponse.json()).map(item => ({...item, sourceName: item.selectionId.split('/').pop()}));
+    heroCatalog = new Map(gallery.map(item => [item.sourceName, item]));
+    const supplementResponse = await fetch('assets/motion/supplement.json');
+    if (!supplementResponse.ok) throw new Error('Missing supplement character list');
+    const supplement = new Set(await supplementResponse.json());
+    assetCases = gallery.filter(item => supplement.has(item.id));
     if(!assetCases.length) throw new Error('No 3D characters available');
-    selectedAsset=Math.max(0,assetCases.findIndex(item=>item.sourceName===cases[selectedHero]?.sourceName));
+    selectedAsset=Math.max(0,assetCases.findIndex(item=>item.sourceName==='Elon_Musk_02'));
     makeCaseButtons($('#assetCases'), selectAsset, assetCases, selectedAsset);
     $('#assetCaseSelect').replaceChildren(...assetCases.map((item,index)=>{
-      const option=document.createElement('option'); option.value=String(index); option.textContent=`${String(index+1).padStart(2,'0')} · ${item.label}`; return option;
+      const option=document.createElement('option'); option.value=String(index); option.textContent=item.label; return option;
     }));
     $('#assetCaseSelect').value=String(selectedAsset);
     $('#assetCaseSelect').addEventListener('change',event=>selectAsset(Number(event.target.value)));
+    makeCaseButtons($('#heroCases'), selectHero);
     cases.forEach((item, index) => {
       const button = document.createElement('button');
-      button.textContent = String(index + 1).padStart(2, '0');
+      button.title = item.label;
       button.setAttribute('aria-label', `Select ${item.label}`);
       button.setAttribute('aria-pressed', String(index === selectedHero));
       button.addEventListener('click', () => selectHero(index));
       $('#stageCases').append(button);
     });
-    selectedHero = Math.min(selectedHero, cases.length - 1);
     await selectHero(selectedHero);
     $('#assetInput').src = `${assetCases[selectedAsset].root}/${assetCases[selectedAsset].images.input}`;
     $('#assetInput').alt = `${assetCases[selectedAsset].label} input portrait`;
     $('#assetInputLabel').textContent = assetCases[selectedAsset].label;
-    $('#viewerTitle').textContent = `${String(selectedAsset+1).padStart(2,'0')} / ${assetCases.length} · ${assetCases[selectedAsset].label}`;
+    $('#viewerTitle').textContent = assetCases[selectedAsset].label;
     selectButtons($('#assetCases'), selectedAsset);
     const observer = new IntersectionObserver((entries) => {
       if (entries.some((entry) => entry.isIntersecting)) { observer.disconnect(); ensureViewer(); }
@@ -459,20 +478,14 @@ const navigationObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-15% 0px -65% 0px', threshold: 0 });
 sections.forEach((section) => navigationObserver.observe(section));
 
-// Two presentations share exactly the same selected case and source images.
-document.querySelectorAll('[data-presentation]').forEach((button) => {
-  button.addEventListener('click', () => {
-    stopReveal();
-    const showPlates = button.dataset.presentation === 'plates';
-    $('#heroDiagram').hidden = !showPlates;
-    $('#comparisonPanel').hidden = showPlates;
-    document.querySelectorAll('[data-presentation]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
-  });
-});
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 function inspectAsset(index) {
   const assetIndex=assetCases.findIndex(item=>item.sourceName===cases[index].sourceName);
-  if(assetIndex<0)return;
+  if (assetIndex < 0) {
+    const item = heroCatalog.get(cases[index].sourceName);
+    if (item) location.hash = `compare-${item.id}`;
+    return;
+  }
   selectAsset(assetIndex);
   $('#assets').scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start' });
 }
@@ -511,6 +524,7 @@ $('#playReveal').addEventListener('click', () => {
   if (reducedMotion.matches) return;
   frame.dataset.view = 'split';
   document.querySelectorAll('.compare-modes button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === 'split')));
+  const startedAtNose = splitAtNose;
   const points = [[split.x, split.y], [65, 12], [12, 86], [88, 86], [split.x, split.y]];
   const start = performance.now();
   $('#playReveal').setAttribute('aria-label', 'Stop comparison reveal');
@@ -518,7 +532,11 @@ $('#playReveal').addEventListener('click', () => {
   $('#playReveal').setAttribute('aria-pressed', 'true');
   function animate(now) {
     const phase = Math.min(4, (now - start) / 850);
-    if (phase >= 4) { updateSplit(...points[4], true); stopReveal(); return; }
+    if (phase >= 4) {
+      if (startedAtNose) resetSplitToNose(true); else updateSplit(...points[4], true);
+      stopReveal();
+      return;
+    }
     const segment = Math.floor(phase);
     const local = phase - segment;
     const eased = local * local * (3 - 2 * local);
@@ -538,7 +556,7 @@ document.querySelectorAll('#focusCompare, #resetCompare').forEach(button => {
     stopReveal();
     frame.dataset.view = 'split';
     document.querySelectorAll('.compare-modes button').forEach(item => item.setAttribute('aria-pressed', String(item.dataset.view === 'split')));
-    if (button.id === 'resetCompare') updateSplit(50, 48, true);
+    if (button.id === 'resetCompare') resetSplitToNose(true);
     handle.focus({ preventScroll: true });
   });
 });

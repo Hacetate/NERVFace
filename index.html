@@ -4,15 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="NERVFace — single-image 3D face generation. Explore input portraits, generated geometry, UV textures, and interactive 3D assets.">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#e3ded7">
   <title>NERVFace | Single-image 3D face generation</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=hero-clean-2">
-  <link rel="stylesheet" href="assets/showcase/showcase.css?v=card-caption4">
-  <script type="module" src="assets/showcase/showcase.js?v=first-page-24-hair"></script>
-  <link rel="preload" href="assets/cases/case-02/input.webp" as="image">
+  <link rel="stylesheet" href="styles.css?v=web-20261128">
+  <link rel="stylesheet" href="assets/showcase/showcase.css?v=web-20261128">
+  <script type="module" src="assets/showcase/showcase.js?v=web-20261128"></script>
+  <link rel="preload" href="assets/cases/case-02/hero/input.webp" as="image">
   <script src="site-config.js?v=dataset-1" defer></script>
-  <script src="app.js?v=hero-clean-2" defer></script>
+  <script src="app.js?v=web-20261128" defer></script>
+  <link rel="stylesheet" href="assets/motion/demo.css?v=web-20261128">
+  <link rel="stylesheet" href="assets/motion/theme.css?v=web-20261128">
+  <script src="assets/motion/demo.js?v=web-20261128" type="module"></script>
 </head>
 <body id="top" class="calibration-page">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,88 +24,76 @@
     <a class="brand" href="#top" aria-label="NERVFace home"><span class="brand-symbol" aria-hidden="true">N<span>/</span>F</span><span>NERVFace</span></a>
     <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="navigation">Index <span aria-hidden="true">+</span></button>
     <nav id="navigation" aria-label="Main navigation">
-      <a href="#overview"><span>01</span> Case Explorer</a><a href="#assets"><span>02</span> 3D Assets</a><a href="#method"><span>03</span> Method</a><a href="#citation"><span>04</span> Citation</a>
+      <a href="#overview">Character gallery</a><a href="#assets">3D viewer</a><a href="#facial-motion">Facial animation</a>
     </nav>
     <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
   </header>
   <main id="main">
     <section class="hero container" aria-labelledby="projectTitle">
       <div class="hero-demo">
-        <div class="plate-topline"><span><b class="red">FIG. 01</b> / ONE IDENTITY, THREE VIEWS</span><div class="presentation-toggle" role="group" aria-label="Presentation layout"><button data-presentation="compare" aria-pressed="true">Drag comparison</button><button data-presentation="plates" aria-pressed="false">View as plates</button></div></div>
-        <div id="heroDiagram" class="triptych" aria-label="Input, geometry and appearance plates" hidden>
-          <figure class="specimen-plate">
-            <button class="plate-viewport" data-lightbox="assets/cases/case-02/input.webp" data-caption="Case 02 · Input photograph" aria-label="Enlarge input photograph"><span class="plate-register" aria-hidden="true"></span><img data-plate-image="input" src="assets/cases/case-02/input.webp" alt="Case 02 input portrait" fetchpriority="high"><span class="plate-enlarge" aria-hidden="true">↗</span></button>
-            <figcaption><span class="plate-number">01</span><div><strong>Input photograph</strong><span>The visual reference</span></div><span class="plate-arrow" aria-hidden="true">→</span></figcaption>
-          </figure>
-          <figure class="specimen-plate">
-            <button class="plate-viewport" data-lightbox="assets/cases/case-02/geometry.webp" data-caption="Case 02 · Generated geometry" aria-label="Enlarge generated geometry"><span class="plate-register" aria-hidden="true"></span><img data-plate-image="geometry" src="assets/cases/case-02/geometry.webp" alt="Case 02 gray geometry"><span class="plate-enlarge" aria-hidden="true">↗</span></button>
-            <figcaption><span class="plate-number">02</span><div><strong>Generated geometry</strong><span>The structure beneath</span></div><span class="plate-arrow" aria-hidden="true">→</span></figcaption>
-          </figure>
-          <figure class="specimen-plate">
-            <button class="plate-viewport" data-lightbox="assets/cases/case-02/render.webp" data-caption="Case 02 · Textured appearance" aria-label="Enlarge textured appearance"><span class="plate-register" aria-hidden="true"></span><img data-plate-image="render" src="assets/cases/case-02/render.webp" alt="Case 02 appearance render"><span class="plate-enlarge" aria-hidden="true">↗</span></button>
-            <figcaption><span class="plate-number">03</span><div><strong>Textured appearance</strong><span>The completed surface</span></div><span class="plate-arrow red" aria-hidden="true">↗</span></figcaption>
-          </figure>
-        </div>
+        <div class="plate-topline"><span><b class="red">FIG. 01</b></span></div>
         <div id="comparisonPanel" class="comparison-panel">
-          <figure class="comparison" aria-label="Interactive portrait, geometry and appearance comparison">
-            <div class="stage-heading"><span>PORTRAIT <i>/</i> SURFACE <i>/</i> APPEARANCE</span><span class="stage-dot" aria-hidden="true"></span></div>
+          <figure class="comparison" aria-label="Interactive face comparison">
+
             <div class="stage-image-inset">
-              <div class="compare-frame" id="compareFrame" data-view="split" style="--x:50%;--y:48%">
-                <img id="compareInput" class="compare-image layer-input" src="assets/cases/case-02/input.webp" alt="Case 02 input portrait" draggable="false">
-                <img id="compareGeometry" class="compare-image layer-geometry" src="assets/cases/case-02/geometry.webp" alt="Case 02 gray geometry" draggable="false">
-                <img id="compareRender" class="compare-image layer-render" src="assets/cases/case-02/render.webp" alt="Case 02 appearance render" draggable="false">
+              <div class="compare-frame" id="compareFrame" data-view="split" style="--x:48.15%;--y:57.66%">
+                <img class="compare-image layer-input" data-hero-image="top" src="assets/cases/case-02/hero/input.webp" alt="Sam Altman · Input" draggable="false">
+                <img class="compare-image layer-geometry" data-hero-image="bottom-left" src="assets/cases/case-02/hero/geometry.webp" alt="Sam Altman · Geometry" draggable="false">
+                <img class="compare-image layer-render" data-hero-image="bottom-right" src="assets/cases/case-02/hero/render.webp" alt="Sam Altman · Appearance" draggable="false">
                 <div class="divider-horizontal" aria-hidden="true"></div><div class="divider-vertical" aria-hidden="true"></div>
                 <button id="compareHandle" class="compare-handle" aria-label="Adjust comparison. Arrow keys move the dividers; Shift moves faster; Home resets." aria-describedby="comparePosition"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 6 2.5-2.5L14.5 6M9.5 18l2.5 2.5 2.5-2.5M6 9.5 3.5 12 6 14.5M18 9.5l2.5 2.5-2.5 2.5"/></svg></button>
-                <span class="image-label label-input">Input</span><span class="image-label label-geometry">Geometry</span><span class="image-label label-render">Appearance</span>
+                <span class="image-label label-input" data-hero-label="top">Input</span>
+                <span class="image-label label-geometry" data-hero-label="bottom-left">Geometry</span>
+                <span class="image-label label-render" data-hero-label="bottom-right">Appearance</span>
               </div>
             </div>
-            <figcaption class="stage-footer">
+            <figcaption><div class="stage-footer">
               <div class="stage-tools" role="group" aria-label="Comparison tools">
                 <button id="focusCompare" class="stage-icon-button" title="Focus comparison for arrow-key control" aria-label="Focus comparison for arrow-key control"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18m-12-6 3-3 3 3m-9 3-3 3 3 3m12-6 3 3-3 3m-9 3 3 3 3-3"/></svg></button>
                 <button id="resetCompare" class="stage-icon-button" title="Reset comparison" aria-label="Reset comparison"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 7A8 8 0 1 1 4 14M5.5 3v5h5"/></svg></button>
                 <button id="playReveal" class="stage-icon-button" title="Play comparison reveal" aria-label="Play comparison reveal" aria-pressed="false"><svg class="reveal-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg><svg class="reveal-stop" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg></button>
-                <span class="stage-hint">Drag to explore</span>
+
               </div>
-              <div id="stageCases" class="stage-cases" role="group" aria-label="Select comparison case by number"></div>
-            </figcaption>
+              <div id="stageCases" class="stage-cases" role="group" aria-label="Select comparison portrait"></div>
+            </div><div class="hero-region-options" role="group" aria-label="Comparison regions"><label><span>Top</span><select data-hero-region="top"><option value="input" selected>Input</option><option value="geometry">Geometry</option><option value="render">Appearance</option><option value="uv">UV</option></select></label><label><span>Bottom left</span><select data-hero-region="bottom-left"><option value="input">Input</option><option value="geometry" selected>Geometry</option><option value="render">Appearance</option><option value="uv">UV</option></select></label><label><span>Bottom right</span><select data-hero-region="bottom-right"><option value="input">Input</option><option value="geometry">Geometry</option><option value="render" selected>Appearance</option><option value="uv">UV</option></select></label></div></figcaption>
           </figure>
-          <div class="comparison-notes"><div class="compare-modes" role="group" aria-label="Comparison view"><button data-view="split" aria-pressed="true">Compare</button><button data-view="input" aria-pressed="false">Input</button><button data-view="geometry" aria-pressed="false">Geometry</button><button data-view="render" aria-pressed="false">Appearance</button></div></div>
+
         </div>
-        <span id="comparePosition" class="sr-only" aria-live="polite">Dividers at 50 percent horizontal and 48 percent vertical.</span>
+        <span id="comparePosition" class="sr-only" aria-live="polite">Dividers at 48 percent horizontal and 58 percent vertical.</span>
       </div>
       <div class="hero-copy">
         <p class="eyebrow hero-eyebrow" hidden><span class="status-dot"></span><span id="venue">BLENDER SCENE / RENDER COMPARISON</span></p>
         <div class="title-lockup"><h1 id="projectTitle">NERVFace</h1><span class="title-registration" aria-hidden="true">+</span></div>
         <p class="hero-title" id="projectSubtitle">Single-image 3D face generation</p>
         <span class="title-rule" aria-hidden="true"></span>
-        <p class="lede" id="projectDescription" hidden>From a photograph to a structured face asset.<br>Generated geometry. Complete UV textures. A new point of view.</p>
+        <p class="lede" id="projectDescription" hidden></p>
             <div class="hero-bottom">
         <div class="actions" id="projectLinks"><button class="button" disabled>Paper <span class="soon">TBA</span></button><button class="button" disabled>Code <span class="soon">TBA</span></button><button class="button" disabled>Dataset <span class="soon">TBA</span></button></div>
-        <div class="filmstrip"><div class="filmstrip-caption"><span>CONTACT SHEET</span><strong id="compareCaseLabel">02 / 06</strong></div><div id="heroCases" class="hero-cases" role="group" aria-label="Select comparison case"></div></div>
+        <div class="filmstrip"><div class="filmstrip-caption"><span>CONTACT SHEET</span><strong id="compareCaseLabel">Sam Altman</strong></div><div id="heroCases" class="hero-cases" role="group" aria-label="Select comparison case"></div></div>
               <div class="hero-explore"><a id="inspectCase" class="button primary" href="#assets">Explore this face in 3D <span aria-hidden="true">↗</span></a></div>
-        <details class="metadata" hidden><summary><span>Project information</span><small id="metadataSummary">Publication details pending</small></summary><div class="metadata-body" id="metadataBody"></div></details>
+        <details class="metadata" hidden><summary><span>Project information</span><small id="metadataSummary"></small></summary><div class="metadata-body" id="metadataBody"></div></details>
       </div>
       </div>
     </section>
     <section id="video-preview" class="container" aria-labelledby="videoPreviewTitle" style="padding-block:24px 48px">
       <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:18px">
-        <h2 id="videoPreviewTitle" style="font-size:28px">Video preview</h2>
+        <h2 id="videoPreviewTitle" style="font-size:28px">Project video</h2>
         <a href="https://www.bilibili.com/video/BV14VsQ6QEc6/" target="_blank" rel="noopener noreferrer">Watch on Bilibili ↗</a>
       </div>
       <iframe src="https://player.bilibili.com/player.html?bvid=BV14VsQ6QEc6&amp;cid=43719134156&amp;autoplay=0&amp;danmaku=0&amp;poster=1"
-        title="Video preview on Bilibili" style="display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);background:#111"
+        title="Project video on Bilibili" style="display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);background:var(--matte)"
         loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
     </section>
-    <section id="overview" class="section container showcase-section" aria-label="Case explorer"><div id="showcase"></div></section>
-    <section id="assets" class="section container">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">02</span> SOURCE-SCENE COMPARISON</p><h2>Same scene.<br>Two renderers<span class="red">.</span></h2></div><p>Explore all 61 characters. Switch between progressive path tracing and real-time rendering above the viewer. The input portrait stays alongside, and switching modes preserves your camera.</p></div>
-      <div class="asset-picker"><label class="mono-label" for="assetCaseSelect">SELECT A CHARACTER · 61 CASES</label><select id="assetCaseSelect" aria-label="Select character for both renderers"></select></div>
+    <section id="overview" class="section container showcase-section" aria-label="Character gallery"><div id="showcase"></div></section>
+    <section id="assets" class="section container" aria-labelledby="viewerHeading">
+      <div class="section-heading"><h2 id="viewerHeading">3D viewer</h2><p>Switch between path tracing and real-time rendering. Drag to rotate the model.</p></div>
+      <div class="asset-picker"><label class="mono-label" for="assetCaseSelect">SELECT A CHARACTER · 42 CASES</label><select id="assetCaseSelect" aria-label="Select character for both renderers"></select></div>
       <div class="asset-strip"><div id="assetCases" class="asset-cases" role="group" aria-label="Select 3D model"></div></div>
       <div class="asset-layout">
         <div class="viewer-column">
-          <div class="pane-title"><div class="renderer-switch" role="group" aria-label="Rendering mode"><button type="button" data-render-mode="pathtraced" aria-pressed="true" title="Progressive path tracing">PT</button><button type="button" data-render-mode="raster" aria-pressed="false" title="Real-time raster rendering">Real-time</button></div><div class="viewer-heading-actions"><strong id="paneRendererTitle">Path tracing · PT</strong><button id="reloadViewer" title="Reload the current model, textures and renderer while keeping the view">↻ Reload viewer</button></div></div>
+          <div class="pane-title"><div class="renderer-switch" role="group" aria-label="Rendering mode"><button type="button" data-render-mode="pathtraced" aria-pressed="true" title="Progressive path tracing">PT</button><button type="button" data-render-mode="raster" aria-pressed="false" title="Real-time raster rendering">Real-time</button></div><div class="viewer-heading-actions"><button id="reloadViewer" title="Reload the current model, textures and renderer while keeping the view">↻ Reload viewer</button></div></div>
           <div id="viewerFrame" class="viewer-frame" data-state="idle">
-            <div class="viewer-top"><span class="viewer-badge"><span class="status-dot"></span><span id="viewerTitle">Case 02</span></span><span id="renderModeBadge" class="viewer-badge">PROGRESSIVE / PT</span></div>
+            <div class="viewer-top"><span class="viewer-badge"><span class="status-dot"></span><span id="viewerTitle">Elon Musk</span></span><span id="renderModeBadge" class="viewer-badge">PROGRESSIVE / PT</span></div>
             <div id="viewerCanvas" class="viewer-canvas" role="img" aria-label="Interactive 3D face. Drag to orbit, pinch or scroll to zoom. Arrow keys rotate the model, plus and minus zoom." tabindex="0"></div>
             <div id="viewerStatus" class="viewer-status" role="status"><span class="loader" aria-hidden="true"></span><strong id="viewerStatusText">Preparing 3D viewer…</strong><progress id="modelProgress" max="100" value="0" aria-label="3D model loading progress"></progress><button id="retryViewer" class="button" hidden>Reload viewer</button></div>
             <div class="viewer-bottom"><span id="viewerHint">DRAG TO ORBIT / SCROLL TO ZOOM</span><div class="viewer-tools"><button id="rotateButton" title="Toggle automatic rotation" aria-pressed="false">Auto-rotate</button><button id="resetButton" title="Restore the original Blender camera">Source camera</button><button id="fullscreenButton" title="Toggle full screen" aria-label="Toggle viewer full screen">⛶</button></div></div>
@@ -110,7 +102,7 @@
           <div class="environment-panel">
             <div class="environment-heading"><span class="mono-label">LIGHTING</span><span id="environmentStatus" class="environment-status">Source lighting</span></div>
             <div id="environmentOptions" class="environment-options" role="group" aria-label="Lighting environment">
-              <button type="button" class="environment-option source-option" data-environment="source" aria-pressed="true"><span class="environment-swatch source-swatch" aria-hidden="true"><span></span></span><span class="environment-name">Source lighting<small>Blender source</small></span></button>
+              <button type="button" class="environment-option source-option" data-environment="source" aria-pressed="true"><span class="environment-swatch source-swatch" aria-hidden="true"><span></span></span><span class="environment-name">Source lighting</span></button>
             </div>
             <div id="environmentAdjust" class="environment-adjust" hidden>
               <label for="environmentIntensity">Intensity <output id="environmentIntensityValue">1.0×</output></label>
@@ -121,34 +113,66 @@
           </div>
           <div class="view-presets" role="group" aria-label="Quick camera views"><span>VIEWPOINT</span><button data-camera="-45">Left 45°</button><button data-camera="0">Source</button><button data-camera="45">Right 45°</button></div>
           <p id="rendererInfo" class="viewer-note">Renderer has not started.</p>
-          <p id="sourceViewStatus" class="viewer-note">Switch between PT and real-time rendering without changing the camera.</p>
+
         </div>
         <aside class="input-photo-column">
-          <div class="input-photo-heading"><span>INPUT PORTRAIT</span><strong>Source portrait</strong></div>
-          <figure class="input-photo"><img id="assetInput" src="assets/cases/case-02/input.webp" alt="Case 02 source portrait" loading="lazy"><figcaption><span id="assetInputLabel">Case 02</span><span>Original input</span></figcaption></figure>
+          <div class="input-photo-heading"><strong>Source portrait</strong></div>
+          <figure class="input-photo"><img id="assetInput" src="assets/showcase/cases/01_avatar_main__Elon_Musk_02/input.webp" alt="Elon Musk source portrait" loading="lazy"><figcaption><span id="assetInputLabel">Elon Musk</span></figcaption></figure>
         </aside>
       </div>
-      <details class="disclosure fidelity-disclosure"><summary><span>Inherited parameters &amp; remaining differences</span><small>Read before judging a match</small></summary><div class="disclosure-body"><p>Camera transforms, original scale, world lighting, area lights, textures and color management come from the source scene. Real-time rendering does not include path-traced global illumination or shadows; disk area lights use a rectangular LTC approximation. Subsurface scattering remains disabled, matching the source. The eyes use an approximation for the separate coat IOR. Wireframe always uses raster rendering.</p><p>Source lighting is enabled by default. Selecting an HDRI replaces the source world and area lights with the selected environment; switch back at any time. The web environments use 1K maps. Both PT and real-time rendering support them, with approximate HDRI highlights in real-time mode.</p><pre id="fidelityNotes">Select a case to inspect its source notes.</pre></div></details>
-      <details class="disclosure export-disclosure"><summary><span>Collection status</span><small>61 ready</small></summary><div class="disclosure-body"><p>All 61 cases use compressed models exported from the final source scenes and support both PT and real-time rendering. Each retains its own camera, lighting, eyes and materials.</p><p>Browser rendering and Blender Cycles differ in shading and lighting. For the final offline result, select Render in the case collection above.</p></div></details>
+      <details class="disclosure fidelity-disclosure"><summary><span>Inherited parameters &amp; remaining differences</span></summary><div class="disclosure-body"><p>Camera transforms, original scale, world lighting, area lights, textures and color management come from the source scene. Real-time rendering does not include path-traced global illumination or shadows; disk area lights use a rectangular LTC approximation. Subsurface scattering remains disabled, matching the source. The eyes use an approximation for the separate coat IOR. Wireframe always uses raster rendering.</p><p>Source lighting is enabled by default. Selecting an HDRI replaces the source world and area lights with the selected environment; switch back at any time. The web environments use 1K maps. Both PT and real-time rendering support them, with approximate HDRI highlights in real-time mode.</p><pre id="fidelityNotes">Select a case to inspect its source notes.</pre></div></details>
+      <details class="disclosure export-disclosure"><summary><span>Collection status</span><small>42 ready</small></summary><div class="disclosure-body"><p>All 42 supplement cases use compressed models exported from the final source scenes and support both PT and real-time rendering. Each retains its own camera, lighting, eyes and materials.</p><p>Browser rendering and Blender Cycles differ in shading and lighting. For the final offline result, select Render in the case collection above.</p></div></details>
     </section>
-    <section id="method" class="section container">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">03</span> METHOD</p><h2>The idea,<br>in three steps<span class="red">.</span></h2></div><p>A high-level illustration of the project. The final method figure and paper description have not yet been supplied.</p></div>
-      <div id="methodPlaceholder" class="method-panel">
-        <div class="method-step"><span class="method-number">01</span><div><span>CONDITION</span><h3>Input portrait</h3><p>A single image provides the visual reference.</p></div></div>
-        <span class="method-arrow" aria-hidden="true">→</span>
-        <div class="method-step"><span class="method-number">02</span><div><span>GENERATE</span><h3>Geometry + texture</h3><p>A generated facial mesh with a complete UV texture.</p></div></div>
-        <span class="method-arrow" aria-hidden="true">→</span>
-        <div class="method-step"><span class="method-number">03</span><div><span>EXPLORE</span><h3>3D face asset</h3><p>Inspect shape and appearance from new views.</p></div></div>
+    <section id="facial-motion" class="section container motion-demo" aria-labelledby="motionTitle">
+      <div class="section-heading">
+        <div><h2 id="motionTitle">Facial animation</h2></div>
+        <p>Compare the same shape presets and expressions across three path-traced characters.</p>
       </div>
-      <figure id="methodFigure" class="figure-card" hidden><button class="figure-zoom" aria-label="Enlarge method figure"><img alt="NERVFace method" loading="lazy"></button><figcaption>Method overview</figcaption></figure>
-      <p id="methodDraftNote" class="draft-note">SCHEMATIC PLACEHOLDER / NOT THE FINAL PAPER PIPELINE</p>
-    </section>
-    <section id="citation" class="section container">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-index">04</span> CITATION</p><h2>Build on<br>this work<span class="red">.</span></h2></div><p id="citationDescription">Publication metadata is pending. The official citation will be added when the paper details are provided.</p></div>
-      <div class="citation-box"><div class="citation-toolbar"><span id="citationStatus">BIBTEX / NOT YET AVAILABLE</span><button id="copyCitation" class="button" disabled>Copy BibTeX</button></div><pre id="bibtex">The official citation will appear here when the paper details are provided.</pre></div>
+      <div class="motion-row" aria-labelledby="sculptTitle">
+        <h3 id="sculptTitle">Blendshape controls</h3>
+        <div class="motion-controls">
+          <label>Preset <select id="sculptPreset" disabled>
+            <option>Nose and brow</option>
+            <option>Upturned nose, thin lips and ears</option>
+            <option>Lips, chin and cheeks</option>
+            <option>Brow and face shape</option>
+            <option>Combined features</option>
+          </select></label>
+          <label class="motion-range">Strength <input id="sculptStrength" type="range" min="0" max="100" value="0" disabled> <output id="sculptValue" for="sculptStrength">0%</output></label>
+        </div>
+        <p class="motion-status" id="sculptStatus" role="status" hidden></p>
+        <div class="motion-faces" id="motionFaces"></div>
+      </div>
+      <div class="motion-row" aria-labelledby="expressionTitle">
+        <h3 id="expressionTitle">Facial expressions</h3>
+        <div class="motion-controls">
+          <label>Sequence <select id="expressionClip">
+            <option value="happy">Happy</option>
+            <option value="disgust" selected>Disgusted</option>
+            <option value="surprise">Surprised</option>
+          </select></label>
+          <button id="expressionPlay" aria-controls="expressionFaces">Play</button>
+          <label class="motion-range">Timeline <input id="expressionTime" type="range" min="0" max="1000" value="0" aria-label="Expression timeline" disabled></label>
+        </div>
+        <p class="motion-status" id="expressionStatus" role="status" hidden></p>
+        <figure class="motion-expression">
+          <video id="expressionFaces" width="1152" height="384" muted playsinline preload="auto"
+            poster="assets/motion/pt/expressions.webp" aria-label="Synchronized expressions on three faces"></video>
+          <figcaption class="motion-faces">
+            <span>Maximilian Beier</span><span>Rohinie Bisesar</span><span>Connor</span>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="motion-finale">
+        <h3>Speech animation</h3>
+        <video width="1280" height="720" controls playsinline preload="none"
+          poster="assets/motion/speech.webp" aria-label="Shared speech animation">
+          <source src="assets/motion/speech.mp4" type="video/mp4">
+        </video>
+      </div>
     </section>
   </main>
-  <footer class="footer container"><div class="footer-wordmark" aria-hidden="true">NERVFace<span class="red">/</span></div><div class="footer-line"><a class="brand" href="#top">A new point of view.</a><p>SHAPE / APPEARANCE / EXPLORATION</p><a href="#top">Back to top <span class="red">↑</span></a></div></footer>
+  <footer class="footer container"><div class="footer-line"><a href="#top">Back to top <span class="red" aria-hidden="true">↑</span></a></div></footer>
   <dialog id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-toolbar"><span id="lightboxCaption"></span><button id="closeLightbox" aria-label="Close enlarged figure">Close ×</button></div><img id="lightboxImage" alt=""><p>Esc to close / Original supplied imagery</p></dialog>
   <div id="toast" class="toast" role="status" hidden></div>
   <noscript><div class="noscript">Enable JavaScript for comparison controls and the interactive 3D viewer. Static figures remain available.</div></noscript>

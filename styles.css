@@ -131,9 +131,10 @@ details[open] > summary::after { content: "−"; }
 .stage-cases button:hover { color: #e2e5e9; }
 .stage-cases button[aria-pressed=true] { color: #fff; }
 .stage-cases button[aria-pressed=true]::after { content: ""; position: absolute; bottom: 1px; left: 5px; right: 5px; height: 1px; background: #c4cbd4; }
-.compare-frame { position: relative; isolation: isolate; width: 100%; aspect-ratio: 1.12; border: 1px solid #474d54; border-radius: 7px; background: #fff; overflow: hidden; }
+.hero { --portrait-inset: 15%; }
+.compare-frame { position: relative; isolation: isolate; width: 100%; aspect-ratio: 1; border: 1px solid #474d54; border-radius: 7px; background: #fff; overflow: hidden; }
 .compare-frame[data-view=split] { cursor: crosshair; touch-action: none; }
-.compare-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #fff; pointer-events: none; user-select: none; }
+.compare-image { position: absolute; inset: 0; width: 100%; height: 100%; padding: var(--portrait-inset); object-fit: contain; background: #fff; pointer-events: none; user-select: none; }
 .layer-input { clip-path: inset(0 0 calc(100% - var(--y)) 0); z-index: 1; }
 .layer-geometry { clip-path: inset(var(--y) calc(100% - var(--x)) 0 0); z-index: 2; }
 .layer-render { clip-path: inset(var(--y) 0 0 var(--x)); z-index: 3; }
@@ -269,12 +270,9 @@ progress::-webkit-progress-value { background: var(--accent); }
 .citation-toolbar > span { font: 9px var(--mono); letter-spacing: .5px; color: var(--muted); }
 .citation-toolbar .button { min-height: 30px; padding: 6px 10px; font: 9px var(--mono); }
 pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 11px/1.9 var(--mono); padding: 25px 22px; margin: 0; color: var(--muted); }
-.footer { margin-top: 90px; padding-top: 28px; border-top: 1px solid var(--ink); }
-.footer-wordmark { font-size: clamp(68px, 11vw, 148px); line-height: 1.1; font-weight: 750; letter-spacing: -.075em; color: #e5e5e1; }
-.footer-wordmark .red { margin-left: 4px; }
-.footer-line { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 27px 35px; }
-.footer-line .brand { font-size: 13px; font-weight: 400; }
-.footer-line p, .footer-line > a:last-child { font: 8px var(--mono); color: var(--muted); }
+.footer { margin-top: 32px; border-top: 1px solid var(--ink); }
+.footer-line { display: flex; justify-content: flex-end; padding-block: 24px; }
+.footer-line > a:last-child { font: 12px var(--mono); color: var(--muted); }
 .footer-line > a:last-child > span { margin-left: 10px; font-size: 14px; }
 dialog { border: 1px solid var(--ink); padding: 20px; width: min(1320px, calc(100vw - 40px)); max-height: 92svh; background: #fff; }
 dialog::backdrop { background: #111d; }
@@ -421,10 +419,6 @@ dialog > p { text-align: center; font: 9px var(--mono); margin-top: 13px; }
   .citation-toolbar > span { font-size: 7px; }
   .citation-toolbar .button { font-size: 8px; padding: 5px 7px; }
   pre { padding: 20px 12px; font-size: 10px; }
-  .footer { margin-top: 58px; padding-top: 23px; }
-  .footer-wordmark { font-size: clamp(58px, 17vw, 100px); }
-  .footer-line { flex-wrap: wrap; gap: 20px; padding-block: 23px; }
-  .footer-line p { order: 3; width: 100%; font-size: 7px; }
   dialog { width: calc(100vw - 18px); padding: 12px; }
   .lightbox-toolbar { font-size: 9px; }
   .lightbox-toolbar button { font-size: 9px; padding: 7px; }
@@ -527,7 +521,7 @@ dialog > p { text-align: center; font: 9px var(--mono); margin-top: 13px; }
 .hero-copy .filmstrip-caption strong { margin:0; font-size:11px; }
 .hero-copy .hero-cases { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; overflow:visible; }
 .hero-copy .case-chip { min-width:0; flex-direction:column; gap:8px; padding:8px; }
-.hero-copy .case-chip img { width:100%; height:auto; aspect-ratio:1; object-fit:cover; }
+.hero-copy .case-chip img { width:100%; height:auto; aspect-ratio:1; padding:var(--portrait-inset); object-fit:contain; background:var(--matte, var(--soft)); }
 .hero-copy .hero-explore { margin-top:18px; }
 .hero .comparison-notes { margin-top:12px; }
 .hero [hidden] { display:none !important; }

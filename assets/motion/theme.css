@@ -1,0 +1,106 @@
+:root {
+  color-scheme: light;
+  --bg: #e3ded7;
+  --soft: #ece8e2;
+  --field: #f2efea;
+  --field-hover: #ded6cd;
+  --frame: #d5cdc4;
+  --matte: #d2cec8;
+  --ink: #302d2b;
+  --muted: #615b57;
+  --line: #c5bdb5;
+  --rule: #8e837a;
+  --walnut: #392f2e;
+  --walnut-hover: #52413e;
+  --accent: #784651;
+}
+
+html, .header nav { background: var(--bg); }
+.brand, h1, h2, h3 { color: var(--walnut); }
+::selection { background: var(--accent); color: var(--bg); }
+input, select, progress { accent-color: var(--accent); }
+input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.sc-filters input::placeholder { color: var(--muted); }
+
+.plate-topline, .method-panel, .citation-box, .footer { border-color: var(--rule); }
+.method-number, .footer-wordmark { color: var(--muted); }
+.disclosure small, .draft-note, .stage-cases button, .header nav a > span,
+.hero .actions .button:disabled { color: var(--muted); }
+
+.comparison {
+  background: var(--frame);
+  border-color: var(--line);
+  border-radius: 4px;
+  box-shadow: none;
+}
+.hero-region-options { background: var(--soft); border-color: var(--line); }
+.hero-region-options select { border-color: var(--line); }
+.compare-frame { border-color: var(--line); border-radius: 2px; }
+.case-chip[aria-pressed=true] { border-color: var(--walnut); background: var(--field); }
+.stage-cases button { color: var(--muted); }
+.stage-icon-button { background: var(--field); color: var(--ink); border-color: var(--line); }
+.stage-icon-button:hover:not(:disabled), .stage-icon-button[aria-pressed=true] {
+  background: var(--field-hover); color: var(--ink); border-color: var(--rule);
+}
+.stage-cases button:hover, .stage-cases button[aria-pressed=true] { color: var(--ink); }
+.stage-cases button[aria-pressed=true]::after { background: var(--accent); }
+.divider-horizontal, .divider-vertical { background: var(--field); }
+.compare-handle { color: var(--field); }
+.compare-handle::before { background: var(--walnut); border-color: var(--field); box-shadow: 0 1px 5px rgb(59 39 26 / 24%); }
+.compare-handle:hover::before { background: var(--walnut-hover); }
+.compare-handle:focus-visible { outline-color: var(--field); }
+.figure-card, .input-photo, .environment-panel,
+.motion-faces figure, .motion-expression,
+.sc-aside figure, .sc-card-controls, .sc-card-caption {
+  background: var(--soft);
+}
+
+.sc-filters input, .sc-filters select, .asset-picker select,
+.material-modes button, .viewer-tools button, #reloadViewer,
+.environment-option, .sc-viewer-controls select, .sc-viewer-controls button,
+.motion-demo button, .motion-demo select, .zoom-hint {
+  background: var(--field);
+  color: var(--ink);
+}
+button.sc-card-open {
+  background: var(--field);
+  border-color: var(--line);
+  color: var(--walnut);
+  box-shadow: none;
+}
+button.sc-card-open:hover, .renderer-switch button:hover:not([aria-pressed=true]) {
+  background: var(--field-hover);
+  color: var(--ink);
+}
+.sc-switch button[aria-pressed=true], .sc-viewer-controls button[aria-pressed=true],
+.renderer-switch button[aria-pressed=true], .viewer-tools button[aria-pressed=true],
+.material-modes button[aria-pressed=true], .button.primary, .skip-link, .toast {
+  background: var(--walnut);
+  color: var(--field);
+  border-color: var(--walnut);
+}
+.button.primary:hover { background: var(--walnut-hover); border-color: var(--walnut-hover); }
+.sc-card-controls input::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, var(--accent) var(--cut, 50%), var(--line) var(--cut, 50%));
+}
+.sc-card-controls input::-moz-range-track { background: var(--line); }
+.sc-card-controls input::-webkit-slider-thumb { border-color: var(--soft); }
+.sc-card-controls input::-moz-range-thumb { border-color: var(--soft); }
+
+dialog, dialog.sc-dialog { background: var(--bg); color: var(--ink); }
+.image-label, .sc-image-label { color: var(--field); background: rgb(57 47 46 / 93%); border-color: transparent; }
+.sc-seam path { stroke: var(--field); }
+dialog::backdrop, .sc-dialog::backdrop { background: rgb(55 40 31 / 42%); }
+.source-swatch span { background: radial-gradient(circle at 35% 35%, var(--field), #b5a592 75%); }
+.viewer-frame::before, .viewer-frame::after { color: var(--rule); }
+.viewer-status, .viewer-top, .viewer-bottom {
+  background: var(--soft);
+  border-color: var(--line);
+}
+
+/* Only the empty media surfaces are themed. Images and rendered pixels keep their source colors. */
+.compare-frame, .compare-image, .figure-zoom, .sc-card-image, .sc-stage,
+.calibration-page .viewer-frame, .motion-portrait,
+video, .motion-expression video, .motion-finale video {
+  background-color: var(--matte);
+}

@@ -2,15 +2,12 @@ NERVFace compressed web assets - 61-case handoff
 
 Authoritative input: F:/NERVFaceWeb/selected_cases_archive/web_handoff_cases.json
 All 61 entries are exported from their explicitly referenced final.blend files.
-The source archive is never saved or modified. Nothing has been uploaded.
+The source archive is never saved or modified.
 
-This directory contains a snapshot of the current site shell for local preview.
-It does not replace F:/NERVFaceWeb/deploy or the source site's structure.
-To integrate into the redesigned site, use assets/showcase/cases.json, cases/,
-textures/, and the compatible assets/showcase/uv-seam.js loader together.
-The hero retains its four comparison examples. "Same scene. Two renderers."
-now offers all 61 characters through the dropdown and thumbnail strip, using
-the same compressed models as the case collection. Each case additionally
+The WEB branch contains the published static site. The gallery uses
+assets/showcase/cases.json, cases/, textures/, and assets/showcase/uv-seam.js.
+The cover has four characters. The 3D viewer uses the 42 entries listed in
+assets/motion/supplement.json. Each gallery case
 contains viewer-scene.json, read from its final archived Blender scene.
 The case collection uses 24 cases per page (6 columns by 4 rows on desktop).
 Cards place a centered slider above a row containing the name and Explore more.

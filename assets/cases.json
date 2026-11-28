@@ -1,6 +1,69 @@
 [
-  {"id":"case-01","label":"Case 01","sourceName":"homelander","root":"assets/cases/case-01"},
-  {"id":"case-02","label":"Case 02","sourceName":"sam","root":"assets/cases/case-02"},
-  {"id":"case-03","label":"Case 03","sourceName":"xjy","root":"assets/cases/case-03"},
-  {"id":"case-04","label":"Case 04","sourceName":"zkbg","root":"assets/cases/case-04"}
+  {
+    "id": "07_avatar_part3_original_branch__Andras_Arato_02_v2_nobald",
+    "label": "Andras Arato",
+    "sourceName": "Andras_Arato_02_v2_nobald",
+    "root": "assets/showcase/cases/07_avatar_part3_original_branch__Andras_Arato_02_v2_nobald",
+    "images": {
+      "input": "input.webp",
+      "geometry": "mesh.webp",
+      "render": "render.webp"
+    },
+    "nose": [
+      56.26,
+      61.99
+    ]
+  },
+  {
+    "id": "01_avatar_main__Elon_Musk_02",
+    "label": "Elon Musk",
+    "sourceName": "Elon_Musk_02",
+    "root": "assets/showcase/cases/01_avatar_main__Elon_Musk_02",
+    "images": {
+      "input": "input.webp",
+      "geometry": "mesh.webp",
+      "render": "render.webp"
+    },
+    "nose": [
+      57.05,
+      63.91
+    ]
+  },
+  {
+    "id": "08_avatar_part4_bald__Jill_Valentine_01",
+    "label": "Jill Valentine",
+    "sourceName": "Jill_Valentine_01",
+    "root": "assets/showcase/cases/08_avatar_part4_bald__Jill_Valentine_01",
+    "images": {
+      "input": "input.webp",
+      "geometry": "mesh.webp",
+      "render": "render.webp"
+    },
+    "nose": [
+      51.77,
+      65.3
+    ]
+  },
+  {
+    "id": "case-02",
+    "label": "Sam Altman",
+    "sourceName": "sam",
+    "root": "assets/cases/case-02",
+    "images": {
+      "input": "hero/input.webp",
+      "geometry": "hero/geometry.webp",
+      "render": "hero/render.webp",
+      "uv": "hero/uv.webp"
+    },
+    "nose": [
+      47.36,
+      63.95
+    ],
+    "crop": [
+      68,
+      132,
+      926,
+      990
+    ]
+  }
 ]
